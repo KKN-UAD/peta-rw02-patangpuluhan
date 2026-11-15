@@ -125,7 +125,8 @@ lg.addTo(map);
 L.control.scale({imperial: false}).addTo(map);
 const bb = rwGaris.getBounds();
 map.fitBounds(bb, {padding: [20, 20]});
-map.setMaxBounds(bb.pad(1.5));
+map.setMinZoom(map.getZoom());            // tidak bisa zoom-out melewati RW 02
+map.setMaxBounds(bb.pad(0.25)); map.options.maxBoundsViscosity = 1.0;
 map.attributionControl.addAttribution('Batas RW: data RW 02 • Survei KKN UAD 2026');
 
 // lokasi saya
