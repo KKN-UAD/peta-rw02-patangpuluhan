@@ -9,7 +9,14 @@ klik kanan layer titik fasilitas terus pilih toggle editing (yang ikon pensil). 
 
 kategorinya harus salah satu dari ini biar warnanya kebaca: tempat ibadah, kesehatan, pendidikan, pemerintahan, ekonomi, keamanan, kebersihan, lainnya. tulisnya pakai huruf depan besar kayak di data yang udah ada.
 
-kalau mau nambah foto, taruh fotonya di folder foto terus di kolom foto isi foto/namafile.jpg
+kalau mau nambah foto:
+1. copy fotonya dulu ke folder foto (yang di dalam folder ini), jangan ambil dari tempat lain biar ikut kekirim
+2. di qgis nyalain toggle editing di layer titik fasilitas, terus klik titiknya pakai identify features (ikon i), atau klik kanan layer > open attribute table
+3. di kolom foto klik tombol titik tiga (...) terus pilih fotonya dari folder foto
+4. save layer edits, tutup qgis, klik kirim_update.bat
+foto yang muncul di banner maksimal 8, yang lain cuma muncul di peta online pas titiknya diklik.
+
+kalau nambah titik baru, kategorinya tinggal pilih dari daftar, gak usah ngetik.
 
 kalau mau ubah garis batas rw juga sama caranya, toggle editing di layer batas rw 02 terus geser titik-titik garisnya pakai vertex tool.
 

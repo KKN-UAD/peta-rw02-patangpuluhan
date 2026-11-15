@@ -34,6 +34,18 @@ for t, nama in reversed(URUT):
         doc = QDomDocument(); doc.setContent(qml[t])
         ok = lyr.importNamedStyle(doc)
         print("   gaya:", ok, lyr.renderer().type() if lyr.renderer() else None)
+    if t == "titik_fasilitas":   # kolom foto = tombol pilih file (path relatif ke folder proyek), kategori = pilihan
+        from qgis.core import QgsEditorWidgetSetup
+        i = lyr.fields().indexOf("foto")
+        lyr.setEditorWidgetSetup(i, QgsEditorWidgetSetup("ExternalResource", {
+            "RelativeStorage": 1, "StorageMode": 0, "DocumentViewer": 1, "DocumentViewerHeight": 200, "DocumentViewerWidth": 300,
+            "DefaultRoot": "", "FileWidget": True, "FileWidgetButton": True, "UseLink": False, "FullUrl": False,
+            "FileWidgetFilter": "Foto (*.jpg *.jpeg *.png)"}))
+        i = lyr.fields().indexOf("kategori")
+        kat = ["Tempat Ibadah", "Kesehatan", "Pendidikan", "Pemerintahan", "Ekonomi", "Keamanan", "Kebersihan", "Lainnya"]
+        lyr.setEditorWidgetSetup(i, QgsEditorWidgetSetup("ValueMap", {"map": [{k: k} for k in kat]}))
+        for f in ("no",):   # nomor diurutkan otomatis, sembunyikan dari form
+            lyr.setEditorWidgetSetup(lyr.fields().indexOf(f), QgsEditorWidgetSetup("Hidden", {}))
     prj.addMapLayer(lyr)
 
 # urutan di panel layer: titik paling atas, citra paling bawah
