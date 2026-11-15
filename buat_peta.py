@@ -637,7 +637,7 @@ fig.savefig(out + ".pdf", dpi=250 * F)            # ~250 dpi pada ukuran cetak
 fig.savefig(out + ".png", dpi=150 * F)           # 150 dpi pada ukuran cetak
 if F != 1:   # perkecil halaman PDF ke ukuran cetak sebenarnya
     from pypdf import PdfReader, PdfWriter
-    w = PdfWriter(); pg = PdfReader(out + ".pdf").pages[0]; pg.scale_by(F); w.add_page(pg)
+    w = PdfWriter(clone_from=out + ".pdf"); w.pages[0].scale_by(F)
     with open(out + ".pdf", "wb") as fh: w.write(fh)
 print(f"ukuran {UKURAN} cm, skala 1:{SKALA_CETAK}")
 print("POI:", [(p["no"], p["name"], p["dalam"]) for p in pois])
