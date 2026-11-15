@@ -1,0 +1,7 @@
+web/
+output/
+__pycache__/
+*.bak*.py
+data/citra_z19.png
+qgis/*.gpkg-wal
+qgis/*.gpkg-shm

@@ -1,0 +1,73 @@
+[
+ {
+  "nama": "Pos Kamling + Bank Sampah RT 11",
+  "lat": -7.8096424,
+  "lon": 110.3473164,
+  "foto": "Pos Kamling + Bank Sampah RT 11.JPG"
+ },
+ {
+  "nama": "Pos Kamling RT 09",
+  "lat": -7.8086356,
+  "lon": 110.3472922,
+  "foto": "Pos Kamling RT 09.JPG"
+ },
+ {
+  "nama": "Bank Sampah RT 12",
+  "lat": -7.8098062,
+  "lon": 110.3492965,
+  "foto": "Bank Sampah RT 12.JPG"
+ },
+ {
+  "nama": "Pos Kamling RT 12",
+  "lat": -7.8098955,
+  "lon": 110.3490353,
+  "foto": "Pos Kamling RT 12.JPG"
+ },
+ {
+  "nama": "Pos Kamling RT 10",
+  "lat": -7.8094654,
+  "lon": 110.3459994,
+  "foto": "Pos Kamling RT 10.JPG"
+ },
+ {
+  "nama": "Pos Kamling RT 08",
+  "lat": -7.8087844,
+  "lon": 110.3483383,
+  "foto": "Pos Kamling RT 08.JPG"
+ },
+ {
+  "nama": "Bank Sampah BCL (RT 08)",
+  "lat": -7.8089608,
+  "lon": 110.3481982,
+  "foto": "",
+  "alamat": "Jl. Pamularsih No. 15, RT 08 RW 02 \u2022 Pemimpin: Emiliana Eko Yuliani \u2022 Berdiri 2008",
+  "sumber": "Geoportal Kota Yogyakarta"
+ },
+ {
+  "nama": "Apotek Mitra",
+  "lat": -7.8088886,
+  "lon": 110.3478142,
+  "foto": "",
+  "kat": "Kesehatan",
+  "alamat": "Jl. Bugisan No. 13 B, Patangpuluhan",
+  "sumber": "Geoportal Kota Yogyakarta"
+ },
+ {
+  "nama": "TK ABA Sindurejan",
+  "lat": -7.8092552,
+  "lon": 110.3470302,
+  "foto": "",
+  "kat": "Pendidikan",
+  "alamat": "Sindurejan WB III No. 89 \u2022 TK Swasta",
+  "sumber": "Geoportal Kota Yogyakarta"
+ },
+ {
+  "nama": "Bank Sampah Resik Becik RT 10 (perkiraan)",
+  "lat": -7.809865,
+  "lon": 110.3458754,
+  "foto": "",
+  "kat": "Kebersihan",
+  "alamat": "RT 10 RW 02 \u2022 Posisi perkiraan (titik Geoportal di luar batas RW, digeser ke dalam), perlu cek lapangan",
+  "sumber": "Geoportal Kota Yogyakarta"
+ }
+]

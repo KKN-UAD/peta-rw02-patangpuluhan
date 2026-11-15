@@ -1,0 +1,9 @@
+matplotlib
+numpy
+pillow
+pyshp
+pypdf
+pyogrio
+shapely
+segno
+requests
