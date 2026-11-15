@@ -26,7 +26,7 @@ J = lambda *p: os.path.join(BASE, *p)
 plt.rcParams["font.family"] = ["Arial", "DejaVu Sans"]
 
 if len(sys.argv) < 2:   # jalankan semua ukuran x kedua mode
-    for u in ("75x45", "80x60", "120x90"):
+    for u in ("75x45",):
         for m in ("vektor", "citra"):
             subprocess.run([sys.executable, __file__, m], check=True, env={**os.environ, "UKURAN": u})
     sys.exit()

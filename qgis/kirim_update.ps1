@@ -45,10 +45,13 @@ try {
     $c = Kirim (Join-Path $DIR "peta_rw02.gpkg") "qgis/peta_rw02.gpkg"; if ($c) { $commit = $c }
 } catch { Selesai "gagal upload: $($_.Exception.Message)`ncek internet atau token.txt nya." }
 
-if (-not $commit) { Selesai "gak ada yang berubah, jadi gak ada yang dikirim." }
-
-Write-Host "kekirim. nunggu github bikin ulang peta (sekitar 3 menit, banner sekitar 10 menit)..."
 $run = $null
+if (-not $commit) {
+    Write-Host "gak ada editan baru. ambil banner pdf terbaru aja..."
+    $run = (Invoke-RestMethod -Uri "$API/actions/runs?status=success&per_page=20" -Headers $H).workflow_runs | Where-Object { $_.name -eq "Update peta" } | Select-Object -First 1
+    if (-not $run) { Selesai "belum ada banner yang jadi di github." }
+} else {
+Write-Host "kekirim. nunggu github bikin ulang peta (sekitar 3 menit, banner sekitar 5 menit)..."
 for ($i = 0; $i -lt 90; $i++) {
     Start-Sleep -Seconds 20
     try { $run = (Invoke-RestMethod -Uri "$API/actions/runs?head_sha=$commit" -Headers $H).workflow_runs | Where-Object { $_.name -eq "Update peta" } | Select-Object -First 1 } catch { }
@@ -61,9 +64,11 @@ for ($i = 0; $i -lt 90; $i++) {
     }
 }
 if (-not $run -or $run.conclusion -ne "success") { Selesai "proses di github gagal atau kelamaan. cek tab Actions di repo, atau kabarin admin." }
+}
 
 Write-Host "download banner pdf..."
 $art = (Invoke-RestMethod -Uri "$API/actions/runs/$($run.id)/artifacts" -Headers $H).artifacts | Where-Object { $_.name -eq "banner-pdf" } | Select-Object -First 1
+if (-not $art -or $art.expired) { Selesai "file banner di github udah kadaluarsa / gak ada. edit dikit terus kirim lagi biar dibikin ulang." }
 $out = Join-Path (Split-Path -Parent $DIR) "banner"
 New-Item -ItemType Directory -Force -Path $out | Out-Null
 $zip = Join-Path $env:TEMP "banner-pdf.zip"
