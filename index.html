@@ -20,6 +20,10 @@ header span{display:block;font-size:12px;color:var(--emas);font-weight:600;white
 .leaflet-control-layers{border:2px solid var(--hijau)!important;border-radius:10px!important;font-size:13px}
 .leaflet-control-layers-expanded{max-height:calc(100vh - 140px);overflow:auto;padding:8px 10px}
 .leaflet-control-layers-separator{border-top-color:var(--emas)}
+.lg{background:#fff;border:2px solid var(--hijau);border-radius:10px;min-width:200px;max-width:270px;font-size:13px;box-shadow:0 2px 8px #0003;overflow:hidden}
+.lgh{background:var(--hijau);color:#fff;font-weight:700;padding:7px 10px;cursor:pointer;border-bottom:3px solid var(--emas)}.lgh span{float:right}
+.lgb{padding:6px 10px 8px;max-height:calc(100vh - 200px);overflow:auto}.lg.tutup .lgb{display:none}.lg.tutup .lgh span{transform:rotate(-90deg);display:inline-block}
+.lg label{display:block;margin:3px 0;cursor:pointer}.lg input{margin:0 5px 0 0;vertical-align:-2px;accent-color:var(--hijau)}
 .dot{display:inline-block;width:12px;height:12px;border-radius:50%;border:1.5px solid #fff;box-shadow:0 0 0 1px #0003;vertical-align:-1px;margin-right:4px}
 .sw{display:inline-block;width:18px;height:4px;vertical-align:3px;margin-right:4px}
 .grp{font-weight:700;color:var(--hijau);margin:4px 0 2px}
@@ -47,28 +51,30 @@ header span{display:block;font-size:12px;color:var(--emas);font-weight:600;white
 <div id="info"><span class="x" onclick="this.parentNode.remove()">✕</span><b>Petunjuk:</b> ketuk titik bernomor untuk melihat foto &amp; keterangan. Atur lapisan peta lewat tombol <b>☰</b> di kanan atas.</div>
 <div id="lb" onclick="this.style.display='none'"><img alt=""></div>
 <script>
-const map = L.map('map', {zoomControl: true, maxZoom: 21});
+const map = L.map('map', {zoomControl: true, maxZoom: 21, minZoom: 15});
 const esri = 'https://server.arcgisonline.com/ArcGIS/rest/services/';
+const citra = () => L.tileLayer(esri + 'World_Imagery/MapServer/tile/{z}/{y}/{x}', {maxZoom: 21, maxNativeZoom: 19, attribution: 'Esri, Maxar, Earthstar'});
 const base = {
-  "OpenStreetMap": L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 21, maxNativeZoom: 19, attribution: '© OpenStreetMap'}),
-  "Citra Satelit (Esri)": L.tileLayer(esri + 'World_Imagery/MapServer/tile/{z}/{y}/{x}', {maxZoom: 21, maxNativeZoom: 19, attribution: 'Esri, Maxar, Earthstar'}),
-  "Citra + Label": L.layerGroup([
-    L.tileLayer(esri + 'World_Imagery/MapServer/tile/{z}/{y}/{x}', {maxZoom: 21, maxNativeZoom: 19, attribution: 'Esri, Maxar, Earthstar'}),
-    L.tileLayer(esri + 'Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}', {maxZoom: 21, maxNativeZoom: 19}),
-    L.tileLayer(esri + 'Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {maxZoom: 21, maxNativeZoom: 19})]),
+  "Citra Satelit": citra(),
+  "Citra + Nama Jalan": L.layerGroup([citra(), L.tileLayer(esri + 'Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}', {maxZoom: 21, maxNativeZoom: 19})]),
+  "Peta Jalan": L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {maxZoom: 21, maxNativeZoom: 20, attribution: '© OpenStreetMap, © CARTO'}),
   "Polos (terang)": L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {maxZoom: 21, maxNativeZoom: 20, attribution: '© OpenStreetMap, © CARTO'})
 };
-base["Citra + Label"].addTo(map);
+base["Citra Satelit"].addTo(map);
 
-const bangunan = L.geoJSON(DATA.bangunan, {style: {color: '#9c7a5b', weight: .6, fillColor: '#e9c9a6', fillOpacity: .55}, interactive: false});
+// redam semua di luar RW 02
+map.createPane('masker'); map.getPane('masker').style.zIndex = 350;
+const rwLL = DATA.rw.features[0].geometry.coordinates[0].map(([x, y]) => [y, x]);
+L.polygon([[[-90, -180], [-90, 180], [90, 180], [90, -180]], rwLL], {pane: 'masker', stroke: false, fillColor: '#0b1f12', fillOpacity: .72, interactive: false}).addTo(map);
+
+const bangunan = L.geoJSON(DATA.bangunan, {style: {color: '#9c7a5b', weight: .6, fillColor: '#e9c9a6', fillOpacity: .45}, interactive: false});
 const sungai = L.geoJSON(DATA.sungai, {style: {color: '#38bdf8', weight: 4}, onEachFeature: (f, l) => f.properties.nama && l.bindTooltip(f.properties.nama, {sticky: true})});
 const gaya = {besar: {color: '#f59e0b', weight: 7}, kecil: {color: '#ffffff', weight: 3.5}, setapak: {color: '#ffffff', weight: 1.8, dashArray: '4 4'}};
 const casing = L.geoJSON(DATA.jalan, {filter: f => f.properties.kelas != 'setapak', style: f => ({color: f.properties.kelas == 'besar' ? '#3b1d00' : '#555', weight: gaya[f.properties.kelas].weight + 2.5, opacity: .8}), interactive: false});
 const jalanAtas = L.geoJSON(DATA.jalan, {style: f => gaya[f.properties.kelas], onEachFeature: (f, l) => f.properties.nama && l.bindTooltip(f.properties.nama, {sticky: true})});
 const jalan = L.layerGroup([casing, jalanAtas]);
-const kel = L.geoJSON(DATA.kel, {style: {color: '#e879f9', weight: 3, dashArray: '10 5 3 5'}, interactive: false});
-const rwHalo = L.geoJSON(DATA.rw, {style: {color: '#000', weight: 8, opacity: .35, fill: false}, interactive: false});
-const rwGaris = L.geoJSON(DATA.rw, {style: {color: '#fdbe15', weight: 4, fillColor: '#fdbe15', fillOpacity: .08},
+const rwHalo = L.geoJSON(DATA.rw, {style: {color: '#000', weight: 9, opacity: .4, fill: false}, interactive: false});
+const rwGaris = L.geoJSON(DATA.rw, {style: {color: '#fdbe15', weight: 4.5, fill: true, fillOpacity: 0},
   onEachFeature: (f, l) => l.bindPopup(`<div class="pop"><div class="b"><h3>Wilayah RW 02</h3><table>
    <tr><td>Kampung</td><td>${f.properties.kampung}</td></tr><tr><td>Kelurahan</td><td>Patangpuluhan</td></tr>
    <tr><td>Kemantren</td><td>Wirobrajan</td></tr><tr><td>Luas</td><td>${f.properties.luas}</td></tr></table></div></div>`)});
@@ -78,34 +84,48 @@ const rw = L.layerGroup([rwHalo, rwGaris]);
 const kategori = {};
 DATA.titik.features.forEach(f => {
   const p = f.properties, [lon, lat] = f.geometry.coordinates;
-  const ic = L.divIcon({className: '', html: `<div class="pin${p.dalam ? '' : ' luar'}" style="background:${p.warna}">${p.no}</div>`,
-                        iconSize: p.dalam ? [26, 26] : [22, 22], iconAnchor: p.dalam ? [13, 13] : [11, 11]});
-  const m = L.marker([lat, lon], {icon: ic, title: p.nama, zIndexOffset: p.dalam ? 1000 : 0});
+  const ic = L.divIcon({className: '', html: `<div class="pin" style="background:${p.warna}">${p.no}</div>`, iconSize: [26, 26], iconAnchor: [13, 13]});
+  const m = L.marker([lat, lon], {icon: ic, title: p.nama, zIndexOffset: 1000});
   m.bindPopup(`<div class="pop">${p.foto ? `<img src="${p.foto}" alt="${p.nama}" onclick="lb(this.src)">` : ''}<div class="b">
     <h3>${p.no}. ${p.nama}</h3><table>
     <tr><td>Kategori</td><td>${p.kat}</td></tr>
-    <tr><td>Lokasi</td><td>${p.dalam ? 'Dalam wilayah RW 02' : 'Sekitar RW 02 (luar wilayah)'}</td></tr>
+    <tr><td>Wilayah</td><td>RW 02 Patangpuluhan</td></tr>
     <tr><td>Koordinat</td><td>${lat.toFixed(6)}, ${lon.toFixed(6)}</td></tr></table>
     <a class="gm" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}">Petunjuk arah (Google Maps)</a></div></div>`);
-  if (p.dalam) m.bindTooltip(p.nama, {permanent: true, direction: 'right', offset: [12, 0], className: 'lbl'});
-  (kategori[p.kat] ||= {warna: p.warna, g: L.layerGroup()}).g.addLayer(m);
+  m.bindTooltip(p.nama, {direction: 'top', offset: [0, -14], className: 'lbl'});
+  (kategori[p.kat] ||= {warna: p.warna, g: L.layerGroup(), n: []}).g.addLayer(m);
+  kategori[p.kat].n.push(p);
 });
 
-[bangunan, sungai, jalan, kel, rw].forEach(l => l.addTo(map));
-const over = {};
-Object.entries(kategori).forEach(([k, v], i) => {
-  v.g.addTo(map);
-  over[(i == 0 ? '<div class="grp">Titik Penting</div>' : '') + `<span class="dot" style="background:${v.warna}"></span>${k}`] = v.g;
-});
-over['<div class="grp">Batas &amp; Jaringan</div><span class="sw" style="background:#fdbe15"></span>Batas RW 02'] = rw;
-over['<span class="sw" style="background:repeating-linear-gradient(90deg,#e879f9 0 6px,transparent 6px 9px)"></span>Batas Kelurahan'] = kel;
-over['<span class="sw" style="background:#f59e0b"></span>Jalan'] = jalan;
-over['<span class="sw" style="background:#38bdf8"></span>Sungai'] = sungai;
-over['<span class="sw" style="background:#e9c9a6;height:10px"></span>Bangunan'] = bangunan;
-if (DATA.menyusul.length) over['<div class="sub">Lokasi menyusul: ' + DATA.menyusul.join(', ') + '</div>'] = L.layerGroup();
-L.control.layers(base, over, {collapsed: innerWidth < 760, position: 'topright'}).addTo(map);
+[bangunan, sungai, jalan, rw].forEach(l => l.addTo(map));
+L.control.layers(base, null, {collapsed: true, position: 'topright'}).addTo(map);
+
+// panel legenda + saklar lapisan
+const lg = L.control({position: 'topright'});
+lg.onAdd = () => {
+  const d = L.DomUtil.create('div', 'lg' + (innerWidth < 760 ? ' tutup' : ''));
+  let h = '<div class="lgh" onclick="this.parentNode.classList.toggle(\'tutup\')">LEGENDA <span>▾</span></div><div class="lgb"><div class="grp">Titik Penting</div>';
+  const rows = [];
+  Object.entries(kategori).forEach(([k, v], i) => {
+    h += `<label><input type="checkbox" checked data-i="${rows.length}"><span class="dot" style="background:${v.warna}"></span>${k}</label>`;
+    h += v.n.map(p => `<div class="sub"><b style="color:${p.warna}">${p.no}</b> ${p.nama}</div>`).join('');
+    rows.push(v.g); v.g.addTo(map);
+  });
+  if (DATA.menyusul.length) h += DATA.menyusul.map(n => `<div class="sub"><b>?</b> ${n} <i>(lokasi menyusul)</i></div>`).join('');
+  h += '<div class="grp">Batas &amp; Jaringan</div>';
+  [[rw, '<span class="sw" style="background:#fdbe15"></span>Batas RW 02'], [jalan, '<span class="sw" style="background:#f59e0b"></span>Jalan'],
+   [sungai, '<span class="sw" style="background:#38bdf8"></span>Sungai'], [bangunan, '<span class="sw" style="background:#e9c9a6;height:10px"></span>Bangunan']]
+    .forEach(([l, t]) => { h += `<label><input type="checkbox" checked data-i="${rows.length}">${t}</label>`; rows.push(l); });
+  d.innerHTML = h + '</div>';
+  d.querySelectorAll('input').forEach(c => c.onchange = () => { const l = rows[c.dataset.i]; c.checked ? l.addTo(map) : map.removeLayer(l); });
+  L.DomEvent.disableClickPropagation(d); L.DomEvent.disableScrollPropagation(d);
+  return d;
+};
+lg.addTo(map);
 L.control.scale({imperial: false}).addTo(map);
-map.fitBounds(rwGaris.getBounds(), {padding: [30, 30]});
+const bb = rwGaris.getBounds();
+map.fitBounds(bb, {padding: [20, 20]});
+map.setMaxBounds(bb.pad(1.5));
 map.attributionControl.addAttribution('Batas RW: data RW 02 • Survei KKN UAD 2026');
 
 // lokasi saya
