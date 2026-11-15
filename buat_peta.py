@@ -23,7 +23,7 @@ import shapefile
 
 BASE = os.path.dirname(os.path.abspath(__file__))
 J = lambda *p: os.path.join(BASE, *p)
-plt.rcParams["font.family"] = ["Arial", "DejaVu Sans"]
+plt.rcParams["font.family"] = ["Arial", "Liberation Sans", "DejaVu Sans"]
 
 if len(sys.argv) < 2:   # jalankan semua ukuran x kedua mode
     for u in ("75x45",):

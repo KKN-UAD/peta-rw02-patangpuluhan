@@ -28,6 +28,12 @@ jobs:
 
       - name: Pasang library
         run: pip install -r requirements.txt
+      - name: Pasang font Arial
+        run: |
+          echo "ttf-mscorefonts-installer msttcorefonts/accept-mscorefonts-eula select true" | sudo debconf-set-selections
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ttf-mscorefonts-installer fonts-liberation || sudo apt-get install -y -qq fonts-liberation
+          fc-list | grep -ci arial || true
 
       - name: Bikin peta web
         run: |
@@ -49,6 +55,12 @@ jobs:
           cache: pip
       - name: Pasang library
         run: pip install -r requirements.txt
+      - name: Pasang font Arial
+        run: |
+          echo "ttf-mscorefonts-installer msttcorefonts/accept-mscorefonts-eula select true" | sudo debconf-set-selections
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ttf-mscorefonts-installer fonts-liberation || sudo apt-get install -y -qq fonts-liberation
+          fc-list | grep -ci arial || true
       - name: Bikin banner semua ukuran
         run: python buat_peta.py
       - uses: actions/upload-artifact@v4
