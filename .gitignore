@@ -9,3 +9,4 @@ qgis/token.txt
 token.txt
 banner/
 qgis/banner/
+*.qgs~
