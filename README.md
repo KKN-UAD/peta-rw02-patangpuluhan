@@ -2,13 +2,11 @@
 
 peta online: https://kkn-uad.github.io/peta-rw02-patangpuluhan/
 
-## cara update peta (gak perlu python)
+## cara update peta (gak perlu python / login)
 
-1. download repo ini (tombol hijau **Code** > **Download ZIP**), buka `qgis/Peta_RW02_Patangpuluhan.qgs` pakai qgis
-2. edit titik / garis yang mau diubah, terus save. habis itu **tutup qgis dulu** biar perubahannya kesimpen ke file
-3. balik ke github, masuk folder `qgis`, klik **Add file > Upload files**, upload `peta_rw02.gpkg` yang udah diedit, terus klik **Commit changes**
-4. kalau ada foto baru, upload ke folder `qgis/foto` dengan cara yang sama, terus di qgis kolom foto isi `foto/namafile.jpg`
-5. tunggu sekitar 3 menit, peta online udah berubah sendiri
+1. buka `qgis/Peta_RW02_Patangpuluhan.qgs` pakai qgis, edit, save, terus tutup qgis
+2. klik 2x `qgis/kirim_update.bat` (butuh file `token.txt` dari admin di folder yang sama)
+3. tunggu, peta online ke-update sekitar 3 menit, banner pdf otomatis kedownload ke folder `banner` sekitar 10 menit
 
 ## ambil file banner (pdf)
 

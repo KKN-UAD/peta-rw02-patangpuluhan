@@ -5,3 +5,6 @@ __pycache__/
 data/citra_z19.png
 qgis/*.gpkg-wal
 qgis/*.gpkg-shm
+qgis/token.txt
+token.txt
+banner/
