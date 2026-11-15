@@ -89,6 +89,7 @@ DATA.titik.features.forEach(f => {
   m.bindPopup(`<div class="pop">${p.foto ? `<img src="${p.foto}" alt="${p.nama}" onclick="lb(this.src)">` : ''}<div class="b">
     <h3>${p.no}. ${p.nama}</h3><table>
     <tr><td>Kategori</td><td>${p.kat}</td></tr>
+    ${p.alamat ? `<tr><td>Keterangan</td><td>${p.alamat}</td></tr>` : ''}
     <tr><td>Wilayah</td><td>RW 02 Patangpuluhan</td></tr>
     <tr><td>Koordinat</td><td>${lat.toFixed(6)}, ${lon.toFixed(6)}</td></tr></table>
     <a class="gm" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}">Petunjuk arah (Google Maps)</a></div></div>`);
