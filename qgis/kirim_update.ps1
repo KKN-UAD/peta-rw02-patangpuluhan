@@ -69,7 +69,7 @@ if (-not $run -or $run.conclusion -ne "success") { Selesai "proses di github gag
 Write-Host "download banner pdf..."
 $art = (Invoke-RestMethod -Uri "$API/actions/runs/$($run.id)/artifacts" -Headers $H).artifacts | Where-Object { $_.name -eq "banner-pdf" } | Select-Object -First 1
 if (-not $art -or $art.expired) { Selesai "file banner di github udah kadaluarsa / gak ada. edit dikit terus kirim lagi biar dibikin ulang." }
-$out = Join-Path (Split-Path -Parent $DIR) "banner"
+$out = Join-Path $DIR "banner"
 New-Item -ItemType Directory -Force -Path $out | Out-Null
 $zip = Join-Path $env:TEMP "banner-pdf.zip"
 Invoke-WebRequest -Uri $art.archive_download_url -Headers $H -OutFile $zip -UseBasicParsing

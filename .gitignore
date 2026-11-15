@@ -8,3 +8,4 @@ qgis/*.gpkg-shm
 qgis/token.txt
 token.txt
 banner/
+qgis/banner/

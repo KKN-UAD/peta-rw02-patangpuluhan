@@ -13,7 +13,7 @@ kalau mau nambah foto, taruh fotonya di folder foto terus di kolom foto isi foto
 
 kalau mau ubah garis batas rw juga sama caranya, toggle editing di layer batas rw 02 terus geser titik-titik garisnya pakai vertex tool.
 
-habis diedit, save terus tutup qgisnya. abis itu klik 2x file kirim_update.bat yang ada di folder qgis. udah, gak perlu login apa-apa. tunggu aja jendelanya, sekitar 3 menit peta online udah berubah, terus sekitar 5 menit banner pdf 75x45 nya otomatis kedownload ke folder banner.
+habis diedit, save terus tutup qgisnya. abis itu klik 2x file kirim_update.bat yang ada di folder qgis. udah, gak perlu login apa-apa. tunggu aja jendelanya, sekitar 3 menit peta online udah berubah, terus sekitar 5 menit banner pdf 75x45 nya otomatis kedownload ke folder banner (di dalam folder ini).
 
 kalau foto baru, taruh aja di folder foto, nanti ikut kekirim sendiri.
 
