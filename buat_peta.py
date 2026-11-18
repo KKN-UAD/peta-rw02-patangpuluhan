@@ -133,7 +133,12 @@ def centroid(pts):
 # ------------------------------------------------------------------ data
 GPKG = J("qgis", "peta_rw02.gpkg")   # kalau ada: titik & batas RW dibaca dari proyek QGIS (hasil edit)
 def FOTO(f):   # cari file foto: folder qgis/ dulu, lalu folder aset
-    return next((p for p in (J("qgis", f), J(ASET, f)) if f and os.path.isfile(p)), "")
+    if not f: return ""
+    nama = os.path.basename(f.replace("\\", "/"))   # foto dipilih dari luar folder foto -> cari nama filenya di qgis/foto
+    cand = [J("qgis", f), J(ASET, f), J("qgis", "foto", nama)]
+    if os.path.isdir(J("qgis", "foto")):
+        cand += [J("qgis", "foto", x) for x in os.listdir(J("qgis", "foto")) if x.lower() == nama.lower()]
+    return next((p for p in cand if os.path.isfile(p)), "")
 if os.path.exists(GPKG):
     import pyogrio, shapely
     _rwdf = pyogrio.raw.read(GPKG, layer="batas_rw")

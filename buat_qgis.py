@@ -12,7 +12,13 @@ D = os.path.dirname(os.path.abspath(__file__))
 J = lambda *a: os.path.join(D, *a)
 Q = J("qgis"); GPKG = os.path.join(Q, "peta_rw02.gpkg")
 ASET = "drive-download-20261115T153336Z-1-001"
-FOTO = lambda f: next((p for p in (J("qgis", f), J(ASET, f)) if f and os.path.isfile(p)), "")
+def FOTO(f):   # sama dengan buat_peta.FOTO: kalau path di luar folder foto, cari nama filenya di qgis/foto
+    if not f: return ""
+    nama = os.path.basename(f.replace("\\", "/"))
+    cand = [J("qgis", f), J(ASET, f), J("qgis", "foto", nama)]
+    if os.path.isdir(J("qgis", "foto")):
+        cand += [J("qgis", "foto", x) for x in os.listdir(J("qgis", "foto")) if x.lower() == nama.lower()]
+    return next((p for p in cand if os.path.isfile(p)), "")
 os.makedirs(os.path.join(Q, "foto"), exist_ok=True)
 import sys
 if os.path.exists(GPKG):

@@ -8,7 +8,13 @@ J = lambda *a: os.path.join(D, *a)
 ASET = "drive-download-20261115T153336Z-1-001"
 OUT = J("web")
 MENYUSUL = []
-FOTO = lambda f: next((p for p in (J("qgis", f), J(ASET, f)) if f and os.path.isfile(p)), "")
+def FOTO(f):   # sama dengan buat_peta.FOTO: kalau path di luar folder foto, cari nama filenya di qgis/foto
+    if not f: return ""
+    nama = os.path.basename(f.replace("\\", "/"))
+    cand = [J("qgis", f), J(ASET, f), J("qgis", "foto", nama)]
+    if os.path.isdir(J("qgis", "foto")):
+        cand += [J("qgis", "foto", x) for x in os.listdir(J("qgis", "foto")) if x.lower() == nama.lower()]
+    return next((p for p in cand if os.path.isfile(p)), "")
 os.makedirs(J("web", "foto"), exist_ok=True)
 
 r6 = lambda v: round(v, 6)
