@@ -36,18 +36,39 @@ function GitSha([byte[]]$b) {   # sha file versi git, buat cek file berubah atau
     return -join ($sha.ComputeHash($head + $b) | ForEach-Object { $_.ToString("x2") })
 }
 
+function PesanGithub($err) {   # ambil pesan error asli dari github
+    try {
+        $sr = New-Object IO.StreamReader($err.Exception.Response.GetResponseStream())
+        return ($sr.ReadToEnd() | ConvertFrom-Json).message
+    } catch { return $err.Exception.Message }
+}
+
+function ShaLama($url) {
+    try { return (Invoke-RestMethod -Uri ($url + "?ref=main&t=" + [DateTime]::Now.Ticks) -Headers $H).sha }
+    catch { if (-not $_.Exception.Response -or [int]$_.Exception.Response.StatusCode -ne 404) { throw }; return $null }   # 404 = file baru
+}
+
 function Kirim($lokal, $path) {
     $b = [IO.File]::ReadAllBytes($lokal)
+    if ($b.Length -gt 40MB) { throw "file $path kegedean (lebih dari 40 MB), kecilin dulu fotonya" }
     $url = "$API/contents/" + (($path -split "/" | ForEach-Object { [Uri]::EscapeDataString($_) }) -join "/")
-    $lama = $null
-    try { $lama = (Invoke-RestMethod -Uri $url -Headers $H).sha }
-    catch { if (-not $_.Exception.Response -or [int]$_.Exception.Response.StatusCode -ne 404) { throw } }   # 404 = file baru
-    if ($lama -eq (GitSha $b)) { return $null }
-    $body = @{ message = "Update dari QGIS: $path"; content = [Convert]::ToBase64String($b) }
-    if ($lama) { $body.sha = $lama }
-    Write-Host "  upload $path"
-    $r = Invoke-RestMethod -Method Put -Uri $url -Headers $H -Body ($body | ConvertTo-Json) -ContentType "application/json"
-    return $r.commit.sha
+    $baru = GitSha $b
+    for ($coba = 1; $coba -le 2; $coba++) {
+        $lama = ShaLama $url
+        if ($lama -eq $baru) { return $null }
+        $body = @{ message = "Update dari QGIS: $path"; content = [Convert]::ToBase64String($b); branch = "main" }
+        if ($lama) { $body.sha = $lama }
+        Write-Host "  upload $path"
+        try {
+            $r = Invoke-RestMethod -Method Put -Uri $url -Headers $H -Body ($body | ConvertTo-Json) -ContentType "application/json; charset=utf-8"
+            return $r.commit.sha
+        } catch {
+            $kode = 0; if ($_.Exception.Response) { $kode = [int]$_.Exception.Response.StatusCode }
+            $msg = PesanGithub $_
+            if ($coba -lt 2 -and $kode -in 409, 422) { Write-Host "  ditolak (${kode}: $msg), nyoba lagi..."; Start-Sleep -Seconds 3; continue }
+            throw "github nolak $path (${kode}): $msg"
+        }
+    }
 }
 
 Write-Host "ngirim editan ke github..."
@@ -57,7 +78,7 @@ try {
         $c = Kirim $_.FullName ("qgis/foto/" + $_.Name); if ($c) { $commit = $c }
     }
     $c = Kirim (Join-Path $DIR "peta_rw02.gpkg") "qgis/peta_rw02.gpkg"; if ($c) { $commit = $c }
-} catch { Selesai "gagal upload: $($_.Exception.Message)`ncek internet atau token.txt nya." }
+} catch { Selesai "gagal upload: $($_.Exception.Message)`nfotoin/screenshot layar ini terus kirim ke admin ya." }
 
 $run = $null
 if (-not $commit) {
