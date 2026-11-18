@@ -17,6 +17,19 @@ $H = @{ Authorization = "Bearer $TOKEN"; "User-Agent" = "peta-rw02-update"; Acce
 if (Get-Process -Name "qgis*" -ErrorAction SilentlyContinue) { Selesai "qgis masih kebuka. tutup qgis dulu biar editannya kesimpen, terus klik lagi file ini." }
 if (Test-Path (Join-Path $DIR "peta_rw02.gpkg-wal")) { Selesai "editan belum kesimpen penuh (ada file peta_rw02.gpkg-wal). buka qgis, save, tutup lagi, terus klik lagi file ini." }
 
+# cek koneksi + token dulu (coba 3x)
+$cek = $null
+for ($i = 1; $i -le 3; $i++) {
+    try { Invoke-RestMethod -Uri $API -Headers $H | Out-Null; $cek = "ok"; break }
+    catch {
+        $kode = $null; if ($_.Exception.Response) { $kode = [int]$_.Exception.Response.StatusCode }
+        if ($kode -in 401, 403, 404) { $cek = "token"; break }
+        $cek = "internet"; Write-Host "  gak bisa nyambung ke github, nyoba lagi ($i/3)..."; Start-Sleep -Seconds 5
+    }
+}
+if ($cek -eq "internet") { Selesai "gak bisa nyambung ke github.`ncoba buka github.com di browser. kalau gak kebuka berarti internetnya mati atau wifinya ngeblok github, ganti wifi / pakai hotspot hp terus klik lagi file ini." }
+if ($cek -eq "token") { Selesai "token.txt nya ditolak github (mungkin udah kadaluarsa). kabarin admin buat minta token baru." }
+
 function GitSha([byte[]]$b) {   # sha file versi git, buat cek file berubah atau nggak
     $head = [Text.Encoding]::ASCII.GetBytes("blob $($b.Length)`0")
     $sha = [Security.Cryptography.SHA1]::Create()
@@ -27,7 +40,8 @@ function Kirim($lokal, $path) {
     $b = [IO.File]::ReadAllBytes($lokal)
     $url = "$API/contents/" + (($path -split "/" | ForEach-Object { [Uri]::EscapeDataString($_) }) -join "/")
     $lama = $null
-    try { $lama = (Invoke-RestMethod -Uri $url -Headers $H).sha } catch { }
+    try { $lama = (Invoke-RestMethod -Uri $url -Headers $H).sha }
+    catch { if (-not $_.Exception.Response -or [int]$_.Exception.Response.StatusCode -ne 404) { throw } }   # 404 = file baru
     if ($lama -eq (GitSha $b)) { return $null }
     $body = @{ message = "Update dari QGIS: $path"; content = [Convert]::ToBase64String($b) }
     if ($lama) { $body.sha = $lama }
