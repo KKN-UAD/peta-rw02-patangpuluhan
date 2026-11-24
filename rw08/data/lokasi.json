@@ -1,0 +1,47 @@
+[
+ {
+  "nama": "Masjid Noor Islam",
+  "lat": -7.7973559,
+  "lon": 110.3816042,
+  "kat": "Tempat Ibadah",
+  "alamat": "Jl. Gayam No. 19, Semaki",
+  "foto": "",
+  "sumber": "Geoportal Kota Yogyakarta"
+ },
+ {
+  "nama": "Masjid Ar-Roqib",
+  "lat": -7.7995099,
+  "lon": 110.3806606,
+  "kat": "Tempat Ibadah",
+  "alamat": "Jl. Sukonandi (Kantor BBKKP), Semaki",
+  "foto": "",
+  "sumber": "Geoportal Kota Yogyakarta"
+ },
+ {
+  "nama": "Posyandu Temugiring 8",
+  "lat": -7.7975202,
+  "lon": 110.3815022,
+  "kat": "Kesehatan",
+  "alamat": "Balai RW 08 Semaki",
+  "foto": "",
+  "sumber": "Geoportal Kota Yogyakarta"
+ },
+ {
+  "nama": "Klinik Pratama Telkomedika",
+  "lat": -7.7975069,
+  "lon": 110.3836768,
+  "kat": "Kesehatan",
+  "alamat": "Jl. Kenari No. 3, Semaki",
+  "foto": "",
+  "sumber": "Geoportal Kota Yogyakarta"
+ },
+ {
+  "nama": "Apotek UAD",
+  "lat": -7.7988333,
+  "lon": 110.3820234,
+  "kat": "Kesehatan",
+  "alamat": "Jl. Cendana No. 9A, Semaki",
+  "foto": "",
+  "sumber": "Geoportal Kota Yogyakarta"
+ }
+]

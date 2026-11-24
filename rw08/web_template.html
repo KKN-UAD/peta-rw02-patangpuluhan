@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+<title>Peta Digital RW 08 Semaki</title>
+<meta name="description" content="Peta digital wilayah RW 08, Kelurahan Semaki, Kemantren Umbulharjo, Kota Yogyakarta">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script src="data.js"></script>
+<style>
+:root{--hijau:#1b6c32;--emas:#fdbe15;--krim:#fbf8ea;--ink:#1f2937}
+*{box-sizing:border-box}html,body{margin:0;height:100%;font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--krim)}
+header{position:absolute;z-index:1000;top:0;left:0;right:0;display:flex;align-items:center;gap:10px;padding:8px 12px;
+ background:var(--hijau);color:#fff;border-bottom:4px solid var(--emas);box-shadow:0 2px 8px #0004}
+header img{width:42px;height:42px;border-radius:50%;background:#fff;padding:2px}
+header .t{flex:1;min-width:0}header b{display:block;font-size:17px;letter-spacing:.3px}
+header span{display:block;font-size:12px;color:var(--emas);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+#map{position:absolute;top:62px;bottom:0;left:0;right:0}
+.leaflet-control-layers{border:2px solid var(--hijau)!important;border-radius:10px!important;font-size:13px}
+.leaflet-control-layers-expanded{max-height:calc(100vh - 140px);overflow:auto;padding:8px 10px}
+.leaflet-control-layers-separator{border-top-color:var(--emas)}
+.lg{background:#fff;border:2px solid var(--hijau);border-radius:10px;min-width:200px;max-width:270px;font-size:13px;box-shadow:0 2px 8px #0003;overflow:hidden}
+.lgh{background:var(--hijau);color:#fff;font-weight:700;padding:7px 10px;cursor:pointer;border-bottom:3px solid var(--emas)}.lgh span{float:right}
+.lgb{padding:6px 10px 8px;max-height:calc(100vh - 200px);overflow:auto}.lg.tutup .lgb{display:none}.lg.tutup .lgh span{transform:rotate(-90deg);display:inline-block}
+.lg label{display:block;margin:3px 0;cursor:pointer}.lg input{margin:0 5px 0 0;vertical-align:-2px;accent-color:var(--hijau)}
+.dot{display:inline-block;width:12px;height:12px;border-radius:50%;border:1.5px solid #fff;box-shadow:0 0 0 1px #0003;vertical-align:-1px;margin-right:4px}
+.sw{display:inline-block;width:18px;height:4px;vertical-align:3px;margin-right:4px}
+.grp{font-weight:700;color:var(--hijau);margin:4px 0 2px}
+.sub{margin-left:20px;font-size:12px;color:#555}
+.pin{width:26px;height:26px;border-radius:50%;border:2.5px solid #fff;color:#fff;font:700 12px/21px system-ui;text-align:center;box-shadow:0 1px 4px #0008}
+.pin.luar{opacity:.8;width:22px;height:22px;line-height:17px;font-size:11px}
+.leaflet-popup-content-wrapper{border-radius:12px;padding:0;overflow:hidden;border-top:5px solid var(--emas)}
+.leaflet-popup-content{margin:0;width:280px!important}
+.pop img{width:100%;height:170px;object-fit:cover;display:block;cursor:zoom-in}
+.pop .b{padding:10px 12px}.pop h3{margin:0 0 6px;font-size:15px;color:var(--hijau)}
+.pop table{width:100%;border-collapse:collapse;font-size:12.5px}.pop td{padding:3px 0;border-bottom:1px solid #eee;vertical-align:top}
+.pop td:first-child{color:#666;width:42%}
+.pop a.gm{display:block;margin-top:8px;text-align:center;background:var(--hijau);color:#fff;text-decoration:none;padding:7px;border-radius:7px;font-weight:600}
+#info{position:absolute;z-index:999;left:10px;bottom:22px;background:#fffffff0;border:2px solid var(--hijau);border-radius:10px;padding:8px 10px;max-width:260px;font-size:12px}
+#info b{color:var(--hijau)}#info .x{float:right;cursor:pointer;color:#888;margin-left:6px}
+#lb{display:none;position:fixed;inset:0;z-index:3000;background:#000d;align-items:center;justify-content:center}#lb img{max-width:95vw;max-height:90vh;border:4px solid #fff}
+.lbl{background:none;border:none;box-shadow:none;font-weight:700;color:#fff;text-shadow:0 0 3px #000,0 0 3px #000;font-size:11px;padding:0}
+.lbl:before{display:none}
+@media(max-width:520px){header b{font-size:15px}header img{width:36px;height:36px}#map{top:56px}.leaflet-popup-content{width:240px!important}}
+</style>
+</head>
+<body>
+<header><img src="uad.png" alt="Logo UAD"><div class="t"><b>PETA DIGITAL RW 08</b><span>Kelurahan Semaki • Umbulharjo • Kota Yogyakarta</span></div><img src="kkn.png" alt="Logo KKN"></header>
+<div id="map"></div>
+<div id="info"><span class="x" onclick="this.parentNode.remove()">✕</span><b>Petunjuk:</b> ketuk titik bernomor untuk melihat foto &amp; keterangan. Atur lapisan peta lewat tombol <b>☰</b> di kanan atas.</div>
+<div id="lb" onclick="this.style.display='none'"><img alt=""></div>
+<script>
+const map = L.map('map', {zoomControl: true, maxZoom: 21, minZoom: 15});
+const esri = 'https://server.arcgisonline.com/ArcGIS/rest/services/';
+const citra = () => L.tileLayer(esri + 'World_Imagery/MapServer/tile/{z}/{y}/{x}', {maxZoom: 21, maxNativeZoom: 19, attribution: 'Esri, Maxar, Earthstar'});
+const base = {
+  "Citra Satelit": citra(),
+  "Citra + Nama Jalan": L.layerGroup([citra(), L.tileLayer(esri + 'Reference/World_Transportation/MapServer/tile/{z}/{y}/{x}', {maxZoom: 21, maxNativeZoom: 19})]),
+  "Peta Jalan": L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {maxZoom: 21, maxNativeZoom: 20, attribution: '© OpenStreetMap, © CARTO'}),
+  "Polos (terang)": L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {maxZoom: 21, maxNativeZoom: 20, attribution: '© OpenStreetMap, © CARTO'})
+};
+base["Citra Satelit"].addTo(map);
+
+// redam semua di luar RW 08
+map.createPane('masker'); map.getPane('masker').style.zIndex = 350;
+const rwLL = DATA.rw.features[0].geometry.coordinates[0].map(([x, y]) => [y, x]);
+L.polygon([[[-90, -180], [-90, 180], [90, 180], [90, -180]], rwLL], {pane: 'masker', stroke: false, fillColor: '#0b1f12', fillOpacity: .72, interactive: false}).addTo(map);
+
+const bangunan = L.geoJSON(DATA.bangunan, {style: {color: '#9c7a5b', weight: .6, fillColor: '#e9c9a6', fillOpacity: .45}, interactive: false});
+const sungai = L.geoJSON(DATA.sungai, {style: {color: '#38bdf8', weight: 4}, onEachFeature: (f, l) => f.properties.nama && l.bindTooltip(f.properties.nama, {sticky: true})});
+const gaya = {besar: {color: '#f59e0b', weight: 7}, kecil: {color: '#ffffff', weight: 3.5}, setapak: {color: '#ffffff', weight: 1.8, dashArray: '4 4'}};
+const casing = L.geoJSON(DATA.jalan, {filter: f => f.properties.kelas != 'setapak', style: f => ({color: f.properties.kelas == 'besar' ? '#3b1d00' : '#555', weight: gaya[f.properties.kelas].weight + 2.5, opacity: .8}), interactive: false});
+const jalanAtas = L.geoJSON(DATA.jalan, {style: f => gaya[f.properties.kelas], onEachFeature: (f, l) => f.properties.nama && l.bindTooltip(f.properties.nama, {sticky: true})});
+const jalan = L.layerGroup([casing, jalanAtas]);
+const rwHalo = L.geoJSON(DATA.rw, {style: {color: '#000', weight: 9, opacity: .4, fill: false}, interactive: false});
+const rwGaris = L.geoJSON(DATA.rw, {style: {color: '#fdbe15', weight: 4.5, fill: true, fillOpacity: 0},
+  onEachFeature: (f, l) => l.bindPopup(`<div class="pop"><div class="b"><h3>Wilayah RW 08</h3><table>
+   <tr><td>Kampung</td><td>${f.properties.kampung}</td></tr><tr><td>Kelurahan</td><td>Semaki</td></tr>
+   <tr><td>Kemantren</td><td>Umbulharjo</td></tr><tr><td>Luas</td><td>${f.properties.luas}</td></tr></table></div></div>`)});
+const rw = L.layerGroup([rwHalo, rwGaris]);
+
+// titik penting per kategori
+const kategori = {};
+DATA.titik.features.forEach(f => {
+  const p = f.properties, [lon, lat] = f.geometry.coordinates;
+  const ic = L.divIcon({className: '', html: `<div class="pin" style="background:${p.warna}">${p.no}</div>`, iconSize: [26, 26], iconAnchor: [13, 13]});
+  const m = L.marker([lat, lon], {icon: ic, title: p.nama, zIndexOffset: 1000});
+  m.bindPopup(`<div class="pop">${p.foto ? `<img src="${p.foto}" alt="${p.nama}" onclick="lb(this.src)">` : ''}<div class="b">
+    <h3>${p.no}. ${p.nama}</h3><table>
+    <tr><td>Kategori</td><td>${p.kat}</td></tr>
+    ${p.alamat ? `<tr><td>Keterangan</td><td>${p.alamat}</td></tr>` : ''}
+    <tr><td>Wilayah</td><td>RW 08 Semaki</td></tr>
+    <tr><td>Koordinat</td><td>${lat.toFixed(6)}, ${lon.toFixed(6)}</td></tr></table>
+    <a class="gm" target="_blank" rel="noopener" href="https://www.google.com/maps/dir/?api=1&destination=${lat},${lon}">Petunjuk arah (Google Maps)</a></div></div>`);
+  m.bindTooltip(p.nama, {direction: 'top', offset: [0, -14], className: 'lbl'});
+  (kategori[p.kat] ||= {warna: p.warna, g: L.layerGroup(), n: []}).g.addLayer(m);
+  kategori[p.kat].n.push(p);
+});
+
+[bangunan, sungai, jalan, rw].forEach(l => l.addTo(map));
+L.control.layers(base, null, {collapsed: true, position: 'topright'}).addTo(map);
+
+// panel legenda + saklar lapisan
+const lg = L.control({position: 'topright'});
+lg.onAdd = () => {
+  const d = L.DomUtil.create('div', 'lg' + (innerWidth < 760 ? ' tutup' : ''));
+  let h = '<div class="lgh" onclick="this.parentNode.classList.toggle(\'tutup\')">LEGENDA <span>▾</span></div><div class="lgb"><div class="grp">Titik Penting</div>';
+  const rows = [];
+  Object.entries(kategori).forEach(([k, v], i) => {
+    h += `<label><input type="checkbox" checked data-i="${rows.length}"><span class="dot" style="background:${v.warna}"></span>${k}</label>`;
+    h += v.n.map(p => `<div class="sub"><b style="color:${p.warna}">${p.no}</b> ${p.nama}</div>`).join('');
+    rows.push(v.g); v.g.addTo(map);
+  });
+  if (DATA.menyusul.length) h += DATA.menyusul.map(n => `<div class="sub"><b>?</b> ${n} <i>(lokasi menyusul)</i></div>`).join('');
+  h += '<div class="grp">Batas &amp; Jaringan</div>';
+  [[rw, '<span class="sw" style="background:#fdbe15"></span>Batas RW 08'], [jalan, '<span class="sw" style="background:#f59e0b"></span>Jalan'],
+   [sungai, '<span class="sw" style="background:#38bdf8"></span>Sungai'], [bangunan, '<span class="sw" style="background:#e9c9a6;height:10px"></span>Bangunan']]
+    .forEach(([l, t]) => { h += `<label><input type="checkbox" checked data-i="${rows.length}">${t}</label>`; rows.push(l); });
+  d.innerHTML = h + '</div>';
+  d.querySelectorAll('input').forEach(c => c.onchange = () => { const l = rows[c.dataset.i]; c.checked ? l.addTo(map) : map.removeLayer(l); });
+  L.DomEvent.disableClickPropagation(d); L.DomEvent.disableScrollPropagation(d);
+  return d;
+};
+lg.addTo(map);
+L.control.scale({imperial: false}).addTo(map);
+const bb = rwGaris.getBounds();
+map.fitBounds(bb.pad(0.15));
+map.setMinZoom(map.getZoom() - 1);        // boleh zoom-out sedikit, tidak jauh
+map.setMaxBounds(bb.pad(0.8)); map.options.maxBoundsViscosity = 1.0;
+map.attributionControl.addAttribution('Batas RW: Geoportal Kota Yogyakarta • KKN UAD 2026');
+
+// lokasi saya
+const loc = L.control({position: 'topleft'});
+loc.onAdd = () => { const b = L.DomUtil.create('a', 'leaflet-bar'); b.innerHTML = '◎'; b.title = 'Lokasi saya';
+  b.style.cssText = 'display:block;width:34px;height:34px;line-height:32px;text-align:center;background:#fff;font-size:20px;cursor:pointer;color:#1b6c32';
+  b.onclick = e => { L.DomEvent.stop(e); map.locate({setView: true, maxZoom: 19}); }; return b; };
+loc.addTo(map);
+let me; map.on('locationfound', e => { me && map.removeLayer(me); me = L.circleMarker(e.latlng, {radius: 8, color: '#fff', weight: 3, fillColor: '#2563eb', fillOpacity: 1}).addTo(map).bindPopup('Anda di sini').openPopup(); });
+map.on('locationerror', () => alert('Lokasi tidak bisa diakses.'));
+function lb(src) { const d = document.getElementById('lb'); d.querySelector('img').src = src; d.style.display = 'flex'; }
+</script>
+</body>
+</html>

@@ -40,6 +40,13 @@ jobs:
           UKURAN=75x45 python buat_peta.py vektor
           python buat_web.py
 
+      - name: Bikin peta web RW 08 (di /rw08/)
+        working-directory: rw08
+        run: |
+          UKURAN=75x45 python buat_peta.py vektor
+          python buat_web.py
+          mkdir -p ../web/rw08 && cp -r web/. ../web/rw08/
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: web
@@ -47,6 +54,14 @@ jobs:
   banner:
     runs-on: ubuntu-latest
     timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - folder: "."
+            nama: banner-pdf
+          - folder: rw08
+            nama: banner-rw08
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -61,12 +76,13 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ttf-mscorefonts-installer fonts-liberation || sudo apt-get install -y -qq fonts-liberation
           fc-list | grep -ci arial || true
-      - name: Bikin banner semua ukuran
+      - name: Bikin banner
+        working-directory: ${{ matrix.folder }}
         run: python buat_peta.py
       - uses: actions/upload-artifact@v4
         with:
-          name: banner-pdf
-          path: output/*.pdf
+          name: ${{ matrix.nama }}
+          path: ${{ matrix.folder }}/output/*.pdf
           retention-days: 90
 
   deploy:

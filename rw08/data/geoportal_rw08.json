@@ -1,0 +1,469 @@
+[
+ {
+  "layer": "masjid_kota_yogyakarta",
+  "lat": -7.79736998,
+  "lon": 110.3815871,
+  "props": {
+   "ogc_fid": 401,
+   "no_kota": 401,
+   "nama": "Noor Islam",
+   "alamat": "Jl. Gayam",
+   "x": 110.381585,
+   "y": -7.79737
+  }
+ },
+ {
+  "layer": "masjid_kota_yogyakarta",
+  "lat": -7.79964798,
+  "lon": 110.3807061,
+  "props": {
+   "ogc_fid": 403,
+   "no_kota": 403,
+   "nama": "Ar Roqib",
+   "alamat": "Jl. Sukonandi",
+   "x": 110.380704,
+   "y": -7.799648
+  }
+ },
+ {
+  "layer": "masjid_kota_yogyakarta",
+  "lat": -7.79887548,
+  "lon": 110.3830931,
+  "props": {
+   "ogc_fid": 407,
+   "no_kota": 407,
+   "nama": "Darussalam",
+   "alamat": "UAD Jl. Kapas",
+   "x": 110.383091,
+   "y": -7.7988755
+  }
+ },
+ {
+  "layer": "masjid_kota_yogyakarta",
+  "lat": -7.79912128,
+  "lon": 110.3832751,
+  "props": {
+   "ogc_fid": 409,
+   "no_kota": 409,
+   "nama": "Al Mujadid",
+   "alamat": "SMU Muh. 2 Jl Kapas",
+   "x": 110.383273,
+   "y": -7.7991213
+  }
+ },
+ {
+  "layer": "masjid_kota_yogyakarta",
+  "lat": -7.80032668,
+  "lon": 110.3827431,
+  "props": {
+   "ogc_fid": 410,
+   "no_kota": 410,
+   "nama": "At Tarbiyah",
+   "alamat": "SMK Koperasi Jl. Kapas",
+   "x": 110.382741,
+   "y": -7.8003267
+  }
+ },
+ {
+  "layer": "masjid_kota_yogyakarta",
+  "lat": -7.80057158,
+  "lon": 110.3817101,
+  "props": {
+   "ogc_fid": 412,
+   "no_kota": 412,
+   "nama": "Al Mizan",
+   "alamat": "Kejati DIY Jl. Sukonandi",
+   "x": 110.381708,
+   "y": -7.8005716
+  }
+ },
+ {
+  "layer": "sebaran_lokasi_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.79735585,
+  "lon": 110.3816063,
+  "props": {
+   "ogc_fid": 66,
+   "no": 66,
+   "nama_tempa": "Masjid Noor Islam",
+   "alamat": "Jl. Gayam No. 19 Semaki UH 1 Yogyakarta",
+   "longitude": 110.3816042,
+   "latitude (": -7.79735587
+  }
+ },
+ {
+  "layer": "sebaran_lokasi_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.79950986,
+  "lon": 110.3806627,
+  "props": {
+   "ogc_fid": 68,
+   "no": 68,
+   "nama_tempa": "Masjid Ar-Roqib",
+   "alamat": "Jl. Sukonandi Semaki UH 1 Yogyakarta",
+   "longitude": 110.3806606,
+   "latitude (": -7.799509878
+  }
+ },
+ {
+  "layer": "sebaran_lokasi_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.80027273,
+  "lon": 110.3819727,
+  "props": {
+   "ogc_fid": 74,
+   "no": 74,
+   "nama_tempa": "Masjid Al-Mahkamah",
+   "alamat": "Pengadilan Tinggi Tipikor. Jl. Prof. DR. Soepomo",
+   "longitude": 110.3819706,
+   "latitude (": -7.800272748
+  }
+ },
+ {
+  "layer": "sebaran_lokasi_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.80054353,
+  "lon": 110.3824941,
+  "props": {
+   "ogc_fid": 75,
+   "no": 75,
+   "nama_tempa": "Masjid At-Tarbiyah",
+   "alamat": "SMK Koperasi, Jl. Kapas",
+   "longitude": 110.382492,
+   "latitude (": -7.800543549
+  }
+ },
+ {
+  "layer": "sebaran_lokasi_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.79900431,
+  "lon": 110.3832748,
+  "props": {
+   "ogc_fid": 79,
+   "no": 79,
+   "nama_tempa": "Masjid Al-Mujadid",
+   "alamat": "SMA Muh. 2, Jl. Kapas Semaki",
+   "longitude": 110.3832727,
+   "latitude (": -7.799004326
+  }
+ },
+ {
+  "layer": "sebaran_lokasi_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.79968032,
+  "lon": 110.3808136,
+  "props": {
+   "ogc_fid": 332,
+   "no": 332,
+   "nama_tempa": "Masjid Masjid Ar-Roqib",
+   "alamat": "Kantor BBKKP Jl. Sokonandi No. 9 Yogyakarta",
+   "longitude": 110.3808115,
+   "latitude (": -7.799680335
+  }
+ },
+ {
+  "layer": "sebaran_lokasi_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.80046945,
+  "lon": 110.3817453,
+  "props": {
+   "ogc_fid": 336,
+   "no": 336,
+   "nama_tempa": "Masjid Al-Mizan",
+   "alamat": "Kantor Kejaksaan Tinggi DIY Jl. Sokonandi Yogyakarta",
+   "longitude": 110.3817432,
+   "latitude (": -7.800469467
+  }
+ },
+ {
+  "layer": "sebaran_lokasi_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.79766258,
+  "lon": 110.3825106,
+  "props": {
+   "ogc_fid": 511,
+   "no": 511,
+   "nama_tempa": "Masjid Darul Hikmah",
+   "alamat": "Jl. Kenari No. 4 SMKN 6 Yogyakarta",
+   "longitude": 110.3825085,
+   "latitude (": -7.797662597
+  }
+ },
+ {
+  "layer": "sebaran_lokasi_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.79753504,
+  "lon": 110.3825106,
+  "props": {
+   "ogc_fid": 733,
+   "no": 733,
+   "nama_tempa": "Musholla Smk Negeri 6 Yogyakarta",
+   "alamat": "Jl. Kenari Semaki Yogyakarta",
+   "longitude": 110.3825085,
+   "latitude (": -7.797535059
+  }
+ },
+ {
+  "layer": "sebaran_lokasi_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.80035253,
+  "lon": 110.3817023,
+  "props": {
+   "ogc_fid": 737,
+   "no": 737,
+   "nama_tempa": "Musholla Al- Mizan",
+   "alamat": "Komplek Kejaksaan Negeri Jl. Sukonandi Yogyakarta",
+   "longitude": 110.3817002,
+   "latitude (": -7.800352542
+  }
+ },
+ {
+  "layer": "sebaran_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.79950986,
+  "lon": 110.3806627,
+  "props": {
+   "ogc_fid": 332,
+   "no": 332,
+   "nama_tempa": "Masjid Ar-Roqib",
+   "alamat": "Jl. Sukonandi Semaki UH 1 Yogyakarta",
+   "longitude": 110.3806606,
+   "latitude (": -7.799509878
+  }
+ },
+ {
+  "layer": "sebaran_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.80054353,
+  "lon": 110.3824941,
+  "props": {
+   "ogc_fid": 339,
+   "no": 339,
+   "nama_tempa": "Masjid At-Tarbiyah",
+   "alamat": "SMK Koperasi, Jl. Kapas",
+   "longitude": 110.382492,
+   "latitude (": -7.800543549
+  }
+ },
+ {
+  "layer": "sebaran_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.79900431,
+  "lon": 110.3832748,
+  "props": {
+   "ogc_fid": 341,
+   "no": 341,
+   "nama_tempa": "Masjid Al-Mujadid",
+   "alamat": "SMA Muh. 2, Jl. Kapas Semaki",
+   "longitude": 110.3832727,
+   "latitude (": -7.799004326
+  }
+ },
+ {
+  "layer": "sebaran_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.7994886,
+  "lon": 110.3806627,
+  "props": {
+   "ogc_fid": 408,
+   "no": 408,
+   "nama_tempa": "Masjid MASJID AR- ROQIB",
+   "alamat": "Kantor BBKKP Jl. Sokonandi No. 9 Yogyakarta",
+   "longitude": 110.3806606,
+   "latitude (": -7.799488619
+  }
+ },
+ {
+  "layer": "sebaran_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.80046945,
+  "lon": 110.3817453,
+  "props": {
+   "ogc_fid": 412,
+   "no": 412,
+   "nama_tempa": "Masjid AL-MIZAN",
+   "alamat": "Kantor Kejaksaan Tinggi DIY Jl. Sokonandi Yogyakarta",
+   "longitude": 110.3817432,
+   "latitude (": -7.800469467
+  }
+ },
+ {
+  "layer": "sebaran_tempat_ibadah_di_kota_yogyakarta",
+  "lat": -7.79766258,
+  "lon": 110.3825106,
+  "props": {
+   "ogc_fid": 437,
+   "no": 437,
+   "nama_tempa": "Masjid Darul Hikmah",
+   "alamat": "Jl. Kenari No. 4 SMKN 6 Yogyakarta",
+   "longitude": 110.3825085,
+   "latitude (": -7.797662597
+  }
+ },
+ {
+  "layer": "sebaran_posyandu_di_kota_yogyakarta",
+  "lat": -7.79752023,
+  "lon": 110.3815043,
+  "props": {
+   "ogc_fid": 265,
+   "no": 265,
+   "nama_posya": "Temugiring 8",
+   "alamat (ke": "Balai RW 08 Semaki",
+   "latitude (": -7.797520241,
+   "longitude": 110.3815022
+  }
+ },
+ {
+  "layer": "sebaran_fasilitas_kesehatan_di_kota_yogyakarta",
+  "lat": -7.79750688,
+  "lon": 110.3836789,
+  "props": {
+   "ogc_fid": 90,
+   "no": 90,
+   "nama_faske": "Klinik Pratama Telkomedika Yogyakarta",
+   "alamat": "Jl. Kenari No. 3 Semaki Umbulharjo Yogyakarta",
+   "longitude": 110.3836768,
+   "latitude (": -7.7975069
+  }
+ },
+ {
+  "layer": "sebaran_fasilitas_kesehatan_di_kota_yogyakarta",
+  "lat": -7.80006292,
+  "lon": 110.3819794,
+  "props": {
+   "ogc_fid": 217,
+   "no": 217,
+   "nama_faske": "Praktik Perseorangan dr. Faizal Arief Nurokhman, M.Si.",
+   "alamat": "Kejaksaan Tinggi Daerah Istimewa Yogyakarta, Jl. Sukonandi No.4, Semaki, Umbulharjo, Kota Yogyakarta",
+   "longitude": 110.3819773,
+   "latitude (": -7.800062937
+  }
+ },
+ {
+  "layer": "sebaran_fasilitas_kesehatan_di_kota_yogyakarta",
+  "lat": -7.79866975,
+  "lon": 110.3821156,
+  "props": {
+   "ogc_fid": 222,
+   "no": 222,
+   "nama_faske": "Praktik Perseorangan dr. H. Tejo Katon, S.Si, MBA, MM",
+   "alamat": "Kanwil Kementerian Agama DIY, Jl. Sukonandi Nomor 8 Semaki Umbulharjo Yogyakarta",
+   "longitude": 110.3821135,
+   "latitude (": -7.798669767
+  }
+ },
+ {
+  "layer": "sebaran_fasilitas_kesehatan_di_kota_yogyakarta",
+  "lat": -7.80006292,
+  "lon": 110.3819794,
+  "props": {
+   "ogc_fid": 246,
+   "no": 246,
+   "nama_faske": "Praktik Perseorangan dr. Molly Inta Sari",
+   "alamat": "Kejaksaan Tinggi Daerah Istimewa Yogyakarta, Jl. Sukonandi No.4, Semaki, Umbulharjo, Kota Yogyakarta",
+   "longitude": 110.3819773,
+   "latitude (": -7.800062937
+  }
+ },
+ {
+  "layer": "sebaran_fasilitas_kesehatan_di_kota_yogyakarta",
+  "lat": -7.80001426,
+  "lon": 110.382026,
+  "props": {
+   "ogc_fid": 253,
+   "no": 253,
+   "nama_faske": "Praktik Perseorangan dr. Nurfitria Wulandari Diaswara",
+   "alamat": "Kejaksaan Tinggi Daerah Istimewa Yogyakarta, Jl. Sukonandi No.4, Semaki, Umbulharjo, Kota Yogyakarta",
+   "longitude": 110.3820239,
+   "latitude (": -7.800014278
+  }
+ },
+ {
+  "layer": "sebaran_fasilitas_kesehatan_di_kota_yogyakarta",
+  "lat": -7.79760798,
+  "lon": 110.3827274,
+  "props": {
+   "ogc_fid": 482,
+   "no": 482,
+   "nama_faske": "Apotek Telkomedika",
+   "alamat": "Jl. Kenari No. 3 Semaki Umbulharjo Yogyakarta",
+   "longitude": 110.3827253,
+   "latitude (": -7.797608
+  }
+ },
+ {
+  "layer": "sebaran_fasilitas_kesehatan_di_kota_yogyakarta",
+  "lat": -7.79883328,
+  "lon": 110.3820255,
+  "props": {
+   "ogc_fid": 536,
+   "no": 536,
+   "nama_faske": "Apotek UAD",
+   "alamat": "Jl. Cendana No. 9.A Semaki Umbulharjo Yogyakarta",
+   "longitude": 110.3820234,
+   "latitude (": -7.7988333
+  }
+ },
+ {
+  "layer": "sebaran_sd_di_kota_yogyakarta",
+  "lat": -7.79979998,
+  "lon": 110.3831021,
+  "props": {
+   "ogc_fid": 142,
+   "jenjang": "SD",
+   "status": "SWASTA",
+   "kecamatan": "Kec. Umbulharjo",
+   "kelurahan": "SEMAKI",
+   "alamat": "Jalan Kapas No. 5A",
+   "lat": -7.7998,
+   "long": 110.3831,
+   "nama": "SD MUHAMMADIYAH SOKONANDI 1"
+  }
+ },
+ {
+  "layer": "sebaran_lokasi_sd_di_kota_yogyakarta",
+  "lat": -7.79979998,
+  "lon": 110.3831021,
+  "props": {
+   "ogc_fid": 152,
+   "no": 152,
+   "nama": "SD MUHAMMADIYAH SOKONANDI 1",
+   "jenjang": "SD",
+   "status": "SWASTA",
+   "kecamatan": "Kec. Umbulharjo",
+   "kelurahan": "Semaki",
+   "alamat": "Jalan Kapas No. 5A",
+   "latitude (": -7.7998,
+   "longitude": 110.3831
+  }
+ },
+ {
+  "layer": "sebaran_tk_ra_di_kota_yogyakarta",
+  "lat": -7.79809975,
+  "lon": 110.3833707,
+  "props": {
+   "ogc_fid": 3,
+   "no": 3,
+   "nama": "TK NEGERI 2",
+   "jenjang": "TK",
+   "status": "NEGERI",
+   "kecamatan": "Kec. Umbulharjo",
+   "kelurahan": "SEMAKI",
+   "alamat": "JL. KAPAS NO. 2",
+   "lat (y)": -7.798099766,
+   "long (x)": 110.3833686
+  }
+ },
+ {
+  "layer": "sebaran_lokasi_tk_ra_di_kota_yogyakarta",
+  "lat": -7.79809975,
+  "lon": 110.3833707,
+  "props": {
+   "ogc_fid": 3,
+   "no": 3,
+   "nama": "TK NEGERI 2",
+   "jenjang": "TK",
+   "status": "NEGERI",
+   "kecamatan": "Kec. Umbulharjo",
+   "kelurahan": "SEMAKI",
+   "alamat": "JL. KAPAS NO. 2",
+   "lat (y)": -7.798099766,
+   "long (x)": 110.3833686
+  }
+ },
+ {
+  "layer": "bank_sampah_kota_yogyakarta",
+  "lat": -7.79865388,
+  "lon": 110.3810355,
+  "props": {
+   "ogc_fid": 307,
+   "name": "Bank Sampah Gempita\n",
+   "descriptio": "Alamat : Jl Ki Mangunsarkoro 50 RT 3 RW1 Baciro Gondokusuman<br>Pemimpin: Antonius Sukandri<br>No SK : 15/KEP/X/BCR/2015<br>Tanggal Berdiri : 1/10/2015"
+  }
+ }
+]

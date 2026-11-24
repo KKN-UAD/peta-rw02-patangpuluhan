@@ -3,6 +3,11 @@
 $ErrorActionPreference = "Stop"
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $REPO = "KKN-UAD/peta-rw02-patangpuluhan"
+# --- pengaturan per RW (folder di repo, nama file data, nama banner di github, alamat peta online) ---
+$SUB = ""                     # RW 02 di folder utama repo
+$GPKG = "peta_rw02.gpkg"
+$ARTIFACT = "banner-pdf"
+$WEB = "https://kkn-uad.github.io/peta-rw02-patangpuluhan/"
 $API = "https://api.github.com/repos/$REPO"
 $DIR = Split-Path -Parent $MyInvocation.MyCommand.Path
 
@@ -15,7 +20,7 @@ else { Selesai "file token.txt belum ada di folder qgis. minta ke admin repo ya.
 $H = @{ Authorization = "Bearer $TOKEN"; "User-Agent" = "peta-rw02-update"; Accept = "application/vnd.github+json" }
 
 if (Get-Process -Name "qgis*" -ErrorAction SilentlyContinue) { Selesai "qgis masih kebuka. tutup qgis dulu biar editannya kesimpen, terus klik lagi file ini." }
-if (Test-Path (Join-Path $DIR "peta_rw02.gpkg-wal")) { Selesai "editan belum kesimpen penuh (ada file peta_rw02.gpkg-wal). buka qgis, save, tutup lagi, terus klik lagi file ini." }
+if (Test-Path (Join-Path $DIR "$GPKG-wal")) { Selesai "editan belum kesimpen penuh (ada file peta_rw02.gpkg-wal). buka qgis, save, tutup lagi, terus klik lagi file ini." }
 
 # cek koneksi + token dulu (coba 3x)
 $cek = $null
@@ -75,9 +80,9 @@ Write-Host "ngirim editan ke github..."
 try {
     $commit = $null
     Get-ChildItem (Join-Path $DIR "foto") -File -ErrorAction SilentlyContinue | ForEach-Object {
-        $c = Kirim $_.FullName ("qgis/foto/" + $_.Name); if ($c) { $commit = $c }
+        $c = Kirim $_.FullName ($SUB + "qgis/foto/" + $_.Name); if ($c) { $commit = $c }
     }
-    $c = Kirim (Join-Path $DIR "peta_rw02.gpkg") "qgis/peta_rw02.gpkg"; if ($c) { $commit = $c }
+    $c = Kirim (Join-Path $DIR $GPKG) ($SUB + "qgis/" + $GPKG); if ($c) { $commit = $c }
 } catch { Selesai "gagal upload: $($_.Exception.Message)`nfotoin/screenshot layar ini terus kirim ke admin ya." }
 
 $run = $null
@@ -93,7 +98,7 @@ for ($i = 0; $i -lt 90; $i++) {
     if ($run) {
         $jobs = (Invoke-RestMethod -Uri $run.jobs_url -Headers $H).jobs
         $dep = $jobs | Where-Object { $_.name -eq "deploy" }
-        if ($dep -and $dep.conclusion -eq "success" -and -not $sudahWeb) { $sudahWeb = $true; Write-Host "peta online udah ke-update: https://kkn-uad.github.io/peta-rw02-patangpuluhan/" }
+        if ($dep -and $dep.conclusion -eq "success" -and -not $sudahWeb) { $sudahWeb = $true; Write-Host "peta online udah ke-update: $WEB" }
         if ($run.status -eq "completed") { break }
         Write-Host "  masih proses... ($([int](($i + 1) * 20 / 60)) menit)"
     }
@@ -102,7 +107,7 @@ if (-not $run -or $run.conclusion -ne "success") { Selesai "proses di github gag
 }
 
 Write-Host "download banner pdf..."
-$art = (Invoke-RestMethod -Uri "$API/actions/runs/$($run.id)/artifacts" -Headers $H).artifacts | Where-Object { $_.name -eq "banner-pdf" } | Select-Object -First 1
+$art = (Invoke-RestMethod -Uri "$API/actions/runs/$($run.id)/artifacts" -Headers $H).artifacts | Where-Object { $_.name -eq $ARTIFACT } | Select-Object -First 1
 if (-not $art -or $art.expired) { Selesai "file banner di github udah kadaluarsa / gak ada. edit dikit terus kirim lagi biar dibikin ulang." }
 $out = Join-Path $DIR "banner"
 New-Item -ItemType Directory -Force -Path $out | Out-Null

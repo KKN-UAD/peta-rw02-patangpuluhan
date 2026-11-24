@@ -13,3 +13,9 @@ peta online: https://kkn-uad.github.io/peta-rw02-patangpuluhan/
 buka tab **Actions**, klik yang paling atas (yang ada centang hijau), scroll ke bawah ke bagian **Artifacts**, download **banner-pdf**. isinya pdf banner ukuran 75x45 cm, versi citra sama vektor. banner butuh sekitar 5 menit sampai jadi.
 
 kalau ada yang gagal (tanda silang merah di tab Actions), biasanya karena nama kategori salah ketik atau qgis belum ditutup pas upload.
+
+## rw 08 semaki
+
+peta online: https://kkn-uad.github.io/peta-rw02-patangpuluhan/rw08/
+
+semua file rw 08 ada di folder `rw08`. caranya sama: buka `rw08/qgis/Peta_RW08_Semaki.qgs`, edit, save, tutup qgis, klik 2x `rw08/qgis/kirim_update.bat`. banner pdf rw 08 (75x45, tanpa qr) kedownload ke folder `rw08/qgis/banner`.

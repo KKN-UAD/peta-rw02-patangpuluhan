@@ -1,0 +1,4245 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.4 2390de5a",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-24T06:51:56Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1987943183,
+  "lat": -7.7970983,
+  "lon": 110.3778593,
+  "tags": {
+    "amenity": "pharmacy",
+    "healthcare": "pharmacy",
+    "name": "Apotek Waringin"
+  }
+},
+{
+  "type": "node",
+  "id": 3472798344,
+  "lat": -7.8014508,
+  "lon": 110.3882241,
+  "tags": {
+    "addr:housenumber": "91",
+    "addr:postcode": "55165",
+    "addr:street": "Jl. Kusumanegara",
+    "contact:phone": "+62 274 560111",
+    "contact:website": "http://www.favehotels.com/hotellist/eng/28/favehotel-kusumanegara/",
+    "name": "favehotel Kusumanegara",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 3658773685,
+  "lat": -7.7930961,
+  "lon": 110.3780556,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "javanese",
+    "name": "Kedai Rakjat Djelata"
+  }
+},
+{
+  "type": "node",
+  "id": 3889891542,
+  "lat": -7.8021055,
+  "lon": 110.3882125,
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:street": "Jalan Kusumanegara",
+    "name": "Lembaga Bimbingan Belajar Primagama",
+    "office": "educational_institution"
+  }
+},
+{
+  "type": "node",
+  "id": 4278281582,
+  "lat": -7.8020279,
+  "lon": 110.3787707,
+  "tags": {
+    "name": "Hotel Panorama",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 4522526346,
+  "lat": -7.8038188,
+  "lon": 110.3826843,
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:housenumber": "02",
+    "addr:street": "Jalan Kusumanegara",
+    "amenity": "place_of_worship",
+    "name": "Masjid Al Hikmah STPP Yogyakarta",
+    "religion": "muslim"
+  }
+},
+{
+  "type": "node",
+  "id": 4691760992,
+  "lat": -7.7954010,
+  "lon": 110.3773503,
+  "tags": {
+    "internet_access": "wlan",
+    "name": "Batik Museum",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "node",
+  "id": 4908348223,
+  "lat": -7.7937544,
+  "lon": 110.3780142,
+  "tags": {
+    "amenity": "restaurant",
+    "name": "Ice cream Gelato"
+  }
+},
+{
+  "type": "node",
+  "id": 5837800087,
+  "lat": -7.8016386,
+  "lon": 110.3753559,
+  "tags": {
+    "amenity": "restaurant",
+    "cuisine": "indonesian",
+    "name": "warung sate ayam “pak kromo” (chicken satay)",
+    "name:es": "warung sate ayam “pak kromo”"
+  }
+},
+{
+  "type": "node",
+  "id": 5837800088,
+  "lat": -7.8014069,
+  "lon": 110.3767454,
+  "tags": {
+    "amenity": "fast_food",
+    "cuisine": "indonesian",
+    "name": "Food court",
+    "name:es": "Comida callejera"
+  }
+},
+{
+  "type": "node",
+  "id": 6357867635,
+  "lat": -7.7985247,
+  "lon": 110.3782306,
+  "tags": {
+    "description": "Penulisan Online\nhttps://bit.ly/2W2mPVO\n\nGeliat PIK-R\nhttps://bit.ly/2INM6z1\n\nLorong sayur\nhttps://bit.ly/2Gwp4d8\n\nBantuan ODGJ\nhttps://bit.ly/2IJHwln\n\nKetua RW 02\nbit.ly/2HqZybd",
+    "government": "yes",
+    "name": "Kepala RW",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 6404037113,
+  "lat": -7.7992504,
+  "lon": 110.3786323,
+  "tags": {
+    "addr:city": "yogyakarta",
+    "addr:postcode": "55111",
+    "description": "Narkoba ancam generasi muda\nhttps://bit.ly/2VTbMOq\n\nKampung KB dan KRA\nhttps://bit.ly/2vfKqXi\n\nPesta rakyat RW 02\nhttps://bit.ly/2Xxq07U\n\nLomba Kampung Proklim\nhttp://bit.ly/2LUCiXi\n\n",
+    "leisure": "park",
+    "name": "Ruang Terbuka Hijau",
+    "operator": "Lembaga Pemberdayaan Masyarakat Kelurahan"
+  }
+},
+{
+  "type": "node",
+  "id": 7068927186,
+  "lat": -7.7959734,
+  "lon": 110.3770853,
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:housenumber": "13A",
+    "addr:postcode": "55211",
+    "addr:street": "Jalan Dokter Sutomo",
+    "amenity": "community_centre",
+    "internet_access": "wlan",
+    "name": "Lifepatch - citizen initiative in art, science and technology",
+    "opening_hours": "Mo-Su 10:00-21:00",
+    "website": "https://lifepatch.id"
+  }
+},
+{
+  "type": "node",
+  "id": 7071652385,
+  "lat": -7.7937032,
+  "lon": 110.3782239,
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:housenumber": "1A",
+    "addr:postcode": "55225",
+    "addr:street": "Jalan Tunjung",
+    "amenity": "restaurant",
+    "cuisine": "indonesian;regional;local",
+    "name": "Kota Kembang",
+    "opening_hours": "Mo-Su 10:00-20:00"
+  }
+},
+{
+  "type": "node",
+  "id": 7660028785,
+  "lat": -7.7947009,
+  "lon": 110.3763375,
+  "tags": {
+    "addr:housenumber": "51",
+    "addr:postcode": "55211",
+    "addr:street": "Jalan Ronodigdayan",
+    "amenity": "fast_food",
+    "cuisine": "local",
+    "email": "istriutami9@gmail.com",
+    "internet_access": "wlan",
+    "name": "Dapur Umi Ami Empal Gentong & Ayam Kremes",
+    "opening_hours": "Mo-Su 08:00-08:00",
+    "operator": "Istri Utami",
+    "phone": "+62 856-4759-5793"
+  }
+},
+{
+  "type": "node",
+  "id": 7660036185,
+  "lat": -7.7946423,
+  "lon": 110.3763284,
+  "tags": {
+    "addr:housenumber": "51",
+    "addr:postcode": "55211",
+    "addr:street": "Jalan Ronodigdayan",
+    "email": "octaadv@gmail.com",
+    "name": "Octa Advertising",
+    "office": "company",
+    "opening_hours": "Mo-Su 08:00-04:00",
+    "phone": "+62274588133",
+    "website": "http://www.octaadv.co.id"
+  }
+},
+{
+  "type": "node",
+  "id": 9819405184,
+  "lat": -7.7969982,
+  "lon": 110.3778556,
+  "tags": {
+    "name": "The Cabin Hotel Sutomo",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "node",
+  "id": 10316215606,
+  "lat": -7.8019650,
+  "lon": 110.3799505,
+  "tags": {
+    "amenity": "cafe",
+    "name": "Isvara"
+  }
+},
+{
+  "type": "node",
+  "id": 10316227334,
+  "lat": -7.8019188,
+  "lon": 110.3796927,
+  "tags": {
+    "amenity": "restaurant",
+    "brand": "Pizza Hut",
+    "brand:wikidata": "Q191615",
+    "cuisine": "pizza",
+    "name": "Pizza Hut"
+  }
+},
+{
+  "type": "node",
+  "id": 11508631377,
+  "lat": -7.8028646,
+  "lon": 110.3882698,
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:housenumber": "UH 4/22",
+    "addr:postcode": "55164",
+    "addr:street": "Gang Glagah II",
+    "brand": "MST",
+    "description": "Electronic Design Programming Queuing System IoT builder",
+    "email": "mst.indonesia@gmail.com",
+    "name": "Mitra Solusi Teknik",
+    "opening_hours": "Mo-Su 09:00-21:00",
+    "payment:cash": "yes",
+    "payment:debit_cards": "yes",
+    "phone": "+62274414502",
+    "shop": "computer",
+    "website": "https://mesinantrianyogya.blogspot.com/"
+  }
+},
+{
+  "type": "node",
+  "id": 12805713500,
+  "lat": -7.7994236,
+  "lon": 110.3848143,
+  "tags": {
+    "air_conditioning": "yes",
+    "branch": "Cendana",
+    "brand": "Indomaret",
+    "brand:wikidata": "Q4262825",
+    "brand:wikipedia": "id:Indomaret",
+    "name": "Indomaret",
+    "name:en": "Indomaret",
+    "name:id": "Indomaret",
+    "name:ja": "インドマレット",
+    "operator": "PT. Indomarco Prismatama",
+    "shop": "convenience",
+    "toilets": "yes",
+    "toilets:access": "permissive",
+    "website": "https://www.klikindomaret.com"
+  }
+},
+{
+  "type": "node",
+  "id": 12942493111,
+  "lat": -7.7946375,
+  "lon": 110.3810834,
+  "tags": {
+    "amenity": "place_of_worship",
+    "name": "Vihara Vimalakirti",
+    "religion": "buddhist"
+  }
+},
+{
+  "type": "node",
+  "id": 12942502246,
+  "lat": -7.8023901,
+  "lon": 110.3764132,
+  "tags": {
+    "amenity": "place_of_worship",
+    "name": "Masjid Margoyoso",
+    "religion": "muslim"
+  }
+},
+{
+  "type": "node",
+  "id": 12942517490,
+  "lat": -7.7935832,
+  "lon": 110.3838838,
+  "tags": {
+    "amenity": "place_of_worship",
+    "name": "Pura Padma Bhuana Saraswati",
+    "religion": "hindu"
+  }
+},
+{
+  "type": "node",
+  "id": 12942517491,
+  "lat": -7.7939236,
+  "lon": 110.3831448,
+  "tags": {
+    "amenity": "place_of_worship",
+    "name": "Masjid Piri",
+    "religion": "muslim"
+  }
+},
+{
+  "type": "node",
+  "id": 13077816880,
+  "lat": -7.7940794,
+  "lon": 110.3780055,
+  "tags": {
+    "brand": "Lawson",
+    "brand:wikidata": "Q1557223",
+    "name": "Lawson",
+    "shop": "convenience"
+  }
+},
+{
+  "type": "node",
+  "id": 13083637752,
+  "lat": -7.7993491,
+  "lon": 110.3819641,
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:district": "Umbulharjo",
+    "addr:housenumber": "06",
+    "addr:postcode": "55166",
+    "addr:province": "D.I.Yogyakarta",
+    "addr:street": "Jalan Sukonandi",
+    "addr:subdistrict": "Semaki",
+    "government": "prosecutor",
+    "name": "Kejaksaan Negeri Yogyakarta",
+    "office": "government",
+    "opening_hours": "Mo-Th 08:00-16:00, Fr 08:00-16:30",
+    "operator": "Instansi Pemerintah",
+    "phone": "+62 27-4512521",
+    "smoking": "no",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "node",
+  "id": 13159268930,
+  "lat": -7.7994079,
+  "lon": 110.3776889,
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:district": "Pakualaman",
+    "addr:housenumber": "35",
+    "addr:postcode": "55111",
+    "addr:province": "Daerah Istimewa Yogyakarta",
+    "addr:street": "Jalan Suryopranoto",
+    "addr:subdistrict": "Gunungketur",
+    "government": "administrative",
+    "name": "Kantor Kemantren Pakualaman",
+    "office": "government"
+  }
+},
+{
+  "type": "node",
+  "id": 13512307801,
+  "lat": -7.7978590,
+  "lon": 110.3758260,
+  "tags": {
+    "addr:street": "Jalan Purwanggan",
+    "amenity": "clinic",
+    "internet_access": "wlan",
+    "name": "Puskesmas Pakualaman",
+    "opening_hours": "Mo-Sa 07:30-12:00"
+  }
+},
+{
+  "type": "node",
+  "id": 13986136802,
+  "lat": -7.8042000,
+  "lon": 110.3755377,
+  "tags": {
+    "addr:housenumber": "19",
+    "addr:postcode": "55151",
+    "addr:street": "Jalan Bintaran Wetan",
+    "name": "Perkumpulan Budi Abadi (Hoo Hap Hwee)",
+    "opening_hours": "24/7",
+    "phone": "+62 274 373782",
+    "shop": "funeral_directors"
+  }
+},
+{
+  "type": "way",
+  "id": 120715818,
+  "bounds": {
+    "minlat": -7.7942429,
+    "minlon": 110.3840937,
+    "maxlat": -7.7938384,
+    "maxlon": 110.3843310
+  },
+  "nodes": [
+    1352791136,
+    1352791140,
+    1352791142,
+    5783746088,
+    5783746090,
+    5783746091,
+    5783746092,
+    5783746094,
+    1352791136
+  ],
+  "geometry": [
+    { "lat": -7.7938384, "lon": 110.3842077 },
+    { "lat": -7.7938764, "lon": 110.3843310 },
+    { "lat": -7.7941476, "lon": 110.3842459 },
+    { "lat": -7.7941433, "lon": 110.3842318 },
+    { "lat": -7.7941618, "lon": 110.3842259 },
+    { "lat": -7.7941693, "lon": 110.3842503 },
+    { "lat": -7.7942429, "lon": 110.3842272 },
+    { "lat": -7.7942017, "lon": 110.3840937 },
+    { "lat": -7.7938384, "lon": 110.3842077 }
+  ],
+  "tags": {
+    "amenity": "school",
+    "building": "yes",
+    "building:levels": "2",
+    "building:name": "SDN Baciro",
+    "building:roof": "tile",
+    "building:structure": "reinforced_masonry",
+    "building:use": "education",
+    "building:walls": "brick",
+    "height": "20.0",
+    "name": "SDN Baciro"
+  }
+},
+{
+  "type": "way",
+  "id": 120718008,
+  "bounds": {
+    "minlat": -7.8010503,
+    "minlon": 110.3768094,
+    "maxlat": -7.8007254,
+    "maxlon": 110.3770120
+  },
+  "nodes": [
+    1352812353,
+    1352812354,
+    1352812360,
+    1352812359,
+    1352812375,
+    1352812372,
+    1352812377,
+    1352812379,
+    1352812367,
+    1352812366,
+    1352812353
+  ],
+  "geometry": [
+    { "lat": -7.8007254, "lon": 110.3768189 },
+    { "lat": -7.8007316, "lon": 110.3770120 },
+    { "lat": -7.8008756, "lon": 110.3770073 },
+    { "lat": -7.8008751, "lon": 110.3769904 },
+    { "lat": -7.8010080, "lon": 110.3769861 },
+    { "lat": -7.8010063, "lon": 110.3769327 },
+    { "lat": -7.8010503, "lon": 110.3769313 },
+    { "lat": -7.8010484, "lon": 110.3768743 },
+    { "lat": -7.8010186, "lon": 110.3768752 },
+    { "lat": -7.8010165, "lon": 110.3768094 },
+    { "lat": -7.8007254, "lon": 110.3768189 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "Jalan Jayaningprangan",
+    "amenity": "hospital",
+    "building": "hospital",
+    "building:condition": "good",
+    "building:floor": "ceramics",
+    "building:levels": "1",
+    "building:material": "brick",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "building:use": "medical",
+    "building:walls": "brick",
+    "capacity:persons": "50-100",
+    "name": "Rumah Sakit Khusus Puri Nirmala",
+    "operator:type": "private",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 120770898,
+  "bounds": {
+    "minlat": -7.7991926,
+    "minlon": 110.3856245,
+    "maxlat": -7.7990423,
+    "maxlon": 110.3859264
+  },
+  "nodes": [
+    1353397391,
+    1353397392,
+    1353397394,
+    1353397393,
+    1353397391
+  ],
+  "geometry": [
+    { "lat": -7.7990423, "lon": 110.3856443 },
+    { "lat": -7.7991040, "lon": 110.3859264 },
+    { "lat": -7.7991926, "lon": 110.3859066 },
+    { "lat": -7.7991309, "lon": 110.3856245 },
+    { "lat": -7.7990423, "lon": 110.3856443 }
+  ],
+  "tags": {
+    "addr:full": "Jl. Semaki UH I/ 161 Telp 0274-549455 Yogyakarta 55166",
+    "admin_level": "7",
+    "amenity": "government",
+    "building": "village_office",
+    "building:condition": "good",
+    "building:levels": "2",
+    "building:material": "brick",
+    "building:name": "Kantor Kelurahan Semaki",
+    "building:roof": "asbestos",
+    "building:structure": "confined_masonry",
+    "building:use": "government",
+    "building:walls": "brick",
+    "capacity:persons": "50-100",
+    "name": "Kantor Kelurahan Semaki",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 121242194,
+  "bounds": {
+    "minlat": -7.8040503,
+    "minlon": 110.3767486,
+    "maxlat": -7.8027351,
+    "maxlon": 110.3783657
+  },
+  "nodes": [
+    1357819968,
+    1357819967,
+    1357819965,
+    1357819966,
+    2930746692,
+    2930746690,
+    2930746691,
+    2930746689,
+    1357819968
+  ],
+  "geometry": [
+    { "lat": -7.8027811, "lon": 110.3783657 },
+    { "lat": -7.8027351, "lon": 110.3768013 },
+    { "lat": -7.8039893, "lon": 110.3767486 },
+    { "lat": -7.8040503, "lon": 110.3780618 },
+    { "lat": -7.8036333, "lon": 110.3780722 },
+    { "lat": -7.8031796, "lon": 110.3781666 },
+    { "lat": -7.8032003, "lon": 110.3782726 },
+    { "lat": -7.8031312, "lon": 110.3783555 },
+    { "lat": -7.8027811, "lon": 110.3783657 }
+  ],
+  "tags": {
+    "addr:street": "Jalan Taman Siswa",
+    "amenity": "prison",
+    "name": "Lembaga Pemasyarakatan Wirogunan",
+    "operator": "Kementerian Hukum dan Hak Asasi Manusia"
+  }
+},
+{
+  "type": "way",
+  "id": 237312441,
+  "bounds": {
+    "minlat": -7.7985550,
+    "minlon": 110.3831313,
+    "maxlat": -7.7982542,
+    "maxlon": 110.3834508
+  },
+  "nodes": [
+    2452334666,
+    2452334667,
+    2452334668,
+    8682383548,
+    2452334669,
+    9742951764,
+    2452334666
+  ],
+  "geometry": [
+    { "lat": -7.7982542, "lon": 110.3831620 },
+    { "lat": -7.7982891, "lon": 110.3834508 },
+    { "lat": -7.7985550, "lon": 110.3834204 },
+    { "lat": -7.7985401, "lon": 110.3833194 },
+    { "lat": -7.7985243, "lon": 110.3832119 },
+    { "lat": -7.7985089, "lon": 110.3831313 },
+    { "lat": -7.7982542, "lon": 110.3831620 }
+  ],
+  "tags": {
+    "amenity": "school",
+    "name": "TK Negeri 2 Yogyakarta"
+  }
+},
+{
+  "type": "way",
+  "id": 249512653,
+  "bounds": {
+    "minlat": -7.7938994,
+    "minlon": 110.3806586,
+    "maxlat": -7.7936653,
+    "maxlon": 110.3808379
+  },
+  "nodes": [
+    2561049397,
+    2561049398,
+    2561049434,
+    2561049430,
+    2561049427,
+    2561049420,
+    2561049397
+  ],
+  "geometry": [
+    { "lat": -7.7936653, "lon": 110.3806810 },
+    { "lat": -7.7936875, "lon": 110.3808379 },
+    { "lat": -7.7938994, "lon": 110.3808053 },
+    { "lat": -7.7938812, "lon": 110.3806871 },
+    { "lat": -7.7938489, "lon": 110.3806912 },
+    { "lat": -7.7938086, "lon": 110.3806586 },
+    { "lat": -7.7936653, "lon": 110.3806810 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "Jalan Tunjung No 1",
+    "amenity": "clinic",
+    "building": "clinic",
+    "building:condition": "good",
+    "building:floor": "ceramics",
+    "building:levels": "2",
+    "building:material": "brick",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "100-250",
+    "healthcare": "clinic",
+    "height": "10",
+    "name": "Puskesmas Gondokusuman 1",
+    "operator": "Ministry of Health",
+    "operator:en": "Ministry of Health",
+    "operator:id": "Kementerian Kesehatan",
+    "operator:type": "government",
+    "operator:wikidata": "Q12490745",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 249526898,
+  "bounds": {
+    "minlat": -7.7971097,
+    "minlon": 110.3784809,
+    "maxlat": -7.7968295,
+    "maxlon": 110.3789721
+  },
+  "nodes": [
+    2561168439,
+    2561168438,
+    2561168442,
+    2561168443,
+    2561168447,
+    2561168446,
+    2561168439
+  ],
+  "geometry": [
+    { "lat": -7.7968327, "lon": 110.3784809 },
+    { "lat": -7.7968295, "lon": 110.3789713 },
+    { "lat": -7.7969387, "lon": 110.3789721 },
+    { "lat": -7.7969414, "lon": 110.3785495 },
+    { "lat": -7.7971093, "lon": 110.3785506 },
+    { "lat": -7.7971097, "lon": 110.3784828 },
+    { "lat": -7.7968327, "lon": 110.3784809 }
+  ],
+  "tags": {
+    "amenity": "school",
+    "building": "yes",
+    "description": "bangunan",
+    "height": "15.0",
+    "name": "SMP Budya Wacana Yogyakarta"
+  }
+},
+{
+  "type": "way",
+  "id": 249654499,
+  "bounds": {
+    "minlat": -7.7978958,
+    "minlon": 110.3774217,
+    "maxlat": -7.7974257,
+    "maxlon": 110.3777309
+  },
+  "nodes": [
+    2562332933,
+    2562332945,
+    2562332942,
+    2562332929,
+    2562332933
+  ],
+  "geometry": [
+    { "lat": -7.7974724, "lon": 110.3774217 },
+    { "lat": -7.7978958, "lon": 110.3776376 },
+    { "lat": -7.7978490, "lon": 110.3777309 },
+    { "lat": -7.7974257, "lon": 110.3775150 },
+    { "lat": -7.7974724, "lon": 110.3774217 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "Jalan Suryopranoto No. 59, Gunungketur, Pakualaman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55111",
+    "amenity": "school",
+    "building": "school",
+    "building:condition": "good",
+    "building:levels": "2",
+    "building:material": "concrete",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "250-500",
+    "name": "SD Negeri Tukangan",
+    "operator:type": "government",
+    "school:type_idn": "sd",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 249655479,
+  "bounds": {
+    "minlat": -7.7944905,
+    "minlon": 110.3814815,
+    "maxlat": -7.7942604,
+    "maxlon": 110.3816827
+  },
+  "nodes": [
+    2562348633,
+    2562348637,
+    2562348642,
+    2562348634,
+    10722608837,
+    10722608838,
+    2562348633
+  ],
+  "geometry": [
+    { "lat": -7.7942604, "lon": 110.3815056 },
+    { "lat": -7.7944699, "lon": 110.3814815 },
+    { "lat": -7.7944905, "lon": 110.3816641 },
+    { "lat": -7.7943294, "lon": 110.3816827 },
+    { "lat": -7.7943146, "lon": 110.3815521 },
+    { "lat": -7.7942663, "lon": 110.3815576 },
+    { "lat": -7.7942604, "lon": 110.3815056 }
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "height": "7.8",
+    "name": "Omah Baciro"
+  }
+},
+{
+  "type": "way",
+  "id": 251109901,
+  "bounds": {
+    "minlat": -7.7973529,
+    "minlon": 110.3815237,
+    "maxlat": -7.7972265,
+    "maxlon": 110.3816890
+  },
+  "nodes": [
+    2573946377,
+    2573946386,
+    2573946384,
+    2573946380,
+    2573946377
+  ],
+  "geometry": [
+    { "lat": -7.7972265, "lon": 110.3815371 },
+    { "lat": -7.7973478, "lon": 110.3815237 },
+    { "lat": -7.7973529, "lon": 110.3816890 },
+    { "lat": -7.7972792, "lon": 110.3816856 },
+    { "lat": -7.7972265, "lon": 110.3815371 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "description": "bangunan",
+    "height": "7.8",
+    "name": "Masjid Noor Islam",
+    "religion": "muslim"
+  }
+},
+{
+  "type": "way",
+  "id": 253275634,
+  "bounds": {
+    "minlat": -7.7951509,
+    "minlon": 110.3758021,
+    "maxlat": -7.7950957,
+    "maxlon": 110.3758542
+  },
+  "nodes": [
+    2592279629,
+    2592279632,
+    2592279631,
+    2592279630,
+    2592279629
+  ],
+  "geometry": [
+    { "lat": -7.7950957, "lon": 110.3758027 },
+    { "lat": -7.7951503, "lon": 110.3758021 },
+    { "lat": -7.7951509, "lon": 110.3758536 },
+    { "lat": -7.7950963, "lon": 110.3758542 },
+    { "lat": -7.7950957, "lon": 110.3758027 }
+  ],
+  "tags": {
+    "amenity": "school",
+    "building": "yes",
+    "name": "Sanggar Belajar Martha Putra Bausasran"
+  }
+},
+{
+  "type": "way",
+  "id": 258224656,
+  "bounds": {
+    "minlat": -7.7979536,
+    "minlon": 110.3764595,
+    "maxlat": -7.7978162,
+    "maxlon": 110.3766113
+  },
+  "nodes": [
+    2636150656,
+    2636150666,
+    2636150667,
+    2636150663,
+    2636150662,
+    2636150657,
+    2636150656
+  ],
+  "geometry": [
+    { "lat": -7.7978162, "lon": 110.3764676 },
+    { "lat": -7.7979443, "lon": 110.3764595 },
+    { "lat": -7.7979536, "lon": 110.3766067 },
+    { "lat": -7.7978810, "lon": 110.3766113 },
+    { "lat": -7.7978755, "lon": 110.3765231 },
+    { "lat": -7.7978199, "lon": 110.3765266 },
+    { "lat": -7.7978162, "lon": 110.3764676 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "Jalan Purwanggan No. 53, Purwokinanti, Pakualaman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55262",
+    "amenity": "police",
+    "building": "yes",
+    "building:condition": "good",
+    "building:levels": "2",
+    "building:material": "concrete",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "50-100",
+    "name": "Polsek Pakualaman",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 260865829,
+  "bounds": {
+    "minlat": -7.8011569,
+    "minlon": 110.3751146,
+    "maxlat": -7.8009565,
+    "maxlon": 110.3754847
+  },
+  "nodes": [
+    2664440327,
+    2664440339,
+    2664440340,
+    2664440335,
+    2664440336,
+    2664440332,
+    2664440331,
+    2664440328,
+    2664440327
+  ],
+  "geometry": [
+    { "lat": -7.8009565, "lon": 110.3751229 },
+    { "lat": -7.8011455, "lon": 110.3751146 },
+    { "lat": -7.8011569, "lon": 110.3753781 },
+    { "lat": -7.8011212, "lon": 110.3753796 },
+    { "lat": -7.8011255, "lon": 110.3754796 },
+    { "lat": -7.8010101, "lon": 110.3754847 },
+    { "lat": -7.8010058, "lon": 110.3753858 },
+    { "lat": -7.8009679, "lon": 110.3753875 },
+    { "lat": -7.8009565, "lon": 110.3751229 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "Jalan Masjid Gunungketur",
+    "amenity": "place_of_worship",
+    "building": "mosque",
+    "building:condition": "good",
+    "building:levels": "1",
+    "building:material": "concrete",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "50-100",
+    "name": "Masjid Gede Puro Pakualaman",
+    "religion": "muslim",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 273660215,
+  "bounds": {
+    "minlat": -7.8010227,
+    "minlon": 110.3771720,
+    "maxlat": -7.8008243,
+    "maxlon": 110.3772945
+  },
+  "nodes": [
+    2784990756,
+    2784990794,
+    2784990797,
+    2784990760,
+    2784990756
+  ],
+  "geometry": [
+    { "lat": -7.8008243, "lon": 110.3771723 },
+    { "lat": -7.8010225, "lon": 110.3771720 },
+    { "lat": -7.8010227, "lon": 110.3772943 },
+    { "lat": -7.8008245, "lon": 110.3772945 },
+    { "lat": -7.8008243, "lon": 110.3771723 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "Jalan Jayaningprangan",
+    "amenity": "hospital",
+    "building": "hospital",
+    "building:condition": "good",
+    "building:floor": "ceramics",
+    "building:levels": "1",
+    "building:material": "brick",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "building:use": "medical",
+    "building:walls": "brick",
+    "capacity:persons": "50-100",
+    "height": "7.6",
+    "name": "Rumah Sakit Khusus Puri Nirmala",
+    "operator:type": "private",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 273670908,
+  "bounds": {
+    "minlat": -7.8016464,
+    "minlon": 110.3776729,
+    "maxlat": -7.8014587,
+    "maxlon": 110.3777826
+  },
+  "nodes": [
+    2785030030,
+    2785030047,
+    2785030053,
+    2785030032,
+    2785030030
+  ],
+  "geometry": [
+    { "lat": -7.8014587, "lon": 110.3776753 },
+    { "lat": -7.8016451, "lon": 110.3776729 },
+    { "lat": -7.8016464, "lon": 110.3777801 },
+    { "lat": -7.8014601, "lon": 110.3777826 },
+    { "lat": -7.8014587, "lon": 110.3776753 }
+  ],
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:country": "ID",
+    "addr:street": "Jalan Sultan Agung",
+    "building": "yes",
+    "building:levels": "1",
+    "height": "7.6",
+    "name": "Toko Sriwijaya",
+    "shop": "clothes"
+  }
+},
+{
+  "type": "way",
+  "id": 274713345,
+  "bounds": {
+    "minlat": -7.7991136,
+    "minlon": 110.3796769,
+    "maxlat": -7.7987566,
+    "maxlon": 110.3799519
+  },
+  "nodes": [
+    2793975685,
+    2793975702,
+    2793975701,
+    2793975712,
+    2793975713,
+    2793975700,
+    2793975699,
+    2793975704,
+    2793975703,
+    2793975686,
+    2793975685
+  ],
+  "geometry": [
+    { "lat": -7.7987566, "lon": 110.3797384 },
+    { "lat": -7.7989877, "lon": 110.3797223 },
+    { "lat": -7.7989851, "lon": 110.3796845 },
+    { "lat": -7.7990955, "lon": 110.3796769 },
+    { "lat": -7.7991136, "lon": 110.3799426 },
+    { "lat": -7.7989791, "lon": 110.3799519 },
+    { "lat": -7.7989752, "lon": 110.3798957 },
+    { "lat": -7.7989993, "lon": 110.3798941 },
+    { "lat": -7.7989953, "lon": 110.3798356 },
+    { "lat": -7.7987643, "lon": 110.3798517 },
+    { "lat": -7.7987566, "lon": 110.3797384 }
+  ],
+  "tags": {
+    "amenity": "school",
+    "building": "yes",
+    "building:levels": "3",
+    "height": "15",
+    "name": "SMP Muhammadiyah 4 Yogyakarta"
+  }
+},
+{
+  "type": "way",
+  "id": 275416671,
+  "bounds": {
+    "minlat": -7.8009091,
+    "minlon": 110.3786293,
+    "maxlat": -7.8008030,
+    "maxlon": 110.3787298
+  },
+  "nodes": [
+    2800463211,
+    2800463223,
+    10747937842,
+    10747937841,
+    2800463224,
+    2800463214,
+    2800463211
+  ],
+  "geometry": [
+    { "lat": -7.8008030, "lon": 110.3786296 },
+    { "lat": -7.8008853, "lon": 110.3786293 },
+    { "lat": -7.8008854, "lon": 110.3786574 },
+    { "lat": -7.8009089, "lon": 110.3786573 },
+    { "lat": -7.8009091, "lon": 110.3787295 },
+    { "lat": -7.8008033, "lon": 110.3787298 },
+    { "lat": -7.8008030, "lon": 110.3786296 }
+  ],
+  "tags": {
+    "amenity": "doctors",
+    "building": "yes",
+    "building:levels": "1",
+    "healthcare": "psychotherapist",
+    "healthcare:speciality": "psychiatry",
+    "height": "7.8",
+    "name": "Neuro-Psychiater Prof DR Dr Soejono"
+  }
+},
+{
+  "type": "way",
+  "id": 277271724,
+  "bounds": {
+    "minlat": -7.8029433,
+    "minlon": 110.3786272,
+    "maxlat": -7.8028073,
+    "maxlon": 110.3787760
+  },
+  "nodes": [
+    2817993123,
+    2817993136,
+    2817993138,
+    2817993134,
+    2817993135,
+    2817993130,
+    2817993128,
+    2817993125,
+    2817993123
+  ],
+  "geometry": [
+    { "lat": -7.8028073, "lon": 110.3786446 },
+    { "lat": -7.8029300, "lon": 110.3786272 },
+    { "lat": -7.8029433, "lon": 110.3787222 },
+    { "lat": -7.8028871, "lon": 110.3787302 },
+    { "lat": -7.8028928, "lon": 110.3787710 },
+    { "lat": -7.8028576, "lon": 110.3787760 },
+    { "lat": -7.8028520, "lon": 110.3787361 },
+    { "lat": -7.8028207, "lon": 110.3787405 },
+    { "lat": -7.8028073, "lon": 110.3786446 }
+  ],
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:country": "ID",
+    "addr:street": "Jalan Taman Siswa",
+    "building": "yes",
+    "building:levels": "1",
+    "height": "7.6",
+    "name": "Hotel Nirwana",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 278849245,
+  "bounds": {
+    "minlat": -7.8045685,
+    "minlon": 110.3801918,
+    "maxlat": -7.8044474,
+    "maxlon": 110.3803028
+  },
+  "nodes": [
+    2831461833,
+    2831461835,
+    2831461836,
+    2831461834,
+    2831461833
+  ],
+  "geometry": [
+    { "lat": -7.8044474, "lon": 110.3802008 },
+    { "lat": -7.8045605, "lon": 110.3801918 },
+    { "lat": -7.8045685, "lon": 110.3802938 },
+    { "lat": -7.8044554, "lon": 110.3803028 },
+    { "lat": -7.8044474, "lon": 110.3802008 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "Wirogunan RW 8",
+    "amenity": "clinic",
+    "building": "clinic",
+    "building:condition": "good",
+    "building:floor": "ceramics",
+    "building:levels": "1",
+    "building:material": "wood",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "<50",
+    "height": "7.5",
+    "name": "Posyandu Lansia dan Balita Wirogunan",
+    "operator:type": "government",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 278851427,
+  "bounds": {
+    "minlat": -7.8042340,
+    "minlon": 110.3798415,
+    "maxlat": -7.8041292,
+    "maxlon": 110.3799172
+  },
+  "nodes": [
+    2831492114,
+    2831492115,
+    2831492116,
+    2831492118,
+    2831492117,
+    2831492113,
+    2831492114
+  ],
+  "geometry": [
+    { "lat": -7.8041301, "lon": 110.3798587 },
+    { "lat": -7.8041898, "lon": 110.3798596 },
+    { "lat": -7.8041900, "lon": 110.3798415 },
+    { "lat": -7.8042340, "lon": 110.3798422 },
+    { "lat": -7.8042329, "lon": 110.3799172 },
+    { "lat": -7.8041292, "lon": 110.3799156 },
+    { "lat": -7.8041301, "lon": 110.3798587 }
+  ],
+  "tags": {
+    "amenity": "prep_school",
+    "building": "yes",
+    "building:levels": "1",
+    "height": "7.5",
+    "name": "Prosus Inten Taman Siswa Yogyakarta"
+  }
+},
+{
+  "type": "way",
+  "id": 279486738,
+  "bounds": {
+    "minlat": -7.8051450,
+    "minlon": 110.3803447,
+    "maxlat": -7.8048272,
+    "maxlon": 110.3806564
+  },
+  "nodes": [
+    2837134046,
+    2837134050,
+    2837134049,
+    2837134052,
+    5778907232,
+    2837134051,
+    2837134047,
+    2837134045,
+    2837134046
+  ],
+  "geometry": [
+    { "lat": -7.8048404, "lon": 110.3803447 },
+    { "lat": -7.8051450, "lon": 110.3803584 },
+    { "lat": -7.8051404, "lon": 110.3804610 },
+    { "lat": -7.8049587, "lon": 110.3804528 },
+    { "lat": -7.8049540, "lon": 110.3805599 },
+    { "lat": -7.8051445, "lon": 110.3805684 },
+    { "lat": -7.8051406, "lon": 110.3806564 },
+    { "lat": -7.8048272, "lon": 110.3806423 },
+    { "lat": -7.8048404, "lon": 110.3803447 }
+  ],
+  "tags": {
+    "access:roof": "yes",
+    "addr:full": "jl tamansiswa Gg Roro Mendut",
+    "amenity": "college",
+    "building": "college",
+    "building:condition": "good",
+    "building:levels": "3",
+    "building:material": "concrete",
+    "building:roof": "concrete",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "250-500",
+    "height": "7.8",
+    "name": "Laboratorium Terpadu UST",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 279671254,
+  "bounds": {
+    "minlat": -7.7991294,
+    "minlon": 110.3819147,
+    "maxlat": -7.7984537,
+    "maxlon": 110.3822748
+  },
+  "nodes": [
+    2838782845,
+    2838782848,
+    2838782850,
+    2838782859,
+    2838782858,
+    2838782865,
+    2838782866,
+    2838782869,
+    2838782868,
+    2838782871,
+    2838782872,
+    2838782870,
+    2838782867,
+    2838782849,
+    2838782851,
+    2838782846,
+    2838782845
+  ],
+  "geometry": [
+    { "lat": -7.7984537, "lon": 110.3819353 },
+    { "lat": -7.7986112, "lon": 110.3819294 },
+    { "lat": -7.7986147, "lon": 110.3820243 },
+    { "lat": -7.7987523, "lon": 110.3820191 },
+    { "lat": -7.7987501, "lon": 110.3819606 },
+    { "lat": -7.7988426, "lon": 110.3819571 },
+    { "lat": -7.7988449, "lon": 110.3820194 },
+    { "lat": -7.7989697, "lon": 110.3820147 },
+    { "lat": -7.7989662, "lon": 110.3819204 },
+    { "lat": -7.7991170, "lon": 110.3819147 },
+    { "lat": -7.7991294, "lon": 110.3822476 },
+    { "lat": -7.7989964, "lon": 110.3822527 },
+    { "lat": -7.7989927, "lon": 110.3821536 },
+    { "lat": -7.7986151, "lon": 110.3821679 },
+    { "lat": -7.7986188, "lon": 110.3822691 },
+    { "lat": -7.7984664, "lon": 110.3822748 },
+    { "lat": -7.7984537, "lon": 110.3819353 }
+  ],
+  "tags": {
+    "access:roof": "yes",
+    "addr:full": "jalan sukonandi no 10",
+    "admin_level": "4",
+    "building": "government_office",
+    "building:condition": "good",
+    "building:levels": "2",
+    "building:material": "brick",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": ">500",
+    "height": "25.0",
+    "name": "Kanwil Kementerian Agama DIY",
+    "office": "government",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 279671255,
+  "bounds": {
+    "minlat": -7.7988456,
+    "minlon": 110.3850023,
+    "maxlat": -7.7979858,
+    "maxlon": 110.3857706
+  },
+  "nodes": [
+    2838782841,
+    2838782847,
+    2838782852,
+    2838782853,
+    2838782855,
+    2838782857,
+    2838782860,
+    2838782862,
+    2838782864,
+    2838782863,
+    2838782861,
+    2838782856,
+    2838782854,
+    2838782844,
+    2838782843,
+    2838782842,
+    2838782840,
+    2838782838,
+    2838782836,
+    2838782835,
+    2838782834,
+    2838782837,
+    2838782839,
+    2838782841
+  ],
+  "geometry": [
+    { "lat": -7.7980877, "lon": 110.3850954 },
+    { "lat": -7.7986002, "lon": 110.3850023 },
+    { "lat": -7.7986624, "lon": 110.3850440 },
+    { "lat": -7.7987137, "lon": 110.3850785 },
+    { "lat": -7.7987527, "lon": 110.3851278 },
+    { "lat": -7.7987894, "lon": 110.3851820 },
+    { "lat": -7.7988187, "lon": 110.3852412 },
+    { "lat": -7.7988358, "lon": 110.3853078 },
+    { "lat": -7.7988456, "lon": 110.3853743 },
+    { "lat": -7.7988431, "lon": 110.3854483 },
+    { "lat": -7.7988260, "lon": 110.3855321 },
+    { "lat": -7.7987869, "lon": 110.3856085 },
+    { "lat": -7.7987267, "lon": 110.3856646 },
+    { "lat": -7.7982172, "lon": 110.3857706 },
+    { "lat": -7.7981740, "lon": 110.3857625 },
+    { "lat": -7.7981177, "lon": 110.3857277 },
+    { "lat": -7.7980655, "lon": 110.3856773 },
+    { "lat": -7.7980224, "lon": 110.3855987 },
+    { "lat": -7.7980004, "lon": 110.3855370 },
+    { "lat": -7.7979858, "lon": 110.3854458 },
+    { "lat": -7.7979858, "lon": 110.3853571 },
+    { "lat": -7.7980029, "lon": 110.3852634 },
+    { "lat": -7.7980395, "lon": 110.3851697 },
+    { "lat": -7.7980877, "lon": 110.3850954 }
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "1",
+    "height": "17.0",
+    "leisure": "sports_centre",
+    "name": "GOR Among Rogo"
+  }
+},
+{
+  "type": "way",
+  "id": 279671937,
+  "bounds": {
+    "minlat": -7.7991654,
+    "minlon": 110.3829477,
+    "maxlat": -7.7989702,
+    "maxlon": 110.3832379
+  },
+  "nodes": [
+    10689848290,
+    9736343735,
+    10689848289,
+    10689848288,
+    10689848290
+  ],
+  "geometry": [
+    { "lat": -7.7989702, "lon": 110.3829734 },
+    { "lat": -7.7991263, "lon": 110.3829477 },
+    { "lat": -7.7991654, "lon": 110.3832129 },
+    { "lat": -7.7990146, "lon": 110.3832379 },
+    { "lat": -7.7989702, "lon": 110.3829734 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "building:levels": "3",
+    "name": "Masjid Al-Mujaddid",
+    "religion": "muslim"
+  }
+},
+{
+  "type": "way",
+  "id": 279967733,
+  "bounds": {
+    "minlat": -7.8005776,
+    "minlon": 110.3818021,
+    "maxlat": -7.7998285,
+    "maxlon": 110.3822379
+  },
+  "nodes": [
+    2841489822,
+    2841489837,
+    2841489838,
+    2841489827,
+    2841489828,
+    2841489824,
+    2841489823,
+    2841489821,
+    2841489822
+  ],
+  "geometry": [
+    { "lat": -7.7998285, "lon": 110.3818209 },
+    { "lat": -7.8005731, "lon": 110.3818021 },
+    { "lat": -7.8005776, "lon": 110.3819856 },
+    { "lat": -7.8002725, "lon": 110.3819934 },
+    { "lat": -7.8002783, "lon": 110.3822279 },
+    { "lat": -7.7998813, "lon": 110.3822379 },
+    { "lat": -7.7998756, "lon": 110.3820101 },
+    { "lat": -7.7998332, "lon": 110.3820111 },
+    { "lat": -7.7998285, "lon": 110.3818209 }
+  ],
+  "tags": {
+    "access:roof": "yes",
+    "addr:full": "jalan sukonandi no 4",
+    "admin_level": "4",
+    "building": "government_office",
+    "building:condition": "good",
+    "building:levels": "4",
+    "building:material": "brick",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "250-500",
+    "height": "30.0",
+    "name": "Kejaksaan Tinggi DIY",
+    "office": "government",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 279969209,
+  "bounds": {
+    "minlat": -7.7999505,
+    "minlon": 110.3822657,
+    "maxlat": -7.7997748,
+    "maxlon": 110.3825050
+  },
+  "nodes": [
+    10689898640,
+    10689898642,
+    10689898643,
+    9742951761,
+    10689898640
+  ],
+  "geometry": [
+    { "lat": -7.7997748, "lon": 110.3822913 },
+    { "lat": -7.7999112, "lon": 110.3822657 },
+    { "lat": -7.7999505, "lon": 110.3824795 },
+    { "lat": -7.7998141, "lon": 110.3825050 },
+    { "lat": -7.7997748, "lon": 110.3822913 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "building:levels": "3",
+    "name": "Masjid At-Tanwir",
+    "religion": "muslim"
+  }
+},
+{
+  "type": "way",
+  "id": 279969739,
+  "bounds": {
+    "minlat": -7.8016600,
+    "minlon": 110.3817048,
+    "maxlat": -7.8013985,
+    "maxlon": 110.3821449
+  },
+  "nodes": [
+    2841506999,
+    2841507001,
+    2841507002,
+    2841507007,
+    2841507008,
+    2841507003,
+    2841507006,
+    2841507000,
+    2841506999
+  ],
+  "geometry": [
+    { "lat": -7.8013985, "lon": 110.3817084 },
+    { "lat": -7.8015738, "lon": 110.3817048 },
+    { "lat": -7.8015759, "lon": 110.3818102 },
+    { "lat": -7.8016562, "lon": 110.3818086 },
+    { "lat": -7.8016600, "lon": 110.3819974 },
+    { "lat": -7.8015773, "lon": 110.3819991 },
+    { "lat": -7.8015803, "lon": 110.3821412 },
+    { "lat": -7.8014074, "lon": 110.3821449 },
+    { "lat": -7.8013985, "lon": 110.3817084 }
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "3",
+    "height": "30.0",
+    "name": "balai besar kerajinan dan batik",
+    "office": "government"
+  }
+},
+{
+  "type": "way",
+  "id": 279970139,
+  "bounds": {
+    "minlat": -7.8016651,
+    "minlon": 110.3823193,
+    "maxlat": -7.8011759,
+    "maxlon": 110.3828768
+  },
+  "nodes": [
+    2841510126,
+    2841510135,
+    2841510134,
+    2841510131,
+    2841510130,
+    2841510137,
+    2841510136,
+    2841510127,
+    2841510126
+  ],
+  "geometry": [
+    { "lat": -7.8011759, "lon": 110.3827702 },
+    { "lat": -7.8015318, "lon": 110.3827660 },
+    { "lat": -7.8015278, "lon": 110.3824150 },
+    { "lat": -7.8013252, "lon": 110.3824173 },
+    { "lat": -7.8013241, "lon": 110.3823232 },
+    { "lat": -7.8016588, "lon": 110.3823193 },
+    { "lat": -7.8016651, "lon": 110.3828711 },
+    { "lat": -7.8011772, "lon": 110.3828768 },
+    { "lat": -7.8011759, "lon": 110.3827702 }
+  ],
+  "tags": {
+    "building": "yes",
+    "building:levels": "3",
+    "height": "30.0go",
+    "name": "dinas perindustrian dan perdagangan DIY",
+    "office": "government"
+  }
+},
+{
+  "type": "way",
+  "id": 358806296,
+  "bounds": {
+    "minlat": -7.7944229,
+    "minlon": 110.3776719,
+    "maxlat": -7.7942909,
+    "maxlon": 110.3777797
+  },
+  "nodes": [
+    3636571075,
+    3636571077,
+    3636571076,
+    3636571074,
+    3636571075
+  ],
+  "geometry": [
+    { "lat": -7.7942962, "lon": 110.3777797 },
+    { "lat": -7.7944229, "lon": 110.3777729 },
+    { "lat": -7.7944176, "lon": 110.3776719 },
+    { "lat": -7.7942909, "lon": 110.3776787 },
+    { "lat": -7.7942962, "lon": 110.3777797 }
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Intisari",
+    "shop": "supermarket"
+  }
+},
+{
+  "type": "way",
+  "id": 363455964,
+  "bounds": {
+    "minlat": -7.7982442,
+    "minlon": 110.3842348,
+    "maxlat": -7.7978470,
+    "maxlon": 110.3847326
+  },
+  "nodes": [
+    3676218670,
+    3676218671,
+    3676218672,
+    3676218673,
+    3676218674,
+    3676218675,
+    3676218676,
+    3676218677,
+    3676218678,
+    3676218679,
+    3676218680,
+    3676218693,
+    3676218670
+  ],
+  "geometry": [
+    { "lat": -7.7982442, "lon": 110.3846463 },
+    { "lat": -7.7981253, "lon": 110.3846643 },
+    { "lat": -7.7981339, "lon": 110.3847220 },
+    { "lat": -7.7980640, "lon": 110.3847326 },
+    { "lat": -7.7980556, "lon": 110.3846760 },
+    { "lat": -7.7979356, "lon": 110.3846942 },
+    { "lat": -7.7978920, "lon": 110.3843997 },
+    { "lat": -7.7978695, "lon": 110.3844031 },
+    { "lat": -7.7978470, "lon": 110.3842514 },
+    { "lat": -7.7979515, "lon": 110.3842357 },
+    { "lat": -7.7979565, "lon": 110.3842691 },
+    { "lat": -7.7981832, "lon": 110.3842348 },
+    { "lat": -7.7982442, "lon": 110.3846463 }
+  ],
+  "tags": {
+    "addr:full": "Jl. Cendana No. 15 Telo. 0274-514180, 514192 Fax 0274-563530 Yogyakarta 55166",
+    "building": "government_office",
+    "building:condition": "good",
+    "building:levels": "2",
+    "building:material": "brick",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "50-100",
+    "name": "Balai Penyelidikan dan Pengembangan Teknologi Kebencanaan Geologi (BPPTKG)",
+    "office": "research",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 383755542,
+  "bounds": {
+    "minlat": -7.7990229,
+    "minlon": 110.3822998,
+    "maxlat": -7.7983685,
+    "maxlon": 110.3834204
+  },
+  "nodes": [
+    2838788602,
+    2838789322,
+    2838788497,
+    2838788495,
+    2838789317,
+    2838788494,
+    2838788492,
+    10689848220,
+    10689848219,
+    2838788482,
+    2838779021,
+    8682383546,
+    2838779020,
+    2838779017,
+    8682383544,
+    2838779019,
+    9742951788,
+    9742951764,
+    2452334669,
+    8682383548,
+    2452334668,
+    2838788602
+  ],
+  "geometry": [
+    { "lat": -7.7990229, "lon": 110.3833790 },
+    { "lat": -7.7990005, "lon": 110.3832482 },
+    { "lat": -7.7989541, "lon": 110.3829774 },
+    { "lat": -7.7989206, "lon": 110.3827732 },
+    { "lat": -7.7989051, "lon": 110.3826792 },
+    { "lat": -7.7988936, "lon": 110.3826090 },
+    { "lat": -7.7988729, "lon": 110.3824808 },
+    { "lat": -7.7988013, "lon": 110.3824932 },
+    { "lat": -7.7988073, "lon": 110.3825338 },
+    { "lat": -7.7986535, "lon": 110.3825599 },
+    { "lat": -7.7985160, "lon": 110.3825824 },
+    { "lat": -7.7984931, "lon": 110.3824392 },
+    { "lat": -7.7984732, "lon": 110.3822998 },
+    { "lat": -7.7983685, "lon": 110.3823172 },
+    { "lat": -7.7983823, "lon": 110.3823983 },
+    { "lat": -7.7984168, "lon": 110.3826006 },
+    { "lat": -7.7984492, "lon": 110.3827907 },
+    { "lat": -7.7985089, "lon": 110.3831313 },
+    { "lat": -7.7985243, "lon": 110.3832119 },
+    { "lat": -7.7985401, "lon": 110.3833194 },
+    { "lat": -7.7985550, "lon": 110.3834204 },
+    { "lat": -7.7990229, "lon": 110.3833790 }
+  ],
+  "tags": {
+    "amenity": "university",
+    "name": "Universitas Ahmad Dahlan Kampus 1",
+    "name:etymology:wikidata": "Q4695300",
+    "name:etymology:wikipedia": "id:Ahmad Dahlan",
+    "wheelchair": "yes"
+  }
+},
+{
+  "type": "way",
+  "id": 446640777,
+  "bounds": {
+    "minlat": -7.7944823,
+    "minlon": 110.3823686,
+    "maxlat": -7.7934179,
+    "maxlon": 110.3835765
+  },
+  "nodes": [
+    4438825719,
+    13475644829,
+    13475644828,
+    4438825720,
+    13475644827,
+    13475644826,
+    4438825721,
+    13475644830,
+    4438825722,
+    4438825719
+  ],
+  "geometry": [
+    { "lat": -7.7934412, "lon": 110.3825681 },
+    { "lat": -7.7934231, "lon": 110.3825932 },
+    { "lat": -7.7934179, "lon": 110.3826248 },
+    { "lat": -7.7936381, "lon": 110.3835312 },
+    { "lat": -7.7936948, "lon": 110.3835765 },
+    { "lat": -7.7944508, "lon": 110.3833082 },
+    { "lat": -7.7944823, "lon": 110.3832513 },
+    { "lat": -7.7942797, "lon": 110.3823934 },
+    { "lat": -7.7942340, "lon": 110.3823686 },
+    { "lat": -7.7934412, "lon": 110.3825681 }
+  ],
+  "tags": {
+    "amenity": "school",
+    "name": "SMK Piri 1 Yogyakarta"
+  }
+},
+{
+  "type": "way",
+  "id": 456241531,
+  "bounds": {
+    "minlat": -7.8033404,
+    "minlon": 110.3808855,
+    "maxlat": -7.8030202,
+    "maxlon": 110.3810518
+  },
+  "nodes": [
+    4525197793,
+    4525197792,
+    4525197791,
+    4525197790,
+    4525197793
+  ],
+  "geometry": [
+    { "lat": -7.8030202, "lon": 110.3808895 },
+    { "lat": -7.8030215, "lon": 110.3810518 },
+    { "lat": -7.8033404, "lon": 110.3810477 },
+    { "lat": -7.8033378, "lon": 110.3808855 },
+    { "lat": -7.8030202, "lon": 110.3808895 }
+  ],
+  "tags": {
+    "leisure": "pitch",
+    "name": "STPP Tenis Club",
+    "sport": "tennis"
+  }
+},
+{
+  "type": "way",
+  "id": 457587448,
+  "bounds": {
+    "minlat": -7.8027766,
+    "minlon": 110.3837771,
+    "maxlat": -7.8019361,
+    "maxlon": 110.3845458
+  },
+  "nodes": [
+    4536960311,
+    4536960308,
+    4536960299,
+    4536960298,
+    4536960300,
+    4536960302,
+    4536960304,
+    4536960306,
+    4536960309,
+    4536960312,
+    4536960311
+  ],
+  "geometry": [
+    { "lat": -7.8027742, "lon": 110.3844959 },
+    { "lat": -7.8024557, "lon": 110.3845160 },
+    { "lat": -7.8019481, "lon": 110.3845458 },
+    { "lat": -7.8019361, "lon": 110.3837906 },
+    { "lat": -7.8022046, "lon": 110.3837771 },
+    { "lat": -7.8022240, "lon": 110.3839648 },
+    { "lat": -7.8024085, "lon": 110.3839348 },
+    { "lat": -7.8024381, "lon": 110.3841349 },
+    { "lat": -7.8027369, "lon": 110.3841056 },
+    { "lat": -7.8027766, "lon": 110.3844956 },
+    { "lat": -7.8027742, "lon": 110.3844959 }
+  ],
+  "tags": {
+    "amenity": "grave_yard",
+    "name": "Makam Tahunan"
+  }
+},
+{
+  "type": "way",
+  "id": 463664278,
+  "bounds": {
+    "minlat": -7.7998064,
+    "minlon": 110.3824956,
+    "maxlat": -7.7988936,
+    "maxlon": 110.3833790
+  },
+  "nodes": [
+    2838788494,
+    2838789321,
+    2838788608,
+    2838788611,
+    2838789329,
+    2838789336,
+    2838789340,
+    4589148416,
+    2748919719,
+    2838788602,
+    2838789322,
+    2838788497,
+    2838788495,
+    2838789317,
+    2838788494
+  ],
+  "geometry": [
+    { "lat": -7.7988936, "lon": 110.3826090 },
+    { "lat": -7.7990073, "lon": 110.3825927 },
+    { "lat": -7.7991866, "lon": 110.3825671 },
+    { "lat": -7.7992935, "lon": 110.3825518 },
+    { "lat": -7.7994876, "lon": 110.3825241 },
+    { "lat": -7.7995536, "lon": 110.3825148 },
+    { "lat": -7.7996662, "lon": 110.3825001 },
+    { "lat": -7.7996981, "lon": 110.3824956 },
+    { "lat": -7.7998064, "lon": 110.3832702 },
+    { "lat": -7.7990229, "lon": 110.3833790 },
+    { "lat": -7.7990005, "lon": 110.3832482 },
+    { "lat": -7.7989541, "lon": 110.3829774 },
+    { "lat": -7.7989206, "lon": 110.3827732 },
+    { "lat": -7.7989051, "lon": 110.3826792 },
+    { "lat": -7.7988936, "lon": 110.3826090 }
+  ],
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:housenumber": "7",
+    "addr:postcode": "55166",
+    "addr:street": "Jalan Kapas",
+    "amenity": "school",
+    "grades": "10-12",
+    "name": "SMA Muhammadiyah 2 Yogyakarta",
+    "operator": "Muhammadiyah",
+    "operator:type": "religious",
+    "operator:wikidata": "Q1951917",
+    "religion": "muslim",
+    "website": "https://smamuhammadiyah2yk.sch.id/",
+    "wikidata": "Q122899718"
+  }
+},
+{
+  "type": "way",
+  "id": 463664279,
+  "bounds": {
+    "minlat": -7.7993229,
+    "minlon": 110.3835665,
+    "maxlat": -7.7988585,
+    "maxlon": 110.3840416
+  },
+  "nodes": [
+    4589148418,
+    10720521931,
+    10720521930,
+    4589148419,
+    10689898474,
+    10689898473,
+    10689898455,
+    10689898456,
+    10689898472,
+    10689898471,
+    4589148420,
+    10720521933,
+    10720521932,
+    4589148421,
+    4589148418
+  ],
+  "geometry": [
+    { "lat": -7.7988585, "lon": 110.3835868 },
+    { "lat": -7.7990317, "lon": 110.3835665 },
+    { "lat": -7.7990352, "lon": 110.3835966 },
+    { "lat": -7.7992541, "lon": 110.3835709 },
+    { "lat": -7.7992587, "lon": 110.3836104 },
+    { "lat": -7.7993134, "lon": 110.3836039 },
+    { "lat": -7.7993229, "lon": 110.3836864 },
+    { "lat": -7.7992656, "lon": 110.3836931 },
+    { "lat": -7.7992710, "lon": 110.3837397 },
+    { "lat": -7.7990503, "lon": 110.3837657 },
+    { "lat": -7.7990809, "lon": 110.3840305 },
+    { "lat": -7.7989869, "lon": 110.3840416 },
+    { "lat": -7.7989809, "lon": 110.3839902 },
+    { "lat": -7.7989061, "lon": 110.3839990 },
+    { "lat": -7.7988585, "lon": 110.3835868 }
+  ],
+  "tags": {
+    "amenity": "courthouse",
+    "building": "yes",
+    "name": "Pengadilan Negeri Yogyakarta"
+  }
+},
+{
+  "type": "way",
+  "id": 463664281,
+  "bounds": {
+    "minlat": -7.7999557,
+    "minlon": 110.3839301,
+    "maxlat": -7.7989765,
+    "maxlon": 110.3844550
+  },
+  "nodes": [
+    5549359518,
+    7266146817,
+    7266146818,
+    7266146819,
+    7266146820,
+    4589148428,
+    7266146816,
+    7266146815,
+    4589148429,
+    4589148430,
+    7266146813,
+    7266146814,
+    7266146812,
+    7266146811,
+    7266146810,
+    7266146809,
+    7266146808,
+    7266146807,
+    7266146805,
+    7266146806,
+    7266146804,
+    7266146803,
+    5549359518
+  ],
+  "geometry": [
+    { "lat": -7.7989765, "lon": 110.3840939 },
+    { "lat": -7.7989984, "lon": 110.3842257 },
+    { "lat": -7.7990315, "lon": 110.3842201 },
+    { "lat": -7.7990456, "lon": 110.3843046 },
+    { "lat": -7.7990156, "lon": 110.3843097 },
+    { "lat": -7.7990398, "lon": 110.3844550 },
+    { "lat": -7.7998145, "lon": 110.3843234 },
+    { "lat": -7.7998211, "lon": 110.3843634 },
+    { "lat": -7.7999557, "lon": 110.3843406 },
+    { "lat": -7.7998873, "lon": 110.3839301 },
+    { "lat": -7.7994591, "lon": 110.3840028 },
+    { "lat": -7.7994813, "lon": 110.3841359 },
+    { "lat": -7.7996610, "lon": 110.3841054 },
+    { "lat": -7.7996759, "lon": 110.3841948 },
+    { "lat": -7.7994733, "lon": 110.3842292 },
+    { "lat": -7.7994377, "lon": 110.3840156 },
+    { "lat": -7.7992925, "lon": 110.3840403 },
+    { "lat": -7.7993276, "lon": 110.3842508 },
+    { "lat": -7.7991299, "lon": 110.3842844 },
+    { "lat": -7.7991147, "lon": 110.3841934 },
+    { "lat": -7.7992734, "lon": 110.3841665 },
+    { "lat": -7.7992535, "lon": 110.3840469 },
+    { "lat": -7.7989765, "lon": 110.3840939 }
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Dinas Pendidikan Pemuda Dan Olahraga DIY",
+    "office": "government"
+  }
+},
+{
+  "type": "way",
+  "id": 463664282,
+  "bounds": {
+    "minlat": -7.8000870,
+    "minlon": 110.3822458,
+    "maxlat": -7.7997181,
+    "maxlon": 110.3832632
+  },
+  "nodes": [
+    4589148431,
+    2841496574,
+    2841496575,
+    2841496578,
+    2841496585,
+    4589148432,
+    4589148433,
+    4589148434,
+    2841502703,
+    10689898641,
+    4589148431
+  ],
+  "geometry": [
+    { "lat": -7.7999131, "lon": 110.3822458 },
+    { "lat": -7.7999155, "lon": 110.3822632 },
+    { "lat": -7.7999583, "lon": 110.3824615 },
+    { "lat": -7.8000347, "lon": 110.3828711 },
+    { "lat": -7.8000865, "lon": 110.3831510 },
+    { "lat": -7.8000870, "lon": 110.3832435 },
+    { "lat": -7.7998818, "lon": 110.3832632 },
+    { "lat": -7.7997181, "lon": 110.3822853 },
+    { "lat": -7.7998019, "lon": 110.3822682 },
+    { "lat": -7.7998696, "lon": 110.3822552 },
+    { "lat": -7.7999131, "lon": 110.3822458 }
+  ],
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:housenumber": "5A",
+    "addr:street": "Jalan Kapas II",
+    "amenity": "school",
+    "grades": "1-3",
+    "name": "SD Muhammadiyah Sokonandi Unit 1",
+    "operator": "Muhammadiyah",
+    "operator:type": "religious",
+    "operator:wikidata": "Q1951917",
+    "religion": "muslim",
+    "website": "https://sdmuhsokonandi.sch.id/"
+  }
+},
+{
+  "type": "way",
+  "id": 463664283,
+  "bounds": {
+    "minlat": -7.7986645,
+    "minlon": 110.3837876,
+    "maxlat": -7.7983182,
+    "maxlon": 110.3843216
+  },
+  "nodes": [
+    10689898426,
+    10689898425,
+    10689898436,
+    10689898435,
+    10689898438,
+    10689898433,
+    10689898434,
+    10689898437,
+    4589148446,
+    4589148445,
+    4589148444,
+    10689898432,
+    10689898431,
+    10689898430,
+    4589148441,
+    10689898428,
+    10689898427,
+    10689898429,
+    10689898426
+  ],
+  "geometry": [
+    { "lat": -7.7983469, "lon": 110.3839013 },
+    { "lat": -7.7983182, "lon": 110.3839074 },
+    { "lat": -7.7983543, "lon": 110.3842572 },
+    { "lat": -7.7983680, "lon": 110.3842530 },
+    { "lat": -7.7983805, "lon": 110.3843147 },
+    { "lat": -7.7984358, "lon": 110.3843032 },
+    { "lat": -7.7984302, "lon": 110.3842758 },
+    { "lat": -7.7984633, "lon": 110.3842690 },
+    { "lat": -7.7984740, "lon": 110.3843216 },
+    { "lat": -7.7985919, "lon": 110.3842973 },
+    { "lat": -7.7985796, "lon": 110.3842363 },
+    { "lat": -7.7986435, "lon": 110.3842231 },
+    { "lat": -7.7986388, "lon": 110.3842002 },
+    { "lat": -7.7986645, "lon": 110.3841917 },
+    { "lat": -7.7986407, "lon": 110.3840591 },
+    { "lat": -7.7985728, "lon": 110.3840709 },
+    { "lat": -7.7985153, "lon": 110.3837876 },
+    { "lat": -7.7983316, "lon": 110.3838256 },
+    { "lat": -7.7983469, "lon": 110.3839013 }
+  ],
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "amenity": "studio",
+    "building": "yes",
+    "name": "ADi TV",
+    "studio": "television"
+  }
+},
+{
+  "type": "way",
+  "id": 517799630,
+  "bounds": {
+    "minlat": -7.8015808,
+    "minlon": 110.3832082,
+    "maxlat": -7.8009289,
+    "maxlon": 110.3840013
+  },
+  "nodes": [
+    5052352396,
+    5821721942,
+    5821721945,
+    5821721944,
+    5821721943,
+    5052352389,
+    5052352390,
+    5052352391,
+    5052352392,
+    5052352393,
+    5052352394,
+    5052352395,
+    5052352396
+  ],
+  "geometry": [
+    { "lat": -7.8009892, "lon": 110.3832201 },
+    { "lat": -7.8009971, "lon": 110.3836118 },
+    { "lat": -7.8009289, "lon": 110.3836132 },
+    { "lat": -7.8009315, "lon": 110.3837405 },
+    { "lat": -7.8010099, "lon": 110.3837389 },
+    { "lat": -7.8010151, "lon": 110.3840013 },
+    { "lat": -7.8015808, "lon": 110.3839899 },
+    { "lat": -7.8015773, "lon": 110.3838178 },
+    { "lat": -7.8015048, "lon": 110.3838193 },
+    { "lat": -7.8014962, "lon": 110.3833889 },
+    { "lat": -7.8015671, "lon": 110.3833875 },
+    { "lat": -7.8015634, "lon": 110.3832082 },
+    { "lat": -7.8009892, "lon": 110.3832201 }
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "gedung keuangan negara",
+    "office": "government"
+  }
+},
+{
+  "type": "way",
+  "id": 517799651,
+  "bounds": {
+    "minlat": -7.8018294,
+    "minlon": 110.3857380,
+    "maxlat": -7.8016847,
+    "maxlon": 110.3858614
+  },
+  "nodes": [
+    5052352691,
+    5052352690,
+    5052352689,
+    5052352688,
+    5052352691
+  ],
+  "geometry": [
+    { "lat": -7.8016847, "lon": 110.3857460 },
+    { "lat": -7.8018228, "lon": 110.3857380 },
+    { "lat": -7.8018294, "lon": 110.3858534 },
+    { "lat": -7.8016913, "lon": 110.3858614 },
+    { "lat": -7.8016847, "lon": 110.3857460 }
+  ],
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:street": "Jalan Kusumanegara",
+    "amenity": "fuel",
+    "brand": "Pertamina",
+    "brand:wikidata": "Q1641044",
+    "brand:wikipedia": "en:Pertamina",
+    "name": "SPBU Pertamina 44.551.09 Semaki"
+  }
+},
+{
+  "type": "way",
+  "id": 517889470,
+  "bounds": {
+    "minlat": -7.8022119,
+    "minlon": 110.3855733,
+    "maxlat": -7.8020103,
+    "maxlon": 110.3857145
+  },
+  "nodes": [
+    5053013799,
+    5053013798,
+    5053013797,
+    5053013796,
+    5053013799
+  ],
+  "geometry": [
+    { "lat": -7.8020103, "lon": 110.3856058 },
+    { "lat": -7.8021929, "lon": 110.3855733 },
+    { "lat": -7.8022119, "lon": 110.3856820 },
+    { "lat": -7.8020293, "lon": 110.3857145 },
+    { "lat": -7.8020103, "lon": 110.3856058 }
+  ],
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:street": "Jalan Kusumanegara",
+    "amenity": "pharmacy",
+    "brand": "Kimia Farma",
+    "brand:wikidata": "Q11264892",
+    "brand:wikipedia": "en:Kimia Farma",
+    "building": "yes",
+    "dispensing": "yes",
+    "healthcare": "pharmacy",
+    "name": "Kimia Farma"
+  }
+},
+{
+  "type": "way",
+  "id": 519209387,
+  "bounds": {
+    "minlat": -7.8050099,
+    "minlon": 110.3767388,
+    "maxlat": -7.8048701,
+    "maxlon": 110.3769185
+  },
+  "nodes": [
+    5063330878,
+    5063330877,
+    5063330876,
+    5063330875,
+    5063330874,
+    5063330873,
+    5063330872,
+    5063330871,
+    5063330878
+  ],
+  "geometry": [
+    { "lat": -7.8048701, "lon": 110.3767586 },
+    { "lat": -7.8049949, "lon": 110.3767388 },
+    { "lat": -7.8050099, "lon": 110.3768351 },
+    { "lat": -7.8049831, "lon": 110.3768394 },
+    { "lat": -7.8049936, "lon": 110.3769067 },
+    { "lat": -7.8049192, "lon": 110.3769185 },
+    { "lat": -7.8049097, "lon": 110.3768573 },
+    { "lat": -7.8048861, "lon": 110.3768610 },
+    { "lat": -7.8048701, "lon": 110.3767586 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "surokarsan",
+    "amenity": "place_of_worship",
+    "building": "mosque",
+    "building:condition": "good",
+    "building:levels": "1",
+    "building:material": "concrete",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "50-100",
+    "name": "Masjid Nurul Huda",
+    "religion": "muslim",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 519209389,
+  "bounds": {
+    "minlat": -7.8046211,
+    "minlon": 110.3769380,
+    "maxlat": -7.8044878,
+    "maxlon": 110.3771021
+  },
+  "nodes": [
+    5063330888,
+    5063330887,
+    5063330886,
+    5063330885,
+    5063330884,
+    5063330883,
+    5063330888
+  ],
+  "geometry": [
+    { "lat": -7.8044878, "lon": 110.3769521 },
+    { "lat": -7.8046022, "lon": 110.3769380 },
+    { "lat": -7.8046211, "lon": 110.3770942 },
+    { "lat": -7.8045571, "lon": 110.3771021 },
+    { "lat": -7.8045494, "lon": 110.3770382 },
+    { "lat": -7.8044990, "lon": 110.3770444 },
+    { "lat": -7.8044878, "lon": 110.3769521 }
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Hotel Musafira Gunung Ketur",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 535309935,
+  "bounds": {
+    "minlat": -7.8020150,
+    "minlon": 110.3782465,
+    "maxlat": -7.8018629,
+    "maxlon": 110.3783024
+  },
+  "nodes": [
+    5189067245,
+    5189067244,
+    5189067243,
+    5189067242,
+    5189067245
+  ],
+  "geometry": [
+    { "lat": -7.8018629, "lon": 110.3782514 },
+    { "lat": -7.8018645, "lon": 110.3783024 },
+    { "lat": -7.8020150, "lon": 110.3782975 },
+    { "lat": -7.8020134, "lon": 110.3782465 },
+    { "lat": -7.8018629, "lon": 110.3782514 }
+  ],
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:country": "ID",
+    "addr:district": "Pakualaman",
+    "addr:street": "Jalan Sultan Agung",
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "Depot Dahar \"Bu Tuk\""
+  }
+},
+{
+  "type": "way",
+  "id": 535309937,
+  "bounds": {
+    "minlat": -7.8020037,
+    "minlon": 110.3779442,
+    "maxlat": -7.8018190,
+    "maxlon": 110.3780765
+  },
+  "nodes": [
+    5189067249,
+    5189067248,
+    5189067247,
+    5189067246,
+    10747843332,
+    10747843331,
+    5189067249
+  ],
+  "geometry": [
+    { "lat": -7.8018190, "lon": 110.3779449 },
+    { "lat": -7.8018197, "lon": 110.3780765 },
+    { "lat": -7.8020037, "lon": 110.3780755 },
+    { "lat": -7.8020031, "lon": 110.3779598 },
+    { "lat": -7.8019428, "lon": 110.3779601 },
+    { "lat": -7.8019427, "lon": 110.3779442 },
+    { "lat": -7.8018190, "lon": 110.3779449 }
+  ],
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:country": "ID",
+    "addr:district": "Pakualaman",
+    "addr:postcode": "55111",
+    "addr:province": "Daerah Istimewa Yogyakarta",
+    "addr:street": "Jalan Sultan Agung",
+    "addr:subdistrict": "Gunungketur",
+    "amenity": "bank",
+    "atm": "yes",
+    "brand": "BRI",
+    "brand:wikidata": "Q623042",
+    "building": "yes",
+    "building:levels": "3",
+    "drive_through": "no",
+    "name": "BRI",
+    "official_name": "Bank Rakyat Indonesia"
+  }
+},
+{
+  "type": "way",
+  "id": 563038687,
+  "bounds": {
+    "minlat": -7.7987196,
+    "minlon": 110.3841501,
+    "maxlat": -7.7975231,
+    "maxlon": 110.3849522
+  },
+  "nodes": [
+    5426695935,
+    5453466841,
+    5426695933,
+    5426695942,
+    10689848212,
+    10689848213,
+    5426695932,
+    5426695940,
+    5426695944,
+    10689848215,
+    10689848214,
+    5426695936,
+    5426695941,
+    5426695934,
+    5426695938,
+    5426695937,
+    5426695939,
+    5426695945,
+    5426695935
+  ],
+  "geometry": [
+    { "lat": -7.7981767, "lon": 110.3848784 },
+    { "lat": -7.7987196, "lon": 110.3847715 },
+    { "lat": -7.7986824, "lon": 110.3845867 },
+    { "lat": -7.7984678, "lon": 110.3846242 },
+    { "lat": -7.7984267, "lon": 110.3844016 },
+    { "lat": -7.7983722, "lon": 110.3844090 },
+    { "lat": -7.7983429, "lon": 110.3843211 },
+    { "lat": -7.7982267, "lon": 110.3843433 },
+    { "lat": -7.7981968, "lon": 110.3842105 },
+    { "lat": -7.7979696, "lon": 110.3842326 },
+    { "lat": -7.7979450, "lon": 110.3841501 },
+    { "lat": -7.7977176, "lon": 110.3842134 },
+    { "lat": -7.7976042, "lon": 110.3842336 },
+    { "lat": -7.7975231, "lon": 110.3842503 },
+    { "lat": -7.7975658, "lon": 110.3846012 },
+    { "lat": -7.7976460, "lon": 110.3848945 },
+    { "lat": -7.7977546, "lon": 110.3849522 },
+    { "lat": -7.7979491, "lon": 110.3849234 },
+    { "lat": -7.7981767, "lon": 110.3848784 }
+  ],
+  "tags": {
+    "leisure": "nature_reserve",
+    "name": "Sasana Wayang Park"
+  }
+},
+{
+  "type": "way",
+  "id": 592216377,
+  "bounds": {
+    "minlat": -7.7979830,
+    "minlon": 110.3760262,
+    "maxlat": -7.7977543,
+    "maxlon": 110.3761997
+  },
+  "nodes": [
+    5652751064,
+    5652751061,
+    5652751062,
+    5652751063,
+    5652751064
+  ],
+  "geometry": [
+    { "lat": -7.7977543, "lon": 110.3760482 },
+    { "lat": -7.7977696, "lon": 110.3761997 },
+    { "lat": -7.7979830, "lon": 110.3761776 },
+    { "lat": -7.7979676, "lon": 110.3760262 },
+    { "lat": -7.7977543, "lon": 110.3760482 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "Jalan Purwanggan No. 45, Purwokinanti, Pakualaman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55166",
+    "amenity": "clinic",
+    "building": "clinic",
+    "building:condition": "good",
+    "building:floor": "ceramics",
+    "building:levels": "2",
+    "building:material": "concrete",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "50-100",
+    "name": "Klinik Utama Khadijah",
+    "operator:type": "private",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 592216378,
+  "bounds": {
+    "minlat": -7.7978858,
+    "minlon": 110.3777450,
+    "maxlat": -7.7973304,
+    "maxlon": 110.3783525
+  },
+  "nodes": [
+    5652751071,
+    5652751070,
+    5652751069,
+    5668408421,
+    5652751068,
+    5668408020,
+    5652751067,
+    5652751066,
+    5652751065,
+    5652751071
+  ],
+  "geometry": [
+    { "lat": -7.7973304, "lon": 110.3777933 },
+    { "lat": -7.7973517, "lon": 110.3783525 },
+    { "lat": -7.7978739, "lon": 110.3783431 },
+    { "lat": -7.7978858, "lon": 110.3782063 },
+    { "lat": -7.7976646, "lon": 110.3782197 },
+    { "lat": -7.7976586, "lon": 110.3778415 },
+    { "lat": -7.7974806, "lon": 110.3777504 },
+    { "lat": -7.7974155, "lon": 110.3777450 },
+    { "lat": -7.7973637, "lon": 110.3777624 },
+    { "lat": -7.7973304, "lon": 110.3777933 }
+  ],
+  "tags": {
+    "addr:full": "Jalan Ki Mangunsarkoro No. 80, Baciro, Gondokusuman, Kota Yogyakarta, Daerah Istimewa Yogyakarta 55225",
+    "amenity": "school",
+    "name": "SD Kanisius Gayam 1",
+    "operator:type": "private",
+    "school:type_idn": "sd"
+  }
+},
+{
+  "type": "way",
+  "id": 592216379,
+  "bounds": {
+    "minlat": -7.7977430,
+    "minlon": 110.3779207,
+    "maxlat": -7.7976648,
+    "maxlon": 110.3782017
+  },
+  "nodes": [
+    5652751075,
+    5652751072,
+    5652751073,
+    5652751074,
+    5652751075
+  ],
+  "geometry": [
+    { "lat": -7.7977350, "lon": 110.3779207 },
+    { "lat": -7.7976648, "lon": 110.3779227 },
+    { "lat": -7.7976728, "lon": 110.3782017 },
+    { "lat": -7.7977430, "lon": 110.3781996 },
+    { "lat": -7.7977350, "lon": 110.3779207 }
+  ],
+  "tags": {
+    "access:roof": "yes",
+    "addr:full": "jalan ki mangunsarkoro 80 yogyakarta 55225",
+    "amenity": "kindergarten",
+    "building": "kindergarten",
+    "building:condition": "good",
+    "building:levels": "1",
+    "building:material": "brick",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "50-100",
+    "name": "Taman Penitipan Anak dan Taman Kanak-Kanak Grha Asih Anak",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 593690393,
+  "bounds": {
+    "minlat": -7.8021912,
+    "minlon": 110.3783405,
+    "maxlat": -7.8018494,
+    "maxlon": 110.3784802
+  },
+  "nodes": [
+    5663161184,
+    5663161181,
+    10283232297,
+    5663161182,
+    5663161183,
+    10283232296,
+    5663161184
+  ],
+  "geometry": [
+    { "lat": -7.8018494, "lon": 110.3783700 },
+    { "lat": -7.8018590, "lon": 110.3784802 },
+    { "lat": -7.8020614, "lon": 110.3784622 },
+    { "lat": -7.8021912, "lon": 110.3784507 },
+    { "lat": -7.8021815, "lon": 110.3783405 },
+    { "lat": -7.8019625, "lon": 110.3783597 },
+    { "lat": -7.8018494, "lon": 110.3783700 }
+  ],
+  "tags": {
+    "addr:full": "jl sultan Agung sentul",
+    "amenity": "fuel",
+    "brand": "Pertamina",
+    "brand:wikidata": "Q1641044",
+    "brand:wikipedia": "en:Pertamina",
+    "compressed_air": "yes",
+    "name": "SPBU Pertamina 44.551.15 Sentul",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 594177110,
+  "bounds": {
+    "minlat": -7.8039683,
+    "minlon": 110.3792812,
+    "maxlat": -7.8038464,
+    "maxlon": 110.3794150
+  },
+  "nodes": [
+    5666393340,
+    5666393337,
+    5666393338,
+    5666393339,
+    5666393340
+  ],
+  "geometry": [
+    { "lat": -7.8038464, "lon": 110.3792906 },
+    { "lat": -7.8038567, "lon": 110.3794150 },
+    { "lat": -7.8039683, "lon": 110.3794056 },
+    { "lat": -7.8039580, "lon": 110.3792812 },
+    { "lat": -7.8038464, "lon": 110.3792906 }
+  ],
+  "tags": {
+    "access:roof": "yes",
+    "addr:full": "jl tamansiswa gg pronocitro sentulrejo",
+    "amenity": "place_of_worship",
+    "building": "mosque",
+    "building:condition": "good",
+    "building:levels": "2",
+    "building:material": "concrete",
+    "building:roof": "concrete",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "<50",
+    "name": "Masjid Baitun Na'im",
+    "religion": "muslim",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 594177113,
+  "bounds": {
+    "minlat": -7.8051817,
+    "minlon": 110.3799149,
+    "maxlat": -7.8045971,
+    "maxlon": 110.3803240
+  },
+  "nodes": [
+    5666393354,
+    5666393353,
+    5666393352,
+    5666393351,
+    5666393350,
+    5666393349,
+    5666393354
+  ],
+  "geometry": [
+    { "lat": -7.8045971, "lon": 110.3799525 },
+    { "lat": -7.8051525, "lon": 110.3799149 },
+    { "lat": -7.8051817, "lon": 110.3803146 },
+    { "lat": -7.8048821, "lon": 110.3803240 },
+    { "lat": -7.8047432, "lon": 110.3803186 },
+    { "lat": -7.8046210, "lon": 110.3802864 },
+    { "lat": -7.8045971, "lon": 110.3799525 }
+  ],
+  "tags": {
+    "addr:full": "jl tamansiswa no 25 Gg Roro Mendut",
+    "amenity": "school",
+    "name": "SMK Ibu Pawiyatan Tamansiswa",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 594421955,
+  "bounds": {
+    "minlat": -7.8018682,
+    "minlon": 110.3877684,
+    "maxlat": -7.8017625,
+    "maxlon": 110.3878284
+  },
+  "nodes": [
+    5668408019,
+    5668408018,
+    5668408017,
+    5668408016,
+    5668408019
+  ],
+  "geometry": [
+    { "lat": -7.8017625, "lon": 110.3877693 },
+    { "lat": -7.8017629, "lon": 110.3878284 },
+    { "lat": -7.8018682, "lon": 110.3878275 },
+    { "lat": -7.8018677, "lon": 110.3877684 },
+    { "lat": -7.8017625, "lon": 110.3877693 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "Jl. Kusuma Negara No. 109 Yogyakarta 55165",
+    "amenity": "pharmacy",
+    "building": "pharmacy",
+    "building:condition": "good",
+    "building:levels": "1",
+    "building:material": "brick",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "<50",
+    "healthcare": "pharmacy",
+    "name": "Apotek Mari Sehat Indonesia (MSI)",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 594421995,
+  "bounds": {
+    "minlat": -7.8010381,
+    "minlon": 110.3877431,
+    "maxlat": -7.8009233,
+    "maxlon": 110.3879991
+  },
+  "nodes": [
+    5668408457,
+    5668408456,
+    5668408455,
+    5668408454,
+    5668408457
+  ],
+  "geometry": [
+    { "lat": -7.8009233, "lon": 110.3877443 },
+    { "lat": -7.8009259, "lon": 110.3879991 },
+    { "lat": -7.8010381, "lon": 110.3879979 },
+    { "lat": -7.8010354, "lon": 110.3877431 },
+    { "lat": -7.8009233, "lon": 110.3877443 }
+  ],
+  "tags": {
+    "access:roof": "yes",
+    "addr:full": "Jl. Miliran 16 Muja Muju Umbulharjo Yogyakarta",
+    "amenity": "college",
+    "building": "college",
+    "building:condition": "good",
+    "building:levels": "4",
+    "building:material": "brick",
+    "building:roof": "concrete",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "100-250",
+    "name": "Fakultas Teknik Universitas Sarjanawiyata Tamansiswa Yogyakarta",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 594422022,
+  "bounds": {
+    "minlat": -7.8019459,
+    "minlon": 110.3883317,
+    "maxlat": -7.8008470,
+    "maxlon": 110.3887957
+  },
+  "nodes": [
+    5668408489,
+    5668408488,
+    5668408487,
+    5668408486,
+    5825065584,
+    5825065585,
+    5668408489
+  ],
+  "geometry": [
+    { "lat": -7.8008901, "lon": 110.3883317 },
+    { "lat": -7.8019227, "lon": 110.3883474 },
+    { "lat": -7.8019459, "lon": 110.3887924 },
+    { "lat": -7.8011850, "lon": 110.3887957 },
+    { "lat": -7.8009910, "lon": 110.3885725 },
+    { "lat": -7.8008470, "lon": 110.3883467 },
+    { "lat": -7.8008901, "lon": 110.3883317 }
+  ],
+  "tags": {
+    "addr:full": "Jl. Kusuma Negara No. 121 Yogyakarta",
+    "amenity": "college",
+    "name": "Fakultas Ekonomi Universitas Sarjanawiyata Tamansiswa Yogyakarta",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 594852396,
+  "bounds": {
+    "minlat": -7.8022774,
+    "minlon": 110.3771584,
+    "maxlat": -7.8018662,
+    "maxlon": 110.3777958
+  },
+  "nodes": [
+    5671318165,
+    5671318164,
+    5671318163,
+    5671318162,
+    5671318165
+  ],
+  "geometry": [
+    { "lat": -7.8018662, "lon": 110.3771689 },
+    { "lat": -7.8018826, "lon": 110.3777958 },
+    { "lat": -7.8022774, "lon": 110.3777853 },
+    { "lat": -7.8022610, "lon": 110.3771584 },
+    { "lat": -7.8018662, "lon": 110.3771689 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "Jalan Sultan Agung No. 52",
+    "amenity": "marketplace",
+    "building": "marketplace",
+    "building:condition": "good",
+    "building:floor": "ceramics",
+    "building:levels": "1",
+    "building:material": "concrete",
+    "building:roof": "asbestos",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "250-500",
+    "marketplace:authority": "officially_managed",
+    "marketplace:type": "mixed",
+    "name": "Pasar Sentul",
+    "opening_hours": "04:00-16:00",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 594852452,
+  "bounds": {
+    "minlat": -7.8039356,
+    "minlon": 110.3884396,
+    "maxlat": -7.8037834,
+    "maxlon": 110.3885778
+  },
+  "nodes": [
+    5671318355,
+    5671318352,
+    5671318353,
+    5671318354,
+    5671318355
+  ],
+  "geometry": [
+    { "lat": -7.8037834, "lon": 110.3884481 },
+    { "lat": -7.8037908, "lon": 110.3885778 },
+    { "lat": -7.8039356, "lon": 110.3885693 },
+    { "lat": -7.8039282, "lon": 110.3884396 },
+    { "lat": -7.8037834, "lon": 110.3884481 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "jalan Glagahsari",
+    "amenity": "place_of_worship",
+    "building": "mosque",
+    "building:condition": "good",
+    "building:levels": "2",
+    "building:material": "brick",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "50-100",
+    "name": "Masjid Sebelas Maret",
+    "religion": "muslim",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 594985424,
+  "bounds": {
+    "minlat": -7.8006460,
+    "minlon": 110.3816451,
+    "maxlat": -7.8004927,
+    "maxlon": 110.3818082
+  },
+  "nodes": [
+    5672032922,
+    5672027719,
+    5672027720,
+    5672032921,
+    5672032922
+  ],
+  "geometry": [
+    { "lat": -7.8005546, "lon": 110.3816451 },
+    { "lat": -7.8004927, "lon": 110.3817564 },
+    { "lat": -7.8005841, "lon": 110.3818082 },
+    { "lat": -7.8006460, "lon": 110.3816969 },
+    { "lat": -7.8005546, "lon": 110.3816451 }
+  ],
+  "tags": {
+    "access:roof": "yes",
+    "addr:full": "jalan kapas",
+    "amenity": "place_of_worship",
+    "building": "mosque",
+    "building:condition": "good",
+    "building:levels": "2",
+    "building:material": "brick",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "100-250",
+    "name": "Masjid Al Mizan",
+    "religion": "muslim",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 595383423,
+  "bounds": {
+    "minlat": -7.8017218,
+    "minlon": 110.3804930,
+    "maxlat": -7.8009259,
+    "maxlon": 110.3815028
+  },
+  "nodes": [
+    5674594660,
+    5674594659,
+    5674594658,
+    5674594657,
+    5674594656,
+    5674594655,
+    5674594654,
+    5674594653,
+    5674594652,
+    5674594660
+  ],
+  "geometry": [
+    { "lat": -7.8009259, "lon": 110.3805050 },
+    { "lat": -7.8009618, "lon": 110.3813606 },
+    { "lat": -7.8014534, "lon": 110.3813499 },
+    { "lat": -7.8014640, "lon": 110.3815028 },
+    { "lat": -7.8017218, "lon": 110.3814948 },
+    { "lat": -7.8016899, "lon": 110.3805184 },
+    { "lat": -7.8015650, "lon": 110.3805158 },
+    { "lat": -7.8012940, "lon": 110.3805010 },
+    { "lat": -7.8011106, "lon": 110.3804930 },
+    { "lat": -7.8009259, "lon": 110.3805050 }
+  ],
+  "tags": {
+    "addr:full": "jalan kusumanegara",
+    "amenity": "school",
+    "name": "SMK SMTI Yogyakarta",
+    "operator:type": "private",
+    "school:type_idn": "sma",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 610095211,
+  "bounds": {
+    "minlat": -7.7939068,
+    "minlon": 110.3777564,
+    "maxlat": -7.7938041,
+    "maxlon": 110.3778119
+  },
+  "nodes": [
+    5778310348,
+    5778310345,
+    5778310346,
+    5778310347,
+    5778310348
+  ],
+  "geometry": [
+    { "lat": -7.7938041, "lon": 110.3777571 },
+    { "lat": -7.7938045, "lon": 110.3778119 },
+    { "lat": -7.7939068, "lon": 110.3778113 },
+    { "lat": -7.7939064, "lon": 110.3777564 },
+    { "lat": -7.7938041, "lon": 110.3777571 }
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Cashlez Homestay",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 610095221,
+  "bounds": {
+    "minlat": -7.7937049,
+    "minlon": 110.3775665,
+    "maxlat": -7.7935848,
+    "maxlon": 110.3777038
+  },
+  "nodes": [
+    5778310386,
+    2561118093,
+    2561118113,
+    5778310385,
+    5778310388,
+    5778310389,
+    5778310390,
+    5778310387,
+    5778310386
+  ],
+  "geometry": [
+    { "lat": -7.7936015, "lon": 110.3776335 },
+    { "lat": -7.7936069, "lon": 110.3777038 },
+    { "lat": -7.7937039, "lon": 110.3776962 },
+    { "lat": -7.7936985, "lon": 110.3776262 },
+    { "lat": -7.7937049, "lon": 110.3776257 },
+    { "lat": -7.7937003, "lon": 110.3775665 },
+    { "lat": -7.7935848, "lon": 110.3775755 },
+    { "lat": -7.7935893, "lon": 110.3776345 },
+    { "lat": -7.7936015, "lon": 110.3776335 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "Jalan Dr. Sutomo",
+    "addr:housenumber": "41",
+    "amenity": "clinic",
+    "building": "clinic",
+    "building:condition": "good",
+    "building:floor": "ceramics",
+    "building:levels": "2",
+    "building:material": "brick",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "100-250",
+    "height": "7.8",
+    "name": "Klinik Parahita",
+    "operator:type": "private",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 610104411,
+  "bounds": {
+    "minlat": -7.8036064,
+    "minlon": 110.3779016,
+    "maxlat": -7.8031769,
+    "maxlon": 110.3781926
+  },
+  "nodes": [
+    5778373587,
+    5778373586,
+    10747643966,
+    10747643967,
+    10747643968,
+    10747643969,
+    5778373585,
+    5778373584,
+    5778373587
+  ],
+  "geometry": [
+    { "lat": -7.8031769, "lon": 110.3779912 },
+    { "lat": -7.8032059, "lon": 110.3781226 },
+    { "lat": -7.8033290, "lon": 110.3780950 },
+    { "lat": -7.8033505, "lon": 110.3781926 },
+    { "lat": -7.8034955, "lon": 110.3781600 },
+    { "lat": -7.8034751, "lon": 110.3780674 },
+    { "lat": -7.8036064, "lon": 110.3780379 },
+    { "lat": -7.8035764, "lon": 110.3779016 },
+    { "lat": -7.8031769, "lon": 110.3779912 }
+  ],
+  "tags": {
+    "addr:street": "Jalan Taman Siswa",
+    "amenity": "prison",
+    "building": "yes",
+    "building:levels": "2",
+    "building:roof": "tile",
+    "building:structure": "reinforced_masonry",
+    "building:use": "government",
+    "building:walls": "brick",
+    "name": "Lembaga Pemasyarakatan Wirogunan",
+    "operator": "Kementerian Hukum dan Hak Asasi Manusia"
+  }
+},
+{
+  "type": "way",
+  "id": 610129451,
+  "bounds": {
+    "minlat": -7.7993733,
+    "minlon": 110.3810348,
+    "maxlat": -7.7991020,
+    "maxlon": 110.3813650
+  },
+  "nodes": [
+    5778560081,
+    5778560082,
+    5778560098,
+    5778560097,
+    5778560081
+  ],
+  "geometry": [
+    { "lat": -7.7991020, "lon": 110.3810376 },
+    { "lat": -7.7991052, "lon": 110.3813650 },
+    { "lat": -7.7993733, "lon": 110.3813623 },
+    { "lat": -7.7993701, "lon": 110.3810348 },
+    { "lat": -7.7991020, "lon": 110.3810376 }
+  ],
+  "tags": {
+    "building": "yes",
+    "leisure": "sports_centre",
+    "name": "Tifosi Futsal",
+    "sport": "soccer"
+  }
+},
+{
+  "type": "way",
+  "id": 610129502,
+  "bounds": {
+    "minlat": -7.8014855,
+    "minlon": 110.3843584,
+    "maxlat": -7.8013680,
+    "maxlon": 110.3844677
+  },
+  "nodes": [
+    5778560491,
+    5778560492,
+    5778560499,
+    5778560495,
+    5778560491
+  ],
+  "geometry": [
+    { "lat": -7.8013680, "lon": 110.3843765 },
+    { "lat": -7.8013840, "lon": 110.3844677 },
+    { "lat": -7.8014855, "lon": 110.3844496 },
+    { "lat": -7.8014696, "lon": 110.3843584 },
+    { "lat": -7.8013680, "lon": 110.3843765 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "name": "Majid Smaki gede",
+    "religion": "muslim"
+  }
+},
+{
+  "type": "way",
+  "id": 610753751,
+  "bounds": {
+    "minlat": -7.7939340,
+    "minlon": 110.3843404,
+    "maxlat": -7.7938758,
+    "maxlon": 110.3844277
+  },
+  "nodes": [
+    5783776719,
+    5783776718,
+    5783776717,
+    5783776716,
+    5783776719
+  ],
+  "geometry": [
+    { "lat": -7.7938758, "lon": 110.3843425 },
+    { "lat": -7.7938792, "lon": 110.3844277 },
+    { "lat": -7.7939340, "lon": 110.3844255 },
+    { "lat": -7.7939307, "lon": 110.3843404 },
+    { "lat": -7.7938758, "lon": 110.3843425 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "Jalan Mawar yogyakarta",
+    "amenity": "marketplace",
+    "building": "marketplace",
+    "building:condition": "good",
+    "building:floor": "tekhel",
+    "building:levels": "1",
+    "building:material": "wood",
+    "building:roof": "tin",
+    "building:structure": "bamboo_frame",
+    "capacity:persons": "50-100",
+    "fixme": "Survey opening and closing time, was \"12\".",
+    "marketplace:authority": "officially_managed",
+    "marketplace:type": "agricultural",
+    "name": "Pasar Sanggrahan Baciro",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 610949700,
+  "bounds": {
+    "minlat": -7.8008854,
+    "minlon": 110.3870874,
+    "maxlat": -7.8007695,
+    "maxlon": 110.3871710
+  },
+  "nodes": [
+    5785540691,
+    5785540688,
+    5785540689,
+    5785540690,
+    5785540691
+  ],
+  "geometry": [
+    { "lat": -7.8007695, "lon": 110.3870908 },
+    { "lat": -7.8007718, "lon": 110.3871710 },
+    { "lat": -7.8008854, "lon": 110.3871677 },
+    { "lat": -7.8008830, "lon": 110.3870874 },
+    { "lat": -7.8007695, "lon": 110.3870908 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "RW 05 Semaki gede yogyakarta",
+    "amenity": "clinic",
+    "building": "clinic",
+    "building:condition": "good",
+    "building:floor": "ceramics",
+    "building:levels": "1",
+    "building:material": "brick",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "<50",
+    "name": "Posyandu Balita Temugiring V",
+    "operator:type": "community",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 610949765,
+  "bounds": {
+    "minlat": -7.8014191,
+    "minlon": 110.3866847,
+    "maxlat": -7.8013061,
+    "maxlon": 110.3868615
+  },
+  "nodes": [
+    5785541859,
+    5785541856,
+    5785541857,
+    5785541858,
+    5785541859
+  ],
+  "geometry": [
+    { "lat": -7.8013061, "lon": 110.3866994 },
+    { "lat": -7.8013333, "lon": 110.3868615 },
+    { "lat": -7.8014191, "lon": 110.3868469 },
+    { "lat": -7.8013920, "lon": 110.3866847 },
+    { "lat": -7.8013061, "lon": 110.3866994 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "name": "Masjid Nurul Jannah",
+    "religion": "muslim"
+  }
+},
+{
+  "type": "way",
+  "id": 610961671,
+  "bounds": {
+    "minlat": -7.7976228,
+    "minlon": 110.3884521,
+    "maxlat": -7.7974620,
+    "maxlon": 110.3886117
+  },
+  "nodes": [
+    5785638706,
+    5785638707,
+    5785637622,
+    5785638709,
+    5785638710,
+    5785638711,
+    5785638706
+  ],
+  "geometry": [
+    { "lat": -7.7974939, "lon": 110.3886117 },
+    { "lat": -7.7975590, "lon": 110.3885939 },
+    { "lat": -7.7975378, "lon": 110.3885153 },
+    { "lat": -7.7976228, "lon": 110.3884920 },
+    { "lat": -7.7976120, "lon": 110.3884521 },
+    { "lat": -7.7974620, "lon": 110.3884933 },
+    { "lat": -7.7974939, "lon": 110.3886117 }
+  ],
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:housenumber": "231",
+    "addr:street": "Gang Tanjung I",
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "building:levels": "3",
+    "denomination": "theravada",
+    "name": "Vihara Vidyaloka",
+    "religion": "buddhist",
+    "service_times": "12:00-16:00"
+  }
+},
+{
+  "type": "way",
+  "id": 610967695,
+  "bounds": {
+    "minlat": -7.7954093,
+    "minlon": 110.3864033,
+    "maxlat": -7.7952006,
+    "maxlon": 110.3865377
+  },
+  "nodes": [
+    5785668266,
+    5785668263,
+    5785668264,
+    5785668265,
+    5785668266
+  ],
+  "geometry": [
+    { "lat": -7.7952006, "lon": 110.3864368 },
+    { "lat": -7.7952180, "lon": 110.3865377 },
+    { "lat": -7.7954093, "lon": 110.3865041 },
+    { "lat": -7.7953919, "lon": 110.3864033 },
+    { "lat": -7.7952006, "lon": 110.3864368 }
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "OYO 2627 Ratamya Co-living",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 610967702,
+  "bounds": {
+    "minlat": -7.7976678,
+    "minlon": 110.3856134,
+    "maxlat": -7.7975019,
+    "maxlon": 110.3857984
+  },
+  "nodes": [
+    5785668279,
+    5785668297,
+    5785668296,
+    5785668299,
+    5785668300,
+    5785668298,
+    5785668279
+  ],
+  "geometry": [
+    { "lat": -7.7975672, "lon": 110.3857311 },
+    { "lat": -7.7975736, "lon": 110.3857984 },
+    { "lat": -7.7976678, "lon": 110.3857892 },
+    { "lat": -7.7976510, "lon": 110.3856134 },
+    { "lat": -7.7975019, "lon": 110.3856280 },
+    { "lat": -7.7975122, "lon": 110.3857365 },
+    { "lat": -7.7975672, "lon": 110.3857311 }
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Hotel Wijaya Kusuma",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 610967719,
+  "bounds": {
+    "minlat": -7.7959035,
+    "minlon": 110.3860451,
+    "maxlat": -7.7956975,
+    "maxlon": 110.3862227
+  },
+  "nodes": [
+    5785668370,
+    5785668371,
+    5785668372,
+    5785668369,
+    5785668374,
+    5785668375,
+    5785668376,
+    5785668373,
+    5785668370
+  ],
+  "geometry": [
+    { "lat": -7.7957782, "lon": 110.3861937 },
+    { "lat": -7.7957836, "lon": 110.3862227 },
+    { "lat": -7.7958569, "lon": 110.3862087 },
+    { "lat": -7.7958515, "lon": 110.3861798 },
+    { "lat": -7.7959035, "lon": 110.3861699 },
+    { "lat": -7.7958801, "lon": 110.3860451 },
+    { "lat": -7.7956975, "lon": 110.3860800 },
+    { "lat": -7.7957208, "lon": 110.3862047 },
+    { "lat": -7.7957782, "lon": 110.3861937 }
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Aliya Hostel",
+    "tourism": "hostel"
+  }
+},
+{
+  "type": "way",
+  "id": 610982547,
+  "bounds": {
+    "minlat": -7.8016849,
+    "minlon": 110.3888428,
+    "maxlat": -7.8013126,
+    "maxlon": 110.3891001
+  },
+  "nodes": [
+    5785747547,
+    5785747550,
+    5785747552,
+    5785747551,
+    5785747549,
+    5785747548,
+    5785747547
+  ],
+  "geometry": [
+    { "lat": -7.8015452, "lon": 110.3889640 },
+    { "lat": -7.8014221, "lon": 110.3888428 },
+    { "lat": -7.8013126, "lon": 110.3889406 },
+    { "lat": -7.8014840, "lon": 110.3890989 },
+    { "lat": -7.8016836, "lon": 110.3891001 },
+    { "lat": -7.8016849, "lon": 110.3889580 },
+    { "lat": -7.8015452, "lon": 110.3889640 }
+  ],
+  "tags": {
+    "brand": "Swiss-Belhotel",
+    "brand:wikidata": "Q115348131",
+    "building": "yes",
+    "name": "Swiss-Bel Express",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 611060951,
+  "bounds": {
+    "minlat": -7.8050895,
+    "minlon": 110.3883634,
+    "maxlat": -7.8049874,
+    "maxlon": 110.3884932
+  },
+  "nodes": [
+    5786266590,
+    5786266589,
+    5786266588,
+    5786266587,
+    5786266590
+  ],
+  "geometry": [
+    { "lat": -7.8049874, "lon": 110.3883870 },
+    { "lat": -7.8050265, "lon": 110.3884932 },
+    { "lat": -7.8050895, "lon": 110.3884695 },
+    { "lat": -7.8050504, "lon": 110.3883634 },
+    { "lat": -7.8049874, "lon": 110.3883870 }
+  ],
+  "tags": {
+    "amenity": "prep_school",
+    "building": "yes",
+    "name": "Alfabank Glagahsari"
+  }
+},
+{
+  "type": "way",
+  "id": 616232271,
+  "bounds": {
+    "minlat": -7.7946824,
+    "minlon": 110.3751585,
+    "maxlat": -7.7944206,
+    "maxlon": 110.3752774
+  },
+  "nodes": [
+    5826439468,
+    5826439467,
+    5826439466,
+    5826439465,
+    5826439468
+  ],
+  "geometry": [
+    { "lat": -7.7944206, "lon": 110.3751755 },
+    { "lat": -7.7944272, "lon": 110.3752774 },
+    { "lat": -7.7946824, "lon": 110.3752605 },
+    { "lat": -7.7946757, "lon": 110.3751585 },
+    { "lat": -7.7944206, "lon": 110.3751755 }
+  ],
+  "tags": {
+    "access:roof": "no",
+    "addr:full": "Jalan Danurejan",
+    "amenity": "clinic",
+    "building": "clinic",
+    "building:condition": "good",
+    "building:floor": "ceramics",
+    "building:levels": "2",
+    "building:material": "brick",
+    "building:roof": "tile",
+    "building:structure": "confined_masonry",
+    "capacity:persons": "100-250",
+    "name": "Puskesmas Danurejan 1",
+    "operator:type": "government",
+    "source": "survey"
+  }
+},
+{
+  "type": "way",
+  "id": 636774521,
+  "bounds": {
+    "minlat": -7.8051278,
+    "minlon": 110.3771925,
+    "maxlat": -7.8047725,
+    "maxlon": 110.3774406
+  },
+  "nodes": [
+    6004334793,
+    6004334792,
+    6004334791,
+    6004334788,
+    6004334790,
+    6004334789,
+    6004334793
+  ],
+  "geometry": [
+    { "lat": -7.8050980, "lon": 110.3771925 },
+    { "lat": -7.8047725, "lon": 110.3772354 },
+    { "lat": -7.8047857, "lon": 110.3773380 },
+    { "lat": -7.8049778, "lon": 110.3773127 },
+    { "lat": -7.8049943, "lon": 110.3774406 },
+    { "lat": -7.8051278, "lon": 110.3774230 },
+    { "lat": -7.8050980, "lon": 110.3771925 }
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "Surokarsan Residence",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 636774754,
+  "bounds": {
+    "minlat": -7.8043423,
+    "minlon": 110.3761867,
+    "maxlat": -7.8040442,
+    "maxlon": 110.3763429
+  },
+  "nodes": [
+    6004336170,
+    6004336168,
+    6004336169,
+    6004336171,
+    6004336165,
+    6004336167,
+    6004336166,
+    6004336170
+  ],
+  "geometry": [
+    { "lat": -7.8040514, "lon": 110.3763429 },
+    { "lat": -7.8041256, "lon": 110.3763394 },
+    { "lat": -7.8043423, "lon": 110.3763290 },
+    { "lat": -7.8043390, "lon": 110.3762598 },
+    { "lat": -7.8041224, "lon": 110.3762701 },
+    { "lat": -7.8041185, "lon": 110.3761867 },
+    { "lat": -7.8040442, "lon": 110.3761902 },
+    { "lat": -7.8040514, "lon": 110.3763429 }
+  ],
+  "tags": {
+    "building": "yes",
+    "name": "S5 Guest House Yogyakarta",
+    "tourism": "hotel"
+  }
+},
+{
+  "type": "way",
+  "id": 645112135,
+  "bounds": {
+    "minlat": -7.8016782,
+    "minlon": 110.3800801,
+    "maxlat": -7.8014507,
+    "maxlon": 110.3804725
+  },
+  "nodes": [
+    6065074725,
+    6065074726,
+    6065074727,
+    6065074728,
+    6065074725
+  ],
+  "geometry": [
+    { "lat": -7.8014507, "lon": 110.3800817 },
+    { "lat": -7.8014515, "lon": 110.3804725 },
+    { "lat": -7.8016685, "lon": 110.3804619 },
+    { "lat": -7.8016782, "lon": 110.3800801 },
+    { "lat": -7.8014507, "lon": 110.3800817 }
+  ],
+  "tags": {
+    "name": "Kelurahan Pakualaman",
+    "office": "government"
+  }
+},
+{
+  "type": "way",
+  "id": 660453553,
+  "bounds": {
+    "minlat": -7.8046347,
+    "minlon": 110.3822305,
+    "maxlat": -7.8045395,
+    "maxlon": 110.3824457
+  },
+  "nodes": [
+    6183567743,
+    13366212950,
+    13366212951,
+    6183567740,
+    6183567741,
+    6183567742,
+    6183567743
+  ],
+  "geometry": [
+    { "lat": -7.8045395, "lon": 110.3822332 },
+    { "lat": -7.8045445, "lon": 110.3824010 },
+    { "lat": -7.8045583, "lon": 110.3824006 },
+    { "lat": -7.8045596, "lon": 110.3824457 },
+    { "lat": -7.8046347, "lon": 110.3824434 },
+    { "lat": -7.8046285, "lon": 110.3822305 },
+    { "lat": -7.8045395, "lon": 110.3822332 }
+  ],
+  "tags": {
+    "amenity": "parking",
+    "building": "yes",
+    "name": "Parkir Alsintan"
+  }
+},
+{
+  "type": "way",
+  "id": 660453556,
+  "bounds": {
+    "minlat": -7.8040423,
+    "minlon": 110.3824436,
+    "maxlat": -7.8036874,
+    "maxlon": 110.3826269
+  },
+  "nodes": [
+    6183567755,
+    6183567752,
+    6183567753,
+    6183567754,
+    6183567755
+  ],
+  "geometry": [
+    { "lat": -7.8036874, "lon": 110.3824436 },
+    { "lat": -7.8036874, "lon": 110.3826269 },
+    { "lat": -7.8040423, "lon": 110.3826269 },
+    { "lat": -7.8040423, "lon": 110.3824436 },
+    { "lat": -7.8036874, "lon": 110.3824436 }
+  ],
+  "tags": {
+    "amenity": "restaurant",
+    "building": "yes",
+    "name": "Kantin Polbangtan"
+  }
+},
+{
+  "type": "way",
+  "id": 683686079,
+  "bounds": {
+    "minlat": -7.7993661,
+    "minlon": 110.3785126,
+    "maxlat": -7.7991635,
+    "maxlon": 110.3787730
+  },
+  "nodes": [
+    6404005913,
+    6404005914,
+    6404005915,
+    6404005916,
+    6404005913
+  ],
+  "geometry": [
+    { "lat": -7.7991635, "lon": 110.3785126 },
+    { "lat": -7.7993472, "lon": 110.3785207 },
+    { "lat": -7.7993661, "lon": 110.3787362 },
+    { "lat": -7.7991716, "lon": 110.3787730 },
+    { "lat": -7.7991635, "lon": 110.3785126 }
+  ],
+  "tags": {
+    "addr:city": "yogyakarta",
+    "addr:postcode": "55111",
+    "leisure": "park",
+    "name": "Ruang Terbuka Hijau Kelurahan Gunungketur",
+    "opening_hours": "sunrise-sunset",
+    "operator": "Lembaga Pemberdayaan Masyarakat Kota"
+  }
+},
+{
+  "type": "way",
+  "id": 786144228,
+  "bounds": {
+    "minlat": -7.7975685,
+    "minlon": 110.3826605,
+    "maxlat": -7.7945780,
+    "maxlon": 110.3854499
+  },
+  "nodes": [
+    8621156830,
+    8621156826,
+    8621156827,
+    8621156828,
+    8621156829,
+    8621156822,
+    8621156837,
+    8621156838,
+    8621156839,
+    8621156840,
+    8621156833,
+    8621156834,
+    8621156823,
+    8621156835,
+    8621156836,
+    8621156845,
+    8621156846,
+    8621156847,
+    8621156848,
+    7307661502,
+    8621156821,
+    8621156841,
+    8621156825,
+    8621156842,
+    8621156843,
+    8621156844,
+    8621156817,
+    8621156818,
+    8621156819,
+    8621156824,
+    8621156820,
+    8621156830
+  ],
+  "geometry": [
+    { "lat": -7.7946726, "lon": 110.3839166 },
+    { "lat": -7.7945780, "lon": 110.3834675 },
+    { "lat": -7.7954146, "lon": 110.3831886 },
+    { "lat": -7.7955751, "lon": 110.3831363 },
+    { "lat": -7.7959471, "lon": 110.3830072 },
+    { "lat": -7.7963826, "lon": 110.3828661 },
+    { "lat": -7.7966203, "lon": 110.3828556 },
+    { "lat": -7.7973299, "lon": 110.3826605 },
+    { "lat": -7.7973960, "lon": 110.3827450 },
+    { "lat": -7.7974519, "lon": 110.3831858 },
+    { "lat": -7.7974776, "lon": 110.3835800 },
+    { "lat": -7.7974796, "lon": 110.3838642 },
+    { "lat": -7.7974701, "lon": 110.3840865 },
+    { "lat": -7.7974707, "lon": 110.3843258 },
+    { "lat": -7.7975250, "lon": 110.3846503 },
+    { "lat": -7.7975685, "lon": 110.3848706 },
+    { "lat": -7.7975076, "lon": 110.3849637 },
+    { "lat": -7.7961108, "lon": 110.3852533 },
+    { "lat": -7.7960845, "lon": 110.3852013 },
+    { "lat": -7.7959374, "lon": 110.3852362 },
+    { "lat": -7.7959157, "lon": 110.3852422 },
+    { "lat": -7.7959097, "lon": 110.3852925 },
+    { "lat": -7.7950177, "lon": 110.3854499 },
+    { "lat": -7.7949405, "lon": 110.3851305 },
+    { "lat": -7.7948875, "lon": 110.3849121 },
+    { "lat": -7.7948643, "lon": 110.3848400 },
+    { "lat": -7.7948359, "lon": 110.3847387 },
+    { "lat": -7.7948060, "lon": 110.3846170 },
+    { "lat": -7.7947663, "lon": 110.3844503 },
+    { "lat": -7.7947335, "lon": 110.3843023 },
+    { "lat": -7.7947049, "lon": 110.3841218 },
+    { "lat": -7.7946726, "lon": 110.3839166 }
+  ],
+  "tags": {
+    "leisure": "stadium",
+    "name": "Kompleks Stadion Mandala Krida"
+  }
+},
+{
+  "type": "way",
+  "id": 1050539156,
+  "bounds": {
+    "minlat": -7.7996981,
+    "minlon": 110.3821232,
+    "maxlat": -7.7988729,
+    "maxlon": 110.3826090
+  },
+  "nodes": [
+    2838787231,
+    2838787254,
+    2838787255,
+    9653927925,
+    4589148416,
+    2838789340,
+    2838789336,
+    2838789329,
+    2838788611,
+    2838788608,
+    2838789321,
+    2838788494,
+    2838788492,
+    2838788607,
+    2838787232,
+    2838787231
+  ],
+  "geometry": [
+    { "lat": -7.7991415, "lon": 110.3821465 },
+    { "lat": -7.7995552, "lon": 110.3821303 },
+    { "lat": -7.7996338, "lon": 110.3821242 },
+    { "lat": -7.7996471, "lon": 110.3821232 },
+    { "lat": -7.7996981, "lon": 110.3824956 },
+    { "lat": -7.7996662, "lon": 110.3825001 },
+    { "lat": -7.7995536, "lon": 110.3825148 },
+    { "lat": -7.7994876, "lon": 110.3825241 },
+    { "lat": -7.7992935, "lon": 110.3825518 },
+    { "lat": -7.7991866, "lon": 110.3825671 },
+    { "lat": -7.7990073, "lon": 110.3825927 },
+    { "lat": -7.7988936, "lon": 110.3826090 },
+    { "lat": -7.7988729, "lon": 110.3824808 },
+    { "lat": -7.7991420, "lon": 110.3824423 },
+    { "lat": -7.7991817, "lon": 110.3824361 },
+    { "lat": -7.7991415, "lon": 110.3821465 }
+  ],
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:housenumber": "7A",
+    "addr:postcode": "5516",
+    "addr:street": "Jalan Kapas II",
+    "amenity": "school",
+    "grades": "7-9",
+    "name": "SMP Muhammadiyah 2 Yogyakarta",
+    "operator": "Muhammadiyah",
+    "operator:type": "religious",
+    "operator:wikidata": "Q1951917",
+    "religion": "muslim",
+    "website": "https://smpmuh2yk.sch.id/"
+  }
+},
+{
+  "type": "way",
+  "id": 1050540821,
+  "bounds": {
+    "minlat": -7.8006836,
+    "minlon": 110.3822632,
+    "maxlat": -7.7999155,
+    "maxlon": 110.3832435
+  },
+  "nodes": [
+    2841496574,
+    9653952181,
+    9653952182,
+    4589148432,
+    2841496585,
+    2841496578,
+    2841496575,
+    2841496574
+  ],
+  "geometry": [
+    { "lat": -7.7999155, "lon": 110.3822632 },
+    { "lat": -7.8006610, "lon": 110.3822862 },
+    { "lat": -7.8006836, "lon": 110.3831633 },
+    { "lat": -7.8000870, "lon": 110.3832435 },
+    { "lat": -7.8000865, "lon": 110.3831510 },
+    { "lat": -7.8000347, "lon": 110.3828711 },
+    { "lat": -7.7999583, "lon": 110.3824615 },
+    { "lat": -7.7999155, "lon": 110.3822632 }
+  ],
+  "tags": {
+    "amenity": "school",
+    "name": "SMK Koperasi Yogyakarta",
+    "website": "http://smk-koperasi.sch.id/"
+  }
+},
+{
+  "type": "way",
+  "id": 1050545449,
+  "bounds": {
+    "minlat": -7.8007317,
+    "minlon": 110.3793370,
+    "maxlat": -7.8003393,
+    "maxlon": 110.3796944
+  },
+  "nodes": [
+    9653997821,
+    9653997822,
+    12556241310,
+    12556241309,
+    9653997821
+  ],
+  "geometry": [
+    { "lat": -7.8003393, "lon": 110.3793765 },
+    { "lat": -7.8003752, "lon": 110.3796944 },
+    { "lat": -7.8007315, "lon": 110.3796669 },
+    { "lat": -7.8007317, "lon": 110.3793370 },
+    { "lat": -7.8003393, "lon": 110.3793765 }
+  ],
+  "tags": {
+    "addr:city": "Yogyakarta",
+    "addr:district": "Pakualaman",
+    "addr:postcode": "55111",
+    "addr:province": "Daerah Istimewa Yogyakarta",
+    "addr:street": "Jalan Notowinatan",
+    "addr:subdistrict": "Gunungketur",
+    "amenity": "school",
+    "grades": "4-6",
+    "name": "SD Muhammadiyah Sokonandi Unit 2",
+    "operator": "Muhammadiyah",
+    "operator:type": "religious",
+    "operator:wikidata": "Q1951917",
+    "religion": "muslim",
+    "website": "http://sdmuhsokonandi.sch/id/"
+  }
+},
+{
+  "type": "way",
+  "id": 1060445402,
+  "bounds": {
+    "minlat": -7.7985089,
+    "minlon": 110.3827907,
+    "maxlat": -7.7975898,
+    "maxlon": 110.3835269
+  },
+  "nodes": [
+    9742951787,
+    2748919716,
+    2748919717,
+    2452334667,
+    2452334666,
+    9742951764,
+    9742951788,
+    10689848216,
+    10696023427,
+    9742951787
+  ],
+  "geometry": [
+    { "lat": -7.7975898, "lon": 110.3829894 },
+    { "lat": -7.7976077, "lon": 110.3831662 },
+    { "lat": -7.7976381, "lon": 110.3835269 },
+    { "lat": -7.7982891, "lon": 110.3834508 },
+    { "lat": -7.7982542, "lon": 110.3831620 },
+    { "lat": -7.7985089, "lon": 110.3831313 },
+    { "lat": -7.7984492, "lon": 110.3827907 },
+    { "lat": -7.7979403, "lon": 110.3828895 },
+    { "lat": -7.7979437, "lon": 110.3829398 },
+    { "lat": -7.7975898, "lon": 110.3829894 }
+  ],
+  "tags": {
+    "amenity": "university",
+    "name": "Kampus 2 FIP UNY"
+  }
+},
+{
+  "type": "way",
+  "id": 1060445403,
+  "bounds": {
+    "minlat": -7.7984492,
+    "minlon": 110.3822746,
+    "maxlat": -7.7974782,
+    "maxlon": 110.3829975
+  },
+  "nodes": [
+    9742951789,
+    9742951790,
+    9742951787,
+    10696023427,
+    10689848216,
+    9742951788,
+    2838779019,
+    8682383544,
+    2838779017,
+    10689848218,
+    10689848217,
+    9742951791,
+    9742951789
+  ],
+  "geometry": [
+    { "lat": -7.7974782, "lon": 110.3824557 },
+    { "lat": -7.7975366, "lon": 110.3829975 },
+    { "lat": -7.7975898, "lon": 110.3829894 },
+    { "lat": -7.7979437, "lon": 110.3829398 },
+    { "lat": -7.7979403, "lon": 110.3828895 },
+    { "lat": -7.7984492, "lon": 110.3827907 },
+    { "lat": -7.7984168, "lon": 110.3826006 },
+    { "lat": -7.7983823, "lon": 110.3823983 },
+    { "lat": -7.7983685, "lon": 110.3823172 },
+    { "lat": -7.7982841, "lon": 110.3823195 },
+    { "lat": -7.7982655, "lon": 110.3822746 },
+    { "lat": -7.7979942, "lon": 110.3823299 },
+    { "lat": -7.7974782, "lon": 110.3824557 }
+  ],
+  "tags": {
+    "amenity": "school",
+    "name": "SMK Negeri 6 Yogyakarta"
+  }
+},
+{
+  "type": "way",
+  "id": 1084138629,
+  "bounds": {
+    "minlat": -7.7998155,
+    "minlon": 110.3867855,
+    "maxlat": -7.7993561,
+    "maxlon": 110.3873787
+  },
+  "nodes": [
+    9934733661,
+    9934733662,
+    9934733663,
+    9934733664,
+    9934733665,
+    9934733666,
+    9934733661
+  ],
+  "geometry": [
+    { "lat": -7.7994729, "lon": 110.3873787 },
+    { "lat": -7.7998155, "lon": 110.3872976 },
+    { "lat": -7.7997272, "lon": 110.3869176 },
+    { "lat": -7.7997677, "lon": 110.3869080 },
+    { "lat": -7.7997393, "lon": 110.3867855 },
+    { "lat": -7.7993561, "lon": 110.3868761 },
+    { "lat": -7.7994729, "lon": 110.3873787 }
+  ],
+  "tags": {
+    "amenity": "school",
+    "name": "SMPIT Abu Bakar Fullday School Yogyakarta"
+  }
+},
+{
+  "type": "way",
+  "id": 1360866353,
+  "bounds": {
+    "minlat": -7.7950766,
+    "minlon": 110.3761193,
+    "maxlat": -7.7947378,
+    "maxlon": 110.3765605
+  },
+  "nodes": [
+    12598025736,
+    12598025737,
+    12598025738,
+    12598025739,
+    12598025736
+  ],
+  "geometry": [
+    { "lat": -7.7950262, "lon": 110.3761193 },
+    { "lat": -7.7950766, "lon": 110.3765270 },
+    { "lat": -7.7947843, "lon": 110.3765605 },
+    { "lat": -7.7947378, "lon": 110.3761515 },
+    { "lat": -7.7950262, "lon": 110.3761193 }
+  ],
+  "tags": {
+    "amenity": "school",
+    "grades": "1-6",
+    "name": "SD Muhammadiyah Bausasran",
+    "operator": "Muhammadiyah",
+    "operator:type": "religious",
+    "operator:wikidata": "Q1951917"
+  }
+},
+{
+  "type": "way",
+  "id": 1388767663,
+  "bounds": {
+    "minlat": -7.8026194,
+    "minlon": 110.3752182,
+    "maxlat": -7.8022112,
+    "maxlon": 110.3759583
+  },
+  "nodes": [
+    12855306775,
+    12855306776,
+    12855306777,
+    12855306778,
+    12855306775
+  ],
+  "geometry": [
+    { "lat": -7.8022112, "lon": 110.3752182 },
+    { "lat": -7.8026194, "lon": 110.3752675 },
+    { "lat": -7.8026159, "lon": 110.3759519 },
+    { "lat": -7.8022197, "lon": 110.3759583 },
+    { "lat": -7.8022112, "lon": 110.3752182 }
+  ],
+  "tags": {
+    "name": "Museum Sasmitaloka Panglima Besar Jenderal Sudirman",
+    "name:etymology:wikidata": "Q2367329",
+    "name:etymology:wikipedia": "id:Soedirman",
+    "tourism": "museum"
+  }
+},
+{
+  "type": "relation",
+  "id": 5615587,
+  "bounds": {
+    "minlat": -7.8019993,
+    "minlon": 110.3803174,
+    "maxlat": -7.7935969,
+    "maxlon": 110.3877078
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 376959429,
+      "role": "outer",
+      "geometry": [
+         { "lat": -7.7944658, "lon": 110.3877078 },
+         { "lat": -7.7948957, "lon": 110.3875448 },
+         { "lat": -7.7956347, "lon": 110.3874363 },
+         { "lat": -7.7962501, "lon": 110.3872867 },
+         { "lat": -7.7981734, "lon": 110.3867915 },
+         { "lat": -7.7984378, "lon": 110.3876117 },
+         { "lat": -7.7991793, "lon": 110.3874149 },
+         { "lat": -7.7997878, "lon": 110.3872397 },
+         { "lat": -7.8010931, "lon": 110.3868639 },
+         { "lat": -7.8019908, "lon": 110.3866464 }
+      ]
+    },
+    {
+      "type": "way",
+      "ref": 376959394,
+      "role": "outer",
+      "geometry": [
+         { "lat": -7.8019908, "lon": 110.3866464 },
+         { "lat": -7.8019993, "lon": 110.3846309 },
+         { "lat": -7.8019958, "lon": 110.3822312 },
+         { "lat": -7.8019935, "lon": 110.3821863 },
+         { "lat": -7.8019692, "lon": 110.3817089 },
+         { "lat": -7.8019513, "lon": 110.3813587 },
+         { "lat": -7.8019417, "lon": 110.3811704 },
+         { "lat": -7.8019165, "lon": 110.3806754 }
+      ]
+    },
+    {
+      "type": "way",
+      "ref": 376959075,
+      "role": "outer",
+      "geometry": [
+         { "lat": -7.7983815, "lon": 110.3805392 },
+         { "lat": -7.7988828, "lon": 110.3805744 },
+         { "lat": -7.8010127, "lon": 110.3805473 },
+         { "lat": -7.8019165, "lon": 110.3806754 }
+      ]
+    },
+    {
+      "type": "way",
+      "ref": 376959002,
+      "role": "outer",
+      "geometry": [
+         { "lat": -7.7944658, "lon": 110.3877078 },
+         { "lat": -7.7943930, "lon": 110.3870360 },
+         { "lat": -7.7942719, "lon": 110.3860763 },
+         { "lat": -7.7941269, "lon": 110.3850447 },
+         { "lat": -7.7939343, "lon": 110.3842771 },
+         { "lat": -7.7937661, "lon": 110.3838214 },
+         { "lat": -7.7936217, "lon": 110.3832937 },
+         { "lat": -7.7935969, "lon": 110.3826459 },
+         { "lat": -7.7940035, "lon": 110.3825013 },
+         { "lat": -7.7944581, "lon": 110.3824286 },
+         { "lat": -7.7943434, "lon": 110.3817028 },
+         { "lat": -7.7941200, "lon": 110.3803174 },
+         { "lat": -7.7945031, "lon": 110.3804369 },
+         { "lat": -7.7950299, "lon": 110.3807000 },
+         { "lat": -7.7955804, "lon": 110.3806992 },
+         { "lat": -7.7962263, "lon": 110.3805303 },
+         { "lat": -7.7967050, "lon": 110.3805536 },
+         { "lat": -7.7974950, "lon": 110.3807204 },
+         { "lat": -7.7982126, "lon": 110.3805274 },
+         { "lat": -7.7983815, "lon": 110.3805392 }
+      ]
+    }
+  ],
+  "tags": {
+    "admin_level": "7",
+    "boundary": "administrative",
+    "name": "Semaki",
+    "type": "boundary"
+  }
+},
+{
+  "type": "relation",
+  "id": 14433670,
+  "bounds": {
+    "minlat": -7.7959593,
+    "minlon": 110.3783987,
+    "maxlat": -7.7950701,
+    "maxlon": 110.3789874
+  },
+  "members": [
+    {
+      "type": "way",
+      "ref": 120689430,
+      "role": "outer",
+      "geometry": [
+         { "lat": -7.7950701, "lon": 110.3784305 },
+         { "lat": -7.7950901, "lon": 110.3789874 },
+         { "lat": -7.7959593, "lon": 110.3789672 },
+         { "lat": -7.7959507, "lon": 110.3783987 },
+         { "lat": -7.7950701, "lon": 110.3784305 }
+      ]
+    },
+    {
+      "type": "way",
+      "ref": 1084363416,
+      "role": "inner",
+      "geometry": [
+         { "lat": -7.7951255, "lon": 110.3786722 },
+         { "lat": -7.7951902, "lon": 110.3786717 },
+         { "lat": -7.7951900, "lon": 110.3786501 },
+         { "lat": -7.7954013, "lon": 110.3786487 },
+         { "lat": -7.7954018, "lon": 110.3787299 },
+         { "lat": -7.7954455, "lon": 110.3787296 },
+         { "lat": -7.7954445, "lon": 110.3785863 },
+         { "lat": -7.7951250, "lon": 110.3785885 },
+         { "lat": -7.7951255, "lon": 110.3786722 }
+      ]
+    },
+    {
+      "type": "way",
+      "ref": 1084363415,
+      "role": "inner",
+      "geometry": [
+         { "lat": -7.7951514, "lon": 110.3788375 },
+         { "lat": -7.7951931, "lon": 110.3788362 },
+         { "lat": -7.7951946, "lon": 110.3788843 },
+         { "lat": -7.7954073, "lon": 110.3788776 },
+         { "lat": -7.7954044, "lon": 110.3787822 },
+         { "lat": -7.7955069, "lon": 110.3787790 },
+         { "lat": -7.7955126, "lon": 110.3789607 },
+         { "lat": -7.7951555, "lon": 110.3789720 },
+         { "lat": -7.7951514, "lon": 110.3788375 }
+      ]
+    },
+    {
+      "type": "way",
+      "ref": 1084363414,
+      "role": "inner",
+      "geometry": [
+         { "lat": -7.7956717, "lon": 110.3785155 },
+         { "lat": -7.7956788, "lon": 110.3788273 },
+         { "lat": -7.7958595, "lon": 110.3788231 },
+         { "lat": -7.7958524, "lon": 110.3785113 },
+         { "lat": -7.7956717, "lon": 110.3785155 }
+      ]
+    }
+  ],
+  "tags": {
+    "amenity": "school",
+    "building": "yes",
+    "building:levels": "1",
+    "building:name": "SMA Stella Duce 2",
+    "building:roof": "tile",
+    "building:structure": "reinforced_masonry",
+    "building:use": "education",
+    "building:walls": "brick",
+    "height": "15.0",
+    "name": "SMA Stella Duce 2",
+    "type": "multipolygon"
+  }
+}
+
+  ]
+}

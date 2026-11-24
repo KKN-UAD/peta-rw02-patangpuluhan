@@ -10,3 +10,7 @@ token.txt
 banner/
 qgis/banner/
 *.qgs~
+rw08/web/
+rw08/output/
+rw08/banner/
+rw08/qgis/banner/
