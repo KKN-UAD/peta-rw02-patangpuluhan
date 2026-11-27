@@ -58,6 +58,7 @@ MENYUSUL = []   # fasilitas yang lokasinya belum diketahui (hanya di legenda)
 LOGO = ["logo/uad.jpg", "logo/tim.png"]   # nama titik OSM yang tidak perlu ditandai
 
 HIJAU, EMAS, NAVY, KRIM = "#7a0000", "#febd59", "#1801a7", "#fff8ec"   # palet logo tim KKN Unit III.D.2 (marun, oranye, biru, krem)
+PANEL = "#1b6c32"   # panel samping (judul, legenda, dst) hijau sesuai permintaan tim
 KATEGORI = {
     "Tempat Ibadah": "#1b8a3a",
     "Kesehatan": "#d62828",
@@ -497,16 +498,16 @@ while v < la1:
 
 # ------------------------------------------------------------------ panel kanan
 def box(y, h):
-    page.add_patch(Rectangle((PX, y), PW, h, fc="white", ec=HIJAU, lw=2.4, zorder=-5))
-    page.add_patch(Rectangle((PX, y), PW, h, fill=False, ec=HIJAU, lw=2.4, zorder=20))
+    page.add_patch(Rectangle((PX, y), PW, h, fc="white", ec=PANEL, lw=2.4, zorder=-5))
+    page.add_patch(Rectangle((PX, y), PW, h, fill=False, ec=PANEL, lw=2.4, zorder=20))
 def head(y, txt):
-    page.add_patch(Rectangle((PX, y - 1.6), PW, 1.6, fc=HIJAU, ec=HIJAU, lw=2))
+    page.add_patch(Rectangle((PX, y - 1.6), PW, 1.6, fc=PANEL, ec=PANEL, lw=2))
     page.add_patch(Rectangle((PX, y - 1.6), PW, 0.22, fc=EMAS, ec="none"))
     page.text(PX + PW / 2, y - 0.8, txt, ha="center", va="center", color="white", fontsize=17, fontweight="bold")
 
 # judul
 TY = TOP; TH = PRESET["TH"]; k = TH / 13.2
-page.add_patch(Rectangle((PX, TY - TH), PW, TH, fc=HIJAU, ec=HIJAU, lw=2))
+page.add_patch(Rectangle((PX, TY - TH), PW, TH, fc=PANEL, ec=PANEL, lw=2))
 page.add_patch(Rectangle((PX, TY - TH), PW, 0.45, fc=EMAS, ec="none"))
 page.text(PX + PW / 2, TY - 2.6 * k, JUDUL[0], ha="center", va="center", color="white", fontsize=38, fontweight="bold")
 page.text(PX + PW / 2, TY - 5.5 * k, JUDUL[1], ha="center", va="center", color=EMAS, fontsize=27, fontweight="bold")
@@ -526,7 +527,7 @@ page.text(PX + PW / 2, TY - 10.9 * k, SUBJUDUL, ha="center", va="center", color=
 SH = PRESET["SH"]; SY = TY - TH; box(SY - SH, SH)
 a = SH / 10.6   # ukuran panah utara ikut tinggi kotak
 nx, ny = PX + 5, SY - SH / 2 - 0.4 * a
-page.add_patch(Polygon([(nx, ny + 3.6 * a), (nx - 1.8 * a, ny - 2.6 * a), (nx, ny - 1.4 * a)], fc=HIJAU, ec=HIJAU))
+page.add_patch(Polygon([(nx, ny + 3.6 * a), (nx - 1.8 * a, ny - 2.6 * a), (nx, ny - 1.4 * a)], fc=PANEL, ec=PANEL))
 page.add_patch(Polygon([(nx, ny + 3.6 * a), (nx + 1.8 * a, ny - 2.6 * a), (nx, ny - 1.4 * a)], fc="white", ec=INK, lw=1.5))
 page.text(nx, ny + 4.0 * a, "U", ha="center", va="bottom", fontsize=24, fontweight="bold")
 page.text(PX + 18.4, SY - 1.9, f"SKALA 1 : {SKALA_CETAK:,}".replace(",", "."), ha="center", va="center", fontsize=20, fontweight="bold")
@@ -628,7 +629,7 @@ for e in kelr:
         iax.add_patch(Polygon(r, fc=WARNA_KEL.get(e["tags"]["name"], "#e5e7eb"), ec="#6b7280", lw=1))
         cx, cy = centroid(r)
         iax.text(cx, cy, e["tags"]["name"], ha="center", va="center", fontsize=13, fontweight="bold", color="#374151")
-iax.add_patch(Polygon(RW, fc=HIJAU, ec=HIJAU, lw=1.5))
+iax.add_patch(Polygon(RW, fc=PANEL, ec=PANEL, lw=1.5))
 iax.autoscale_view()
 
 # sumber data
