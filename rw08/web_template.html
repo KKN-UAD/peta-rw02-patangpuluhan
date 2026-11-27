@@ -9,7 +9,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
 <script src="data.js"></script>
 <style>
-:root{--hijau:#1b6c32;--emas:#fdbe15;--krim:#fbf8ea;--ink:#1f2937}
+:root{--hijau:#7a0000;--emas:#febd59;--krim:#fff8ec;--ink:#1f2937}
 *{box-sizing:border-box}html,body{margin:0;height:100%;font:14px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);background:var(--krim)}
 header{position:absolute;z-index:1000;top:0;left:0;right:0;display:flex;align-items:center;gap:10px;padding:8px 12px;
  background:var(--hijau);color:#fff;border-bottom:4px solid var(--emas);box-shadow:0 2px 8px #0004}
@@ -46,7 +46,7 @@ header span{display:block;font-size:12px;color:var(--emas);font-weight:600;white
 </style>
 </head>
 <body>
-<header><img src="uad.png" alt="Logo UAD"><div class="t"><b>PETA DIGITAL RW 08</b><span>Kelurahan Semaki • Umbulharjo • Kota Yogyakarta</span></div><img src="kkn.png" alt="Logo KKN"></header>
+<header><img src="uad.png" alt="Logo UAD"><div class="t"><b>PETA DIGITAL RW 08</b><span>Kelurahan Semaki • Umbulharjo • Kota Yogyakarta</span></div><img src="tim.png" alt="Logo KKN Unit III.D.2"></header>
 <div id="map"></div>
 <div id="info"><span class="x" onclick="this.parentNode.remove()">✕</span><b>Petunjuk:</b> ketuk titik bernomor untuk melihat foto &amp; keterangan. Atur lapisan peta lewat tombol <b>☰</b> di kanan atas.</div>
 <div id="lb" onclick="this.style.display='none'"><img alt=""></div>
@@ -65,7 +65,7 @@ base["Citra Satelit"].addTo(map);
 // redam semua di luar RW 08
 map.createPane('masker'); map.getPane('masker').style.zIndex = 350;
 const rwLL = DATA.rw.features[0].geometry.coordinates[0].map(([x, y]) => [y, x]);
-L.polygon([[[-90, -180], [-90, 180], [90, 180], [90, -180]], rwLL], {pane: 'masker', stroke: false, fillColor: '#0b1f12', fillOpacity: .72, interactive: false}).addTo(map);
+L.polygon([[[-90, -180], [-90, 180], [90, 180], [90, -180]], rwLL], {pane: 'masker', stroke: false, fillColor: '#1f0505', fillOpacity: .72, interactive: false}).addTo(map);
 
 const bangunan = L.geoJSON(DATA.bangunan, {style: {color: '#9c7a5b', weight: .6, fillColor: '#e9c9a6', fillOpacity: .45}, interactive: false});
 const sungai = L.geoJSON(DATA.sungai, {style: {color: '#38bdf8', weight: 4}, onEachFeature: (f, l) => f.properties.nama && l.bindTooltip(f.properties.nama, {sticky: true})});
@@ -74,7 +74,7 @@ const casing = L.geoJSON(DATA.jalan, {filter: f => f.properties.kelas != 'setapa
 const jalanAtas = L.geoJSON(DATA.jalan, {style: f => gaya[f.properties.kelas], onEachFeature: (f, l) => f.properties.nama && l.bindTooltip(f.properties.nama, {sticky: true})});
 const jalan = L.layerGroup([casing, jalanAtas]);
 const rwHalo = L.geoJSON(DATA.rw, {style: {color: '#000', weight: 9, opacity: .4, fill: false}, interactive: false});
-const rwGaris = L.geoJSON(DATA.rw, {style: {color: '#fdbe15', weight: 4.5, fill: true, fillOpacity: 0},
+const rwGaris = L.geoJSON(DATA.rw, {style: {color: '#febd59', weight: 4.5, fill: true, fillOpacity: 0},
   onEachFeature: (f, l) => l.bindPopup(`<div class="pop"><div class="b"><h3>Wilayah RW 08</h3><table>
    <tr><td>Kampung</td><td>${f.properties.kampung}</td></tr><tr><td>Kelurahan</td><td>Semaki</td></tr>
    <tr><td>Kemantren</td><td>Umbulharjo</td></tr><tr><td>Luas</td><td>${f.properties.luas}</td></tr></table></div></div>`)});
@@ -114,7 +114,7 @@ lg.onAdd = () => {
   });
   if (DATA.menyusul.length) h += DATA.menyusul.map(n => `<div class="sub"><b>?</b> ${n} <i>(lokasi menyusul)</i></div>`).join('');
   h += '<div class="grp">Batas &amp; Jaringan</div>';
-  [[rw, '<span class="sw" style="background:#fdbe15"></span>Batas RW 08'], [jalan, '<span class="sw" style="background:#f59e0b"></span>Jalan'],
+  [[rw, '<span class="sw" style="background:#febd59"></span>Batas RW 08'], [jalan, '<span class="sw" style="background:#f59e0b"></span>Jalan'],
    [sungai, '<span class="sw" style="background:#38bdf8"></span>Sungai'], [bangunan, '<span class="sw" style="background:#e9c9a6;height:10px"></span>Bangunan']]
     .forEach(([l, t]) => { h += `<label><input type="checkbox" checked data-i="${rows.length}">${t}</label>`; rows.push(l); });
   d.innerHTML = h + '</div>';
@@ -133,7 +133,7 @@ map.attributionControl.addAttribution('Batas RW: Geoportal Kota Yogyakarta • K
 // lokasi saya
 const loc = L.control({position: 'topleft'});
 loc.onAdd = () => { const b = L.DomUtil.create('a', 'leaflet-bar'); b.innerHTML = '◎'; b.title = 'Lokasi saya';
-  b.style.cssText = 'display:block;width:34px;height:34px;line-height:32px;text-align:center;background:#fff;font-size:20px;cursor:pointer;color:#1b6c32';
+  b.style.cssText = 'display:block;width:34px;height:34px;line-height:32px;text-align:center;background:#fff;font-size:20px;cursor:pointer;color:#7a0000';
   b.onclick = e => { L.DomEvent.stop(e); map.locate({setView: true, maxZoom: 19}); }; return b; };
 loc.addTo(map);
 let me; map.on('locationfound', e => { me && map.removeLayer(me); me = L.circleMarker(e.latlng, {radius: 8, color: '#fff', weight: 3, fillColor: '#2563eb', fillOpacity: 1}).addTo(map).bindPopup('Anda di sini').openPopup(); });

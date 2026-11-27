@@ -55,9 +55,9 @@ FOTO_OSM = {}
 GANTI_NAMA = {}   # nama mengikuti Geoportal Kota Yogyakarta
 ALAMAT_OSM = {}       # foto untuk titik dari OSM
 MENYUSUL = []   # fasilitas yang lokasinya belum diketahui (hanya di legenda)
-LOGO = ["logo/uad.jpg", "logo/kkn.png"]   # nama titik OSM yang tidak perlu ditandai
+LOGO = ["logo/uad.jpg", "logo/tim.png"]   # nama titik OSM yang tidak perlu ditandai
 
-HIJAU, EMAS, NAVY, KRIM = "#1b6c32", "#fdbe15", "#033e6f", "#fbf8ea"   # palet logo KKN & UAD
+HIJAU, EMAS, NAVY, KRIM = "#7a0000", "#febd59", "#1801a7", "#fff8ec"   # palet logo tim KKN Unit III.D.2 (marun, oranye, biru, krem)
 KATEGORI = {
     "Tempat Ibadah": "#1b8a3a",
     "Kesehatan": "#d62828",

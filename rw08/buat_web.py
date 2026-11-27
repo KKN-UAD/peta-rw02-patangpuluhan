@@ -65,7 +65,7 @@ for p in pois:
         im.save(J("web", foto), quality=80, optimize=True)
     titik.append(F({"type": "Point", "coordinates": [p["lon"], p["lat"]]}, no=p["no"], nama=p["nama"], kat=p["kat"],
                    warna=p["warna"], dalam=p["dalam"], foto=foto, alamat=p.get("alamat", "")))
-for f in ("logo/uad.jpg", "logo/kkn.png"):
+for f in ("logo/uad.jpg", "logo/tim.png"):
     im = Image.open(J(f)).convert("RGB"); im.thumbnail((256, 256)); im.save(J("web", os.path.basename(f).split(".")[0] + ".png"))
 
 data = dict(rw=batas_rw, kel=batas_kel, jalan=fc(jalan), sungai=fc(sungai), bangunan=fc(bangunan), titik=fc(titik),
