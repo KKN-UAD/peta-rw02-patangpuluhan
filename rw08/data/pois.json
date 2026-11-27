@@ -49,18 +49,6 @@
  },
  {
   "no": 5,
-  "nama": "Masjid Noor Islam",
-  "kat": "Tempat Ibadah",
-  "warna": "#1b8a3a",
-  "dalam": true,
-  "foto": "",
-  "alamat": "Jl. Gayam No. 19, Semaki",
-  "sumber": "OpenStreetMap",
-  "lat": -7.7973559,
-  "lon": 110.3816042
- },
- {
-  "no": 6,
   "nama": "Apotek UAD",
   "kat": "Kesehatan",
   "warna": "#d62828",
@@ -72,7 +60,7 @@
   "lon": 110.3820234
  },
  {
-  "no": 7,
+  "no": 6,
   "nama": "Klinik Pratama Telkomedika",
   "kat": "Kesehatan",
   "warna": "#d62828",
@@ -84,7 +72,7 @@
   "lon": 110.3836768
  },
  {
-  "no": 8,
+  "no": 7,
   "nama": "Kampus 2 FIP UNY",
   "kat": "Pendidikan",
   "warna": "#1d4ed8",
@@ -96,7 +84,7 @@
   "lon": 110.3831036
  },
  {
-  "no": 9,
+  "no": 8,
   "nama": "PAUD Mekar Wijaya",
   "kat": "Pendidikan",
   "warna": "#1d4ed8",
@@ -108,7 +96,7 @@
   "lon": 110.3805556
  },
  {
-  "no": 10,
+  "no": 9,
   "nama": "SD Muhammadiyah Sokonandi Unit 1",
   "kat": "Pendidikan",
   "warna": "#1d4ed8",
@@ -120,7 +108,7 @@
   "lon": 110.3825958
  },
  {
-  "no": 11,
+  "no": 10,
   "nama": "SMA Muhammadiyah 2 Yogyakarta",
   "kat": "Pendidikan",
   "warna": "#1d4ed8",
@@ -132,7 +120,7 @@
   "lon": 110.3827528
  },
  {
-  "no": 12,
+  "no": 11,
   "nama": "SMK Koperasi Yogyakarta",
   "kat": "Pendidikan",
   "warna": "#1d4ed8",
@@ -144,7 +132,7 @@
   "lon": 110.3827129
  },
  {
-  "no": 13,
+  "no": 12,
   "nama": "SMK Negeri 6 Yogyakarta",
   "kat": "Pendidikan",
   "warna": "#1d4ed8",
@@ -156,7 +144,7 @@
   "lon": 110.3825968
  },
  {
-  "no": 14,
+  "no": 13,
   "nama": "SMP Muhammadiyah 2 Yogyakarta",
   "kat": "Pendidikan",
   "warna": "#1d4ed8",
@@ -168,7 +156,7 @@
   "lon": 110.3823991
  },
  {
-  "no": 15,
+  "no": 14,
   "nama": "TK Negeri 2 Yogyakarta",
   "kat": "Pendidikan",
   "warna": "#1d4ed8",
@@ -180,7 +168,7 @@
   "lon": 110.3832654
  },
  {
-  "no": 16,
+  "no": 15,
   "nama": "Universitas Ahmad Dahlan Kampus 1",
   "kat": "Pendidikan",
   "warna": "#1d4ed8",
@@ -192,7 +180,7 @@
   "lon": 110.3828011
  },
  {
-  "no": 17,
+  "no": 16,
   "nama": "Balai Besar Kulit, Karet dan Plastik",
   "kat": "Pemerintahan",
   "warna": "#7b2cbf",
@@ -204,7 +192,7 @@
   "lon": 110.38095
  },
  {
-  "no": 18,
+  "no": 17,
   "nama": "Balai RK Semaki Kulon",
   "kat": "Pemerintahan",
   "warna": "#7b2cbf",
@@ -216,7 +204,7 @@
   "lon": 110.3815022
  },
  {
-  "no": 19,
+  "no": 18,
   "nama": "Kanwil Kementerian Agama DIY",
   "kat": "Pemerintahan",
   "warna": "#7b2cbf",
@@ -228,7 +216,7 @@
   "lon": 110.3820586
  },
  {
-  "no": 20,
+  "no": 19,
   "nama": "Kejaksaan Negeri Yogyakarta",
   "kat": "Pemerintahan",
   "warna": "#7b2cbf",
@@ -240,19 +228,7 @@
   "lon": 110.3819641
  },
  {
-  "no": 21,
-  "nama": "Kejaksaan Tinggi DIY",
-  "kat": "Pemerintahan",
-  "warna": "#7b2cbf",
-  "dalam": true,
-  "foto": "",
-  "alamat": "",
-  "sumber": "OpenStreetMap",
-  "lat": -7.8001054,
-  "lon": 110.38199
- },
- {
-  "no": 22,
+  "no": 20,
   "nama": "Imah Kopi",
   "kat": "Ekonomi",
   "warna": "#e07a00",
@@ -264,7 +240,7 @@
   "lon": 110.3808652
  },
  {
-  "no": 23,
+  "no": 21,
   "nama": "Kupiku Coffee",
   "kat": "Ekonomi",
   "warna": "#e07a00",
@@ -276,7 +252,7 @@
   "lon": 110.3809415
  },
  {
-  "no": 24,
+  "no": 22,
   "nama": "Socca Coffee",
   "kat": "Ekonomi",
   "warna": "#e07a00",
@@ -288,7 +264,7 @@
   "lon": 110.3810046
  },
  {
-  "no": 25,
+  "no": 23,
   "nama": "Sokonandi Corner",
   "kat": "Ekonomi",
   "warna": "#e07a00",
@@ -300,7 +276,7 @@
   "lon": 110.3808056
  },
  {
-  "no": 26,
+  "no": 24,
   "nama": "Pos Kamling RT 27",
   "kat": "Keamanan",
   "warna": "#be185d",
@@ -312,7 +288,7 @@
   "lon": 110.3807833
  },
  {
-  "no": 27,
+  "no": 25,
   "nama": "Pos Kamling RT 28",
   "kat": "Keamanan",
   "warna": "#be185d",
@@ -324,7 +300,7 @@
   "lon": 110.381775
  },
  {
-  "no": 28,
+  "no": 26,
   "nama": "Gapura Gang Damai",
   "kat": "Lainnya",
   "warna": "#0e7490",
@@ -336,7 +312,7 @@
   "lon": 110.3811508
  },
  {
-  "no": 29,
+  "no": 27,
   "nama": "Tifosi Futsal",
   "kat": "Lainnya",
   "warna": "#0e7490",
