@@ -20,7 +20,7 @@ else { Selesai "file token.txt belum ada di folder qgis. minta ke admin repo ya.
 $H = @{ Authorization = "Bearer $TOKEN"; "User-Agent" = "peta-rw02-update"; Accept = "application/vnd.github+json" }
 
 if (Get-Process -Name "qgis*" -ErrorAction SilentlyContinue) { Selesai "qgis masih kebuka. tutup qgis dulu biar editannya kesimpen, terus klik lagi file ini." }
-if (Test-Path (Join-Path $DIR "$GPKG-wal")) { Selesai "editan belum kesimpen penuh (ada file peta_rw02.gpkg-wal). buka qgis, save, tutup lagi, terus klik lagi file ini." }
+if (Test-Path (Join-Path $DIR "$GPKG-wal")) { Selesai "editan belum kesimpen penuh (ada file $GPKG-wal). buka qgis, save, tutup lagi, terus klik lagi file ini." }
 
 # cek koneksi + token dulu (coba 3x)
 $cek = $null
@@ -91,14 +91,11 @@ if (-not $commit) {
     $run = (Invoke-RestMethod -Uri "$API/actions/runs?status=success&per_page=20" -Headers $H).workflow_runs | Where-Object { $_.name -eq "Update peta" } | Select-Object -First 1
     if (-not $run) { Selesai "belum ada banner yang jadi di github." }
 } else {
-Write-Host "kekirim. nunggu github bikin ulang peta (sekitar 3 menit, banner sekitar 5 menit)..."
+Write-Host "kekirim. nunggu github bikin banner pdf (sekitar 5 menit)..."
 for ($i = 0; $i -lt 90; $i++) {
     Start-Sleep -Seconds 20
     try { $run = (Invoke-RestMethod -Uri "$API/actions/runs?head_sha=$commit" -Headers $H).workflow_runs | Where-Object { $_.name -eq "Update peta" } | Select-Object -First 1 } catch { }
     if ($run) {
-        $jobs = (Invoke-RestMethod -Uri $run.jobs_url -Headers $H).jobs
-        $dep = $jobs | Where-Object { $_.name -eq "deploy" }
-        if ($dep -and $dep.conclusion -eq "success" -and -not $sudahWeb) { $sudahWeb = $true; Write-Host "peta online udah ke-update: $WEB" }
         if ($run.status -eq "completed") { break }
         Write-Host "  masih proses... ($([int](($i + 1) * 20 / 60)) menit)"
     }
@@ -116,4 +113,4 @@ Invoke-WebRequest -Uri $art.archive_download_url -Headers $H -OutFile $zip -UseB
 Expand-Archive -Path $zip -DestinationPath $out -Force
 Remove-Item $zip
 Start-Process $out
-Selesai "beres! banner pdf ada di folder banner, peta online juga udah ke-update."
+Selesai "beres! banner pdf ada di folder banner."
